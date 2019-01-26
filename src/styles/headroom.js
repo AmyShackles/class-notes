@@ -4,7 +4,8 @@ import theme from '../../config/theme';
 const headroom = css`
   .headroom-wrapper {
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    height: 102px;
     z-index: 2000;
     top: 0;
   }
@@ -12,7 +13,6 @@ const headroom = css`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
     padding: 1rem 1.5rem;
     svg {
       height: 2.5rem;
@@ -39,6 +39,7 @@ const headroom = css`
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
     background-color: #3e5fbc;
+    width: 100vw;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {

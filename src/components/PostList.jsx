@@ -46,6 +46,7 @@ const StyledLink = styled(Link)`
   justify-content: space-between;
   padding: 1rem;
   z-index: 3;
+  overflow: hidden;
   border-radius: ${props => props.theme.borderRadius.default};
   &:after {
     content: '';
@@ -94,7 +95,6 @@ const Image = styled.div`
 const Info = styled.div`
   color: ${props => props.theme.colors.white.light};
   margin: 0 1rem 1.25rem 1.25rem;
-  position: absolute;
   bottom: 0;
   left: 0;
 `;

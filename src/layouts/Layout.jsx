@@ -47,6 +47,18 @@ injectGlobal`
   h1{
     font-family: ${theme.fontFamily.heading};
   }
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+  }
+  thead tr {
+    display: block;
+  }
 
   ${headroom}
 `;

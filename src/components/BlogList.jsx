@@ -7,7 +7,7 @@ import { TagsBlock } from 'components';
 import { Container } from 'layouts';
 
 const Wrapper = styled.article`
-  margin: 0 3rem;
+  margin: auto;
 `;
 
 const Image = styled.div`
@@ -69,6 +69,8 @@ const Information = styled.div`
   text-align: center;
   flex-basis: 100%;
   max-width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
   width: 100%;
   @media (max-width: 800px) {
     flex-basis: 100%;
