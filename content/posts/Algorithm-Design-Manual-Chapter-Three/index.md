@@ -8,7 +8,7 @@ tags: ['algorithms', 'data structures']
 published: true
 ---
 
-### Contiguous vs. Linked Data Structures
+### Contiguous vs. Linked Data Structures:
 
 **Contiguous**: single slab of memory - arrays, matrices, heaps, hash tables
 **Linked**: distinct chunks of memory bound together by pointer - lists, trees, graphs, graph adjacency lists

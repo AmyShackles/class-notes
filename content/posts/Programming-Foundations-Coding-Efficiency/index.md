@@ -8,7 +8,7 @@ published: true
 tags: ['foundations', 'efficiency']
 ---
 
-## Rules of Coding Efficency
+## Rules of Coding Efficency:
 
 1. First, do nothing
 2. You don't know what the problem is until you measure it

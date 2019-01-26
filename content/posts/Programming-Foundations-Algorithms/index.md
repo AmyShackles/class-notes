@@ -8,7 +8,7 @@ published: true
 tags: ['foundations', 'algorithms', 'sorting']
 ---
 
-## Algorithm Characteristics
+## Algorithm Characteristics:
 
 ### Algorithm complexity
 

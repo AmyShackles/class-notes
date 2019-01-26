@@ -8,7 +8,7 @@ tags: ['MongoDB', 'CS9']
 published: true
 ---
 
-### Mongod
+### Mongod:
 
 mongod is a database server
 

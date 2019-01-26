@@ -8,7 +8,7 @@ tags: ['foundations', 'data structures']
 published: true
 ---
 
-## Introduction
+## Introduction:
 
 **Data Structure** - An intentional arrangement of data
 

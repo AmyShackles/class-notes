@@ -8,7 +8,7 @@ tags: ['MongoDB']
 published: true
 ---
 
-## MongoDB Week 2 Part I
+## MongoDB Week 2 Part I:
 
 ### Creating Documents, the \_id Field, Reading Documents
 

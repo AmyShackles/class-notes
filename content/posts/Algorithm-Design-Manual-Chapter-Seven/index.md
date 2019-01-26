@@ -8,7 +8,7 @@ tags: ['algorithms', 'heuristics', 'search']
 published: true
 ---
 
-### Backtracking
+### Backtracking:
 
 Backtracking is a systematic way to iterate through all possible configurations of a search space. The configuration may represent all possible arrangements of objects (permutations) or all possible ways of building a collection of them (subsets).
 
