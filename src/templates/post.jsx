@@ -88,15 +88,12 @@ export const query = graphql`
           childImageSharp {
             fluid(
               maxWidth: 1920
+              quality: 90
               duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
             ) {
-              sizes
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
-            resize(width: 1200) {
+            resize(width: 1200, quality: 90) {
               src
             }
           }
