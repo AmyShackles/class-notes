@@ -61,3 +61,5 @@ typings/
 public
 yarn-error.log
 .tern-port
+.DS_Store
+/.DS_Store
