@@ -1,6 +1,6 @@
 ---
 path: '/Programming-Foundations--Data-Structures'
-cover: '../2018-10-16/speed.jpg'
+cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Programming-Foundations--Data-Structures'
 date: '2018-11-22'
 title: 'Programming Foundations:  Data Structures'

@@ -1,10 +1,10 @@
 ---
 path: '/Algorithm-Design-Manual--Chapter-One'
-cover: '../2018-10-16/speed.jpg'
+cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-One'
-date: '2018-10-18'
+date: '2018-12-18'
 title: 'Algorithm Design Manual:  Chapter One - Introduction to Algorithm Design'
-tags: ['data structures', 'algorithms']
+tags: ['algorithms']
 published: true
 ---
 
@@ -13,8 +13,6 @@ Designing good algorithms for real-world problems requires the use of techniques
 Collected implementations of algorithms can be found at http://www.cs.sunysb.ed/~algorith (though that redirects you to [this website](http://www.algorist.com/algorist.html)
 
 Links to example problems can be found at ~~programming - challenges . com~~ - nope, that doesn't exist anymore. He also mentions online-judge.vva.es. Finally found uva.onlinejudge.org which has the problems he mentions in Chapter 1 under the right numbers, but the website is kind of horrendously slow. Still, [this](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1) should get you to any of the questions you're looking for.
-
-## Chapter 1: Introduction to Algorithm Design
 
 **Algorithms** are procedures for solving geernal, well-specified, problems. These problems are specified by describing the list of instances it is designed to work on and what the resulting output of each instance should be. It is a procedure to take any of the possible input instances and transform it into the desired output.
 

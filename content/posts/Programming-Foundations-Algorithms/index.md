@@ -1,6 +1,6 @@
 ---
 path: '/Programming-Foundations--Algorithms'
-cover: '../2018-10-16/speed.jpg'
+cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Programming-Foundations--Algorithms'
 date: '2018-11-21'
 title: 'Programming-Foundations:  Algorithms'
