@@ -1,10 +1,10 @@
 ---
 path: '/Programming-Foundations--Algorithms'
-cover: './blocks.jpg'
+cover: '../2018-10-16/speed.jpg'
 slug: 'Programming-Foundations--Algorithms'
-date: '2018-10-15'
+date: '2018-11-21'
 title: 'Programming-Foundations:  Algorithms'
-published: false
+published: true
 tags: ['foundations', 'algorithms', 'sorting']
 ---
 
