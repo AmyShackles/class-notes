@@ -25,7 +25,7 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        Note Application - <a href="https://amyshackles.com">Amy Shackles</a>
+        Notes for Great Good- <a href="https://amyshackles.com">Amy Shackles</a>
       </span>
     </Text>
   </Wrapper>
