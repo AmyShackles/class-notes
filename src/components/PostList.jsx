@@ -100,10 +100,16 @@ const Info = styled.div`
 `;
 
 const Title = styled.h2`
-  margin-bottom: 0.6rem;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  span {
+    font-size: 20px;
+  }
 `;
 
-const PostList = ({ cover, path, date, title, excerpt }) => (
+const PostList = ({ cover, path, date, title, chapter, subtitle }) => (
   <Wrapper>
     <Image>
       <Img fluid={cover} />
@@ -111,8 +117,13 @@ const PostList = ({ cover, path, date, title, excerpt }) => (
     <StyledLink to={path}>
       <Info>
         <span>{date}</span>
-        <Title>{title}</Title>
-        <span>{excerpt}</span>
+        <Title>
+          {title}
+          <br />
+          {chapter}
+          <br />
+          <span>{subtitle}</span>
+        </Title>
       </Info>
     </StyledLink>
   </Wrapper>
@@ -123,7 +134,9 @@ export default PostList;
 PostList.propTypes = {
   cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
-  excerpt: PropTypes.string,
+  subtitle: PropTypes.string,
+  chapter: PropTypes.string,
+  // excerpt: PropTypes.string,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };

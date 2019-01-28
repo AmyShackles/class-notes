@@ -3,7 +3,8 @@ path: '/Programming-Foundations--Algorithms'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Programming-Foundations--Algorithms'
 date: '2018-11-21'
-title: 'Programming-Foundations:  Algorithms'
+title: 'Programming Foundations:'
+subtitle: 'Algorithms'
 published: true
 tags: ['foundations', 'algorithms', 'sorting']
 ---

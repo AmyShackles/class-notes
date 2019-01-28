@@ -3,7 +3,8 @@ path: '/Programming-Foundations--Data-Structures'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Programming-Foundations--Data-Structures'
 date: '2018-11-22'
-title: 'Programming Foundations:  Data Structures'
+title: 'Programming Foundations:'
+subtitle: 'Data Structures'
 tags: ['foundations', 'data structures']
 published: true
 ---

@@ -3,7 +3,8 @@ path: '/Programming-Foundations--Coding-Efficiency'
 cover: './speed.jpg'
 slug: 'Programming-Foundations--Coding-Efficiency'
 date: '2018-11-20'
-title: 'Programming Foundations:  Coding Efficiency'
+title: 'Programming Foundations:'
+subtitle: 'Coding Efficiency'
 published: true
 tags: ['foundations', 'efficiency']
 ---

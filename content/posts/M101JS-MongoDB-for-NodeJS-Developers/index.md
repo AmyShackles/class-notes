@@ -3,7 +3,8 @@ path: '/M101JS-MongoDB-for-NodeJS-Developers'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'M101JS-MongoDB-for-NodeJS-Developers'
 date: '2018-06-11'
-title: 'M101JS: MongoDB for Node.JS Developers'
+title: 'M101JS:'
+subtitle: 'MongoDB for Node.JS Developers'
 tags: ['MongoDB']
 published: true
 ---

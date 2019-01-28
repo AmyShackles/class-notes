@@ -2,7 +2,9 @@
 path: '/Algorithm-Design-Manual--Chapter-Nine'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 date: '2019-01-27'
-title: 'Algorithm Design Manual:  Chapter Nine - Intractable Problems and Approximation Algorithms'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Nine'
+subtitle: 'Intractable Problems and Approximation Algorithms'
 tags: ['algorithms', 'NP-complete']
 ---
 

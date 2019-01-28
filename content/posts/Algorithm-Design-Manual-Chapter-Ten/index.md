@@ -2,7 +2,9 @@
 path: '/Algorithm-Design-Manual--Chapter-Ten'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 date: '2019-01-28'
-title: 'Algorithm Design Manual:  Chapter Ten - How to Design Algorithms'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Ten'
+subtitle: 'How to Design Algorithms'
 tags: ['algorithms', 'algorithm design']
 ---
 

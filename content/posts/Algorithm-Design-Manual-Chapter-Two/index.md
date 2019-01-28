@@ -3,7 +3,9 @@ path: '/Algorithm-Design-Manual--Chapter-Two'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-Two'
 date: '2019-01-11'
-title: 'Algorithm Design Manual:  Chapter Two - Algorithm Analysis'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Two'
+subtitle: 'Algorithm Analysis'
 tags: ['algorithms', 'algorithm analysis']
 published: true
 ---

@@ -3,7 +3,9 @@ path: '/Algorithm-Design-Manual--Chapter-Three'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-Three'
 date: '2019-01-13'
-title: 'Algorithm Design Manual:  Chapter Three:  Data Structures'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Three'
+subtitle: 'Data Structures'
 tags: ['algorithms', 'data structures']
 published: true
 ---

@@ -3,7 +3,9 @@ path: '/Algorithm-Design-Manual--Chapter-Seven'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-Seven'
 date: '2019-01-23'
-title: 'Algorithm Design Manual:  Chapter Seven - Combinatorial Search and Heuristic Methods'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Seven'
+subtitle: 'Combinatorial Search and Heuristic Methods'
 tags: ['algorithms', 'heuristics', 'search']
 published: true
 ---

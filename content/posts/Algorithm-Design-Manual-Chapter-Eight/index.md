@@ -3,7 +3,9 @@ path: '/Algorithm-Design-Manual--Chapter-Eight'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-Eight'
 date: '2019-01-27'
-title: 'Algorithm Design Manual:  Chapter Eight - Dynamic Programming'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Eight'
+subtitle: 'Dynamic Programming'
 tags: ['algorithms', 'dynamic programming']
 published: true
 ---

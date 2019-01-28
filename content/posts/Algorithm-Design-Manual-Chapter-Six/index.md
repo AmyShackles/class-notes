@@ -3,7 +3,9 @@ path: '/Algorithm-Design-Manual--Chapter-Six'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-Six'
 date: '2019-01-18'
-title: 'Algorithm Design Manual:  Chapter Six - Weighted Graph Algorithms'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Six'
+subtitle: 'Weighted Graph Algorithms'
 tags: ['algorithms', 'graphs']
 published: true
 ---

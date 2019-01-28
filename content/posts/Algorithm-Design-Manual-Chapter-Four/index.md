@@ -2,7 +2,9 @@
 path: '/Algorithm-Design-Manual--Chapter-Four'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 date: '2019-01-15'
-title: 'Algorithm Design Manual:  Chapter Four - Sorting and Searching'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Four'
+subtitle: 'Sorting and Searching'
 tags: ['algorithms', 'sorting', 'searching']
 ---
 

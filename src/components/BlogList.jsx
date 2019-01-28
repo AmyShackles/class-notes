@@ -58,7 +58,6 @@ const Image = styled.div`
 
 const Information = styled.div`
   h1 {
-    font-size: 2rem;
     display: inline-block;
     color: ${props => props.theme.colors.black.base};
     transition: all ${props => props.theme.transitions.default.duration};
@@ -86,9 +85,10 @@ const Date = styled.div`
 
 const Title = styled.h1`
   margin: 0;
+  font-size: 24px;
 `;
 
-const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
+const BlogList = ({ path, cover, title, date, chapter, subtitle, tags }) => (
   <Container>
     <Wrapper>
       <Image>
@@ -99,10 +99,15 @@ const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
       <Information>
         <Date>{date}</Date>
         <Link to={path}>
-          <Title>{title}</Title>
+          <Title>
+            {title}
+            <br />
+            {chapter}
+            {chapter ? <br /> : null}
+            {subtitle}
+          </Title>
         </Link>
         <TagsBlock list={tags} />
-        {excerpt}
       </Information>
     </Wrapper>
   </Container>
@@ -113,8 +118,10 @@ export default BlogList;
 BlogList.propTypes = {
   cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
-  excerpt: PropTypes.string,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  chapter: PropTypes.string,
+  subtitle: PropTypes.string,
+  excerpt: PropTypes.string,
   tags: PropTypes.array.isRequired,
 };

@@ -3,7 +3,9 @@ path: '/Algorithm-Design-Manual--Chapter-One'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Algorithm-Design-Manual--Chapter-One'
 date: '2018-12-18'
-title: 'Algorithm Design Manual:  Chapter One - Introduction to Algorithm Design'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter One'
+subtitle: 'Introduction to Algorithm Design'
 tags: ['algorithms']
 published: true
 ---

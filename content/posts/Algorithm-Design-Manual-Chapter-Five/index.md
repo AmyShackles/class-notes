@@ -2,7 +2,9 @@
 path: '/Algorithm-Design-Manual--Chapter-Five'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 date: '2019-01-16'
-title: 'Algorithm Design Manual:  Chapter Five - Graph Traversal'
+title: 'Algorithm Design Manual:'
+chapter: 'Chapter Five'
+subtitle: 'Graph Traversal'
 tags: ['algorithms', 'graphs']
 ---
 

@@ -3,7 +3,8 @@ path: '/CS9-Auth-I-Guided-Demo-I'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'CS9-Auth-I-Guided-Demo-I'
 date: '2018-06-10'
-title: 'CS9: Auth I - Guided Demo I'
+title: 'CS9: Auth I'
+subtitle: 'Guided Demo I'
 tags: ['authentication', 'CS9']
 published: true
 ---

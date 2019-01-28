@@ -34,7 +34,12 @@ const Post = ({ data, pageContext }) => {
     <Layout>
       <SEO
         title={title}
-        description={post.frontmatter.description || post.excerpt || ' '}
+        description={
+          post.frontmatter.description ||
+          post.excerpt ||
+          post.frontmatter.subtitle ||
+          ' '
+        }
         image={image}
         pathname={post.frontmatter.path}
         article
@@ -83,6 +88,8 @@ export const query = graphql`
       frontmatter {
         date
         title
+        chapter
+        subtitle
         tags
         cover {
           childImageSharp {
