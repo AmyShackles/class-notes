@@ -1,5 +1,29 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { keyframes } from 'react-emotion';
+
+const reverseRave = keyframes`
+  0% {
+    color: violet;
+  }
+  14% {
+    color: indigo;
+  }
+  28% {
+    color: blue;
+  }
+  42% {
+    color: green;
+  }
+  56% {
+    color: yellow;
+  }
+  70% {
+    color: orange;
+  }
+  84% {
+    color: red;
+  }
+`;
 
 const Wrapper = styled.footer`
   position: relative;
@@ -19,13 +43,25 @@ const Text = styled.div`
   padding-bottom: 2rem;
   text-align: center;
   color: ${props => props.theme.colors.white.light};
+  a {
+    animation: ${reverseRave} 1.5s alternate infinite;
+  }
+  span {
+    color: transparent;
+    text-shadow: 0 0 0 white;
+  }
 `;
 
 const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        Notes for Great Good- <a href="https://amyshackles.com">Amy Shackles</a>
+        Notes for Great Good &nbsp;&nbsp;&nbsp;
+        <span role="img" aria-label="pawprints">
+          🐾
+        </span>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://amyshackles.com">Amy Shackles</a>
       </span>
     </Text>
   </Wrapper>
