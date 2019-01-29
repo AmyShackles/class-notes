@@ -20,7 +20,7 @@ const SuggestionBar = styled.div`
 const PostSuggestion = styled.div`
   display: flex;
   align-items: center;
-  margin: 1rem 3rem 0 3rem;
+  margin: 1rem;
 `;
 
 const Post = ({ data, pageContext }) => {
@@ -28,12 +28,16 @@ const Post = ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const image = post.frontmatter.cover.childImageSharp.fluid;
   const title = post.frontmatter.title;
+  const chapter = post.frontmatter.chapter;
+  const subtitle = post.frontmatter.subtitle;
   const date = post.frontmatter.date;
   const html = post.html;
   return (
     <Layout>
       <SEO
         title={title}
+        chapter={chapter}
+        subtitle={subtitle}
         description={
           post.frontmatter.description ||
           post.excerpt ||
@@ -44,7 +48,13 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image} />
+      <Header
+        title={title}
+        chapter={chapter}
+        subtitle={subtitle}
+        date={date}
+        cover={image}
+      />
       <Container>
         <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />

@@ -38,18 +38,27 @@ const Text = styled.div`
   padding: 0 2rem;
   margin-top: 3rem;
   align-items: center;
+  h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
 `;
-
 const Subtitle = styled.p`
   max-width: 650px;
   color: ${props => props.theme.colors.white.light};
 `;
 
-const Header = ({ children, title, date, cover }) => (
+const Header = ({ children, title, chapter, subtitle, date, cover }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
+      <h3>{chapter}</h3>
+      <h3>{subtitle}</h3>
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}
@@ -68,6 +77,8 @@ Header.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
+  chapter: PropTypes.string,
+  subtitle: PropTypes.string,
 };
 
 Header.defaultProps = {
@@ -75,4 +86,6 @@ Header.defaultProps = {
   cover: false,
   date: false,
   title: false,
+  chapter: false,
+  subtitle: false,
 };
