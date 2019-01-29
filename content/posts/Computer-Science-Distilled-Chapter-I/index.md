@@ -23,7 +23,7 @@ published: true
 
 #### Example: Finding maximum value between three variables:
 
-![FlowchartExample](./flowchart.jpeg)
+![FlowchartExample](./Flowchart.jpeg)
 
 **Pseudocode**: Human-friendly code not understood by machines.
 
@@ -79,12 +79,66 @@ To negate ideas, use `!` operator (negation operator)
 
 **Biconditional**: If A->B and B->A, can be represented as A<->B. A->B does not necessarily mean that B->A.
 
-|  A  |  B  | !A  | A->B | A<->B | A AND B | A OR B | A XOR B |
-| :-: | :-: | :-: | :--: | :---: | :-----: | :----: | :-----: |
-|  ✓  |  ✓  | ❌  |  ✓   |   ✓   |    ✓    |   ✓    |   ❌    |
-|  ✓  | ❌  | ❌  |  ❌  |  ❌   |   ❌    |   ✓    |    ✓    |
-| ❌  |  ✓  |  ✓  |  ✓   |  ❌   |   ❌    |   ✓    |    ✓    |
-| ❌  | ❌  |  ✓  |  ✓   |   ✓   |   ❌    |   ❌   |   ❌    |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-1l4x{font-size: x-large;;border-color:inherit;text-align:center}
+.tg .tg-49rs{font-size: x-large;;border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-1l4x">A</th>
+    <th class="tg-1l4x">B</th>
+    <th class="tg-1l4x">!A</th>
+    <th class="tg-1l4x">A-&gt;B</th>
+    <th class="tg-1l4x">A&lt;-&gt;B</th>
+    <th class="tg-1l4x">A AND B</th>
+    <th class="tg-49rs">A OR B</th>
+    <th class="tg-49rs">A XOR B</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">❌</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">✓</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+    <td class="tg-baqh">❌</td>
+  </tr>
+</table>
 
 ### Boolean Algebra (Simplifies logical expressions)
 
@@ -163,24 +217,219 @@ C   Write queue is full         III     C OR D
 D   Cache is loaded             IV      D->!A
 ```
 
-| State # | A   | B   | C   | D   | I   | II  | III | IV  | All four |
-| ------- | --- | --- | --- | --- | --- | --- | --- | --- | -------- |
-| 1       | X   | X   | X   | X   | ✓   | ✓   | X   | ✓   | X        |
-| 2       | X   | X   | X   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓        |
-| 3       | X   | X   | ✓   | X   | ✓   | ✓   | ✓   | ✓   | ✓        |
-| 4       | X   | X   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓        |
-| 5       | X   | ✓   | X   | X   | ✓   | ✓   | X   | ✓   | X        |
-| 6       | X   | ✓   | X   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓        |
-| 7       | X   | ✓   | ✓   | X   | ✓   | ✓   | ✓   | ✓   | ✓        |
-| 8       | X   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓        |
-| 9       | ✓   | X   | X   | X   | X   | ✓   | X   | ✓   | X        |
-| 10      | ✓   | X   | X   | ✓   | X   | ✓   | ✓   | X   | X        |
-| 11      | ✓   | X   | ✓   | X   | X   | X   | ✓   | ✓   | X        |
-| 12      | ✓   | X   | ✓   | ✓   | X   | X   | ✓   | X   | X        |
-| 13      | ✓   | ✓   | X   | X   | ✓   | ✓   | X   | ✓   | X        |
-| 14      | ✓   | ✓   | X   | ✓   | ✓   | ✓   | ✓   | X   | X        |
-| 15      | ✓   | ✓   | ✓   | X   | ✓   | X   | ✓   | ✓   | X        |
-| 16      | ✓   | ✓   | ✓   | ✓   | ✓   | X   | ✓   | X   | X        |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-uzi9{font-size: x-large;;text-align:center;vertical-align:top}
+.tg .tg-1l4x{font-size: x-large;;border-color:inherit;text-align:center}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-1l4x">State #</th>
+    <th class="tg-1l4x">A</th>
+    <th class="tg-1l4x">B</th>
+    <th class="tg-1l4x">C</th>
+    <th class="tg-1l4x">D</th>
+    <th class="tg-1l4x">I</th>
+    <th class="tg-uzi9">II</th>
+    <th class="tg-uzi9">III</th>
+    <th class="tg-uzi9">IV</th>
+    <th class="tg-uzi9">All four</th>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">1</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">2</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">3</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">4</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">5</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">6</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">7</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">8</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">9</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">10</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">11</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">12</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">13</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">14</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">15</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+  <tr>
+    <td class="tg-uzi9">16</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">✓</td>
+    <td class="tg-uzi9">X</td>
+    <td class="tg-uzi9">X</td>
+  </tr>
+</table>
 
 All requirements are met in states 2-4 and 6-8. In those states, A = False, so database can't ever be locked. The cache will not be loaded in states 3 and 7.
 
@@ -248,19 +497,63 @@ Norwegian(1) AND Blue(2)
 
 - Kools are smoked in the house next to where the horse is kept, which means that the horse has to live in the blue house next door.
 
-+-------------+-----------+-------+------+---+---+
-| | 1 | 2 | 3 | 4 | 5 |
-+-------------+-----------+-------+------+---+---+
-| Nationality | Norwegian | | | | |
-+-------------+-----------+-------+------+---+---+
-| House color | Yellow | Blue | | | |
-+-------------+-----------+-------+------+---+---+
-| Animal | | Horse | | | |
-+-------------+-----------+-------+------+---+---+
-| Drink | | | Milk | | |
-+-------------+-----------+-------+------+---+---+
-| Cigarette | Kools | | | | |
-+-------------+-----------+-------+------+---+---+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{font-size: x-large;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">House</th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">House-color</td>
+    <td class="tg-xldj">Yellow</td>
+    <td class="tg-xldj">Blue</td>
+    <td class="tg-xldj">?</td>
+    <td class="tg-xldj">?</td>
+    <td class="tg-xldj">?</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Nationality</td>
+    <td class="tg-xldj">Norway</td>
+    <td class="tg-xldj">?</td>
+    <td class="tg-xldj">?</td>
+    <td class="tg-xldj">?</td>
+    <td class="tg-xldj">?</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Drink</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">Milk</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Cigarette</td>
+    <td class="tg-0pky">Kools</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Animal</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">Horse</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+    <td class="tg-0pky">?</td>
+  </tr>
+</table>
 
 EnglishRed(3) XOR EnglishRed(4) XOR EnglishRed(5)
 
@@ -315,26 +608,224 @@ A: Ivory(3) AND GreenCoffe(4) AND EnglishRed(5)
 
 B: Ivory(4) AND GreenCoffe(5) AND EnglishRed(3)
 
-| OK? | EspDog(3) | EspDog(4) | EspDog(5) | UkrTea(2) | UkrTea(4) | UkrTea(5) | A   | B   |
-| --- | --------- | --------- | --------- | --------- | --------- | --------- | --- | --- |
-| x   | 1         | 0         | 0         | 1         | 0         | 0         | 0   | 1   |
-| YES | 0         | 1         | 0         | 1         | 0         | 0         | 0   | 1   |
-| YES | 0         | 0         | 1         | 1         | 0         | 0         | 0   | 1   |
-| x   | 1         | 0         | 0         | 0         | 1         | 0         | 0   | 1   |
-| x   | 0         | 1         | 0         | 0         | 1         | 0         | 0   | 1   |
-| YES | 0         | 0         | 1         | 0         | 1         | 0         | 0   | 1   |
-| x   | 1         | 0         | 0         | 0         | 0         | 1         | 0   | 1   |
-| x   | 0         | 1         | 0         | 0         | 0         | 1         | 0   | 1   |
-| x   | 0         | 0         | 1         | 0         | 0         | 1         | 0   | 1   |
-| YES | 1         | 0         | 0         | 1         | 0         | 0         | 1   | 0   |
-| YES | 0         | 1         | 0         | 1         | 0         | 0         | 1   | 0   |
-| x   | 0         | 0         | 1         | 1         | 0         | 0         | 1   | 0   |
-| x   | 1         | 0         | 0         | 0         | 1         | 0         | 1   | 0   |
-| x   | 0         | 1         | 0         | 0         | 1         | 0         | 1   | 0   |
-| x   | 0         | 0         | 1         | 0         | 1         | 0         | 1   | 0   |
-| x   | 1         | 0         | 0         | 0         | 0         | 1         | 1   | 0   |
-| x   | 0         | 1         | 0         | 0         | 0         | 1         | 1   | 0   |
-| x   | 0         | 0         | 1         | 0         | 0         | 1         | 1   | 0   |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{font-size: x-large;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+</style>
+<table class="tg">
+  <tr>
+    <th>OK?</th>
+    <th>EspDog(3)</th>
+    <th>EspDog(4)</th>
+    <th>EspDog(5)</th>
+    <th>UkrTea(2)</th>
+    <th>UkrTea(4)</th>
+    <th>UkrTea(5)</th>
+    <th>A</th>
+    <th>B</th>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>YES</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>YES</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>YES</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>YES</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>YES</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>x</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+</table>
 
 In all valid combinations, UkraineTea(5) was false, so that can be eliminated
 
@@ -353,24 +844,126 @@ In the truth table, there was only one line where UkraineTea(2) is false. This t
 NOT(UkraineTea(2))-> SpainDog(5) AND Ivory(4) AND GreenCoffee(5) AND UkranianTea(4) AND EnglishRed(3)
 
 Assume UkraineTea(2) is false and try to fill in the table:
-| | 1 | 2 | 3 | 4 | 5 |
-|------------- |----------- |------- |--------- |---------- |-------- |
-| Nationality | Norwegian | | English | Ukranian | Spain |
-| House color | Yellow | Blue | Red | Ivory | Green |
-| Animal | | Horse | | | Dog |
-| Drink | | Juice | Milk | Tea | Coffee |
-| Cigarette | Kools | Lucky | | | |
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{border-color:inherit;text-align:left}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj"></th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Nationality</td>
+    <td class="tg-0pky">Norwegian</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">English</td>
+    <td class="tg-0pky">Ukranian</td>
+    <td class="tg-0pky">Spain</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">House color</td>
+    <td class="tg-0pky">Yellow</td>
+    <td class="tg-0pky">Blue</td>
+    <td class="tg-0pky">Red</td>
+    <td class="tg-0pky">Ivory</td>
+    <td class="tg-0pky">Green</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Animal</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Horse</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Dog</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Drink</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Juice</td>
+    <td class="tg-0pky">Milk</td>
+    <td class="tg-0pky">Tea</td>
+    <td class="tg-0pky">Coffee</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Cigarette</td>
+    <td class="tg-0pky">Kools</td>
+    <td class="tg-0pky">Lucky</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</table>
 
 Ack! That would leave only House II open for the Japanese person and they can't smoke Lucky because they smoke Parliament!
 
 That tells us that the assumption was wrong and therefore UkraineTea(2) has to be true
-| | 1 | 2 | 3 | 4 | 5 |
-|------------- |----------- |--------- |------ |--- |--- |
-| Nationality | Norwegian | Ukraine | | | |
-| House color | Yellow | Blue | | | |
-| Animal | | Horse | | | |
-| Drink | | Tea | Milk | | |
-| Cigarette | Kools | | | | |
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+.tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj"></th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Nationality</td>
+    <td class="tg-0lax">Norwegian</td>
+    <td class="tg-0lax">Ukraine</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">House color</td>
+    <td class="tg-0lax">Yellow</td>
+    <td class="tg-0lax">Blue</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Animal</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Horse</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Drink</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Tea</td>
+    <td class="tg-0lax">Milk</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Cigarette</td>
+    <td class="tg-0lax">Kools</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table>
 
 SpainDog(3) XOR SpainDog(4) XOR SpainDog(5)
 
@@ -392,13 +985,63 @@ Both Cofee and Juice can only be 4 and 5 now. Milk and Tea are already spoken fo
 
 Likewise, Parliament is only capable of being House III, IV or V, Lucky is only capable of being House IV or V, Old Gold is only able to be III, IV, or V, and Kools is already spoken for. That leaves House II being the Chesterfield smoker!
 
-|             | 1         | 2            | 3    | 4   | 5   |
-| ----------- | --------- | ------------ | ---- | --- | --- |
-| Nationality | Norwegian | Ukraine      |      |     |     |
-| House color | Yellow    | Blue         |      |     |     |
-| Animal      |           | Horse        |      |     |     |
-| Drink       | Water     | Tea          | Milk |     |     |
-| Cigarette   | Kools     | Chesterfield |      |     |     |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+.tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj"></th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Nationality</td>
+    <td class="tg-0lax">Norwegian</td>
+    <td class="tg-0lax">Ukraine</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">House color</td>
+    <td class="tg-0lax">Yellow</td>
+    <td class="tg-0lax">Blue</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Animal</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Horse</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Drink</td>
+    <td class="tg-0lax">Water</td>
+    <td class="tg-0lax">Tea</td>
+    <td class="tg-0lax">Milk</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Cigarette</td>
+    <td class="tg-0lax">Kools</td>
+    <td class="tg-0lax">Chesterfield</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table>
 
 SpainDog(3) XOR SpainDog(4) XOR SpainDog(5)
 
@@ -412,26 +1055,224 @@ LuckyJuice(4) XOR LuckyJuice(5)
 
 JapanParliament(3) XOR JapanParliament(4) XOR JapanParliament(5)
 
-| OK? | JpaPar<br/>(3) | JpaPar<br/>(4) | JpaPar<br/>(5) | OldSnail<br/>(3) | OldSnail<br/>(4) | OldSnail<br/>(5) | LuckyJuice<br/>(4) | LuckyJuice<br/>(5) |
-| --- | -------------- | -------------- | -------------- | ---------------- | ---------------- | ---------------- | ------------------ | ------------------ |
-| x   | 1              | 0              | 0              | 1                | 0                | 0                | 0                  | 1                  |
-| YES | 1              | 0              | 0              | 0                | 1                | 0                | 0                  | 1                  |
-| x   | 1              | 0              | 0              | 0                | 0                | 1                | 0                  | 1                  |
-| YES | 0              | 1              | 0              | 1                | 0                | 0                | 0                  | 1                  |
-| x   | 0              | 1              | 0              | 0                | 1                | 0                | 0                  | 1                  |
-| x   | 0              | 1              | 0              | 0                | 1                | 0                | 0                  | 1                  |
-| x   | 0              | 0              | 1              | 1                | 0                | 0                | 0                  | 1                  |
-| x   | 0              | 0              | 1              | 0                | 1                | 0                | 0                  | 1                  |
-| x   | 0              | 0              | 1              | 0                | 0                | 1                | 0                  | 1                  |
-| x   | 1              | 0              | 0              | 1                | 0                | 0                | 1                  | 0                  |
-| x   | 1              | 0              | 0              | 0                | 1                | 0                | 1                  | 0                  |
-| YES | 1              | 0              | 0              | 0                | 0                | 1                | 1                  | 0                  |
-| x   | 0              | 1              | 0              | 1                | 0                | 0                | 1                  | 0                  |
-| x   | 0              | 1              | 0              | 0                | 1                | 0                | 1                  | 0                  |
-| x   | 0              | 1              | 0              | 0                | 0                | 1                | 1                  | 0                  |
-| YES | 0              | 0              | 1              | 1                | 0                | 0                | 1                  | 0                  |
-| x   | 0              | 0              | 1              | 0                | 1                | 0                | 1                  | 0                  |
-| x   | 0              | 0              | 1              | 0                | 0                | 1                | 1                  | 0                  |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+.tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj">OK?</th>
+    <th class="tg-xldj">JpaParbr  (3)</th>
+    <th class="tg-xldj">JpaPar  (4)</th>
+    <th class="tg-xldj">JpaPar  (5)</th>
+    <th class="tg-xldj">OldSnail  (3)</th>
+    <th class="tg-xldj">OldSnail  (4)</th>
+    <th class="tg-0lax">OldSnail  (5)</th>
+    <th class="tg-0lax">LuckyJuice  (4)</th>
+    <th class="tg-0lax">LuckyJuice  (5)</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">YES</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">YES</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">YES</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">YES</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">x</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+</table>
 
 JapanParliaments(4) is only valid on one line, so we can write:
 
@@ -439,13 +1280,63 @@ JapanParliaments(4)->OldSnail(3) AND LuckyJuice(5)
 
 Try to plug it into the table and see if it works!
 
-|             | 1         | 2       | 3        | 4           | 5            |
-| ----------- | --------- | ------- | -------- | ----------- | ------------ |
-| Nationality | Norwegian | Ukraine |          | Japan       | English      |
-| House color | Yellow    | Blue    | Ivory    | Green       | Red          |
-| Animal      |           | Horse   | Snail    |             |              |
-| Drink       | Water     | Tea     | Milk     | Coffee      | Juice        |
-| Cigarette   | Kools     | Chester | Old Gold | Parliaments | Lucky Strike |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+.tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj"></th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Nationality</td>
+    <td class="tg-0lax">Norwegian</td>
+    <td class="tg-0lax">Ukraine</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Japan</td>
+    <td class="tg-0lax">English</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">House color</td>
+    <td class="tg-0lax">Yellow</td>
+    <td class="tg-0lax">Blue</td>
+    <td class="tg-0lax">Ivory</td>
+    <td class="tg-0lax">Green</td>
+    <td class="tg-0lax">Red</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Animal</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Horse</td>
+    <td class="tg-0lax">Snail</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Drink</td>
+    <td class="tg-0lax">Water</td>
+    <td class="tg-0lax">Tea</td>
+    <td class="tg-0lax">Milk</td>
+    <td class="tg-0lax">Coffee</td>
+    <td class="tg-0lax">Juice</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Cigarette</td>
+    <td class="tg-0lax">Kools</td>
+    <td class="tg-0lax">Chester</td>
+    <td class="tg-0lax">Old Gold</td>
+    <td class="tg-0lax">Parliaments</td>
+    <td class="tg-0lax">Lucky Strike</td>
+  </tr>
+</table>
 
 That would leave only Spain unaccounted for and restrict it to living in House II. But the Spaniard has a dog, so it can't have a snail!
 
@@ -467,13 +1358,63 @@ The English and the Japanese individuals can only live in 3 or 5, so that leaves
 
 We also know that OldGold and Parliament can only be in houses 3 or 5, so that leaves House IV
 
-|             | 1         | 2       | 3    | 4            | 5   |
-| ----------- | --------- | ------- | ---- | ------------ | --- |
-| Nationality | Norwegian | Ukraine |      | Spain        |     |
-| House color | Yellow    | Blue    |      |              |     |
-| Animal      |           | Horse   |      | Dog          |     |
-| Drink       | Water     | Tea     | Milk | OJ           |     |
-| Cigarette   | Kools     | Chester |      | Lucky Strike |     |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+.tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj"></th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Nationality</td>
+    <td class="tg-0lax">Norwegian</td>
+    <td class="tg-0lax">Ukraine</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Spain</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">House color</td>
+    <td class="tg-0lax">Yellow</td>
+    <td class="tg-0lax">Blue</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Animal</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Horse</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Dog</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Drink</td>
+    <td class="tg-0lax">Water</td>
+    <td class="tg-0lax">Tea</td>
+    <td class="tg-0lax">Milk</td>
+    <td class="tg-0lax">OJ</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Cigarette</td>
+    <td class="tg-0lax">Kools</td>
+    <td class="tg-0lax">Chester</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Lucky Strike</td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table>
 
 EnglishRed(3) AND (Ivory(4) AND GreenCoffee(5))
 
@@ -493,12 +1434,62 @@ Fox(1) XOR Fox(3)
 
 THAT MEANS THAT JAPAN HAS THE ZEBRA!
 
-|             | 1         | 2       | 3        | 4            | 5          |
-| ----------- | --------- | ------- | -------- | ------------ | ---------- |
-| Nationality | Norwegian | Ukraine | English  | Spain        | Japan      |
-| House color | Yellow    | Blue    | Red      | Ivory        | Green      |
-| Animal      | Fox       | Horse   | Snail    | Dog          | Zebra      |
-| Drink       | Water     | Tea     | Milk     | OJ           | Coffee     |
-| Cigarette   | Kools     | Chester | Old Gold | Lucky Strike | Parliament |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
+.tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-xldj"></th>
+    <th class="tg-xldj">1</th>
+    <th class="tg-xldj">2</th>
+    <th class="tg-xldj">3</th>
+    <th class="tg-xldj">4</th>
+    <th class="tg-xldj">5</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Nationality</td>
+    <td class="tg-0lax">Norwegian</td>
+    <td class="tg-0lax">Ukraine</td>
+    <td class="tg-0lax">English</td>
+    <td class="tg-0lax">Spain</td>
+    <td class="tg-0lax">Japan</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">House color</td>
+    <td class="tg-0lax">Yellow</td>
+    <td class="tg-0lax">Blue</td>
+    <td class="tg-0lax">Red</td>
+    <td class="tg-0lax">Ivory</td>
+    <td class="tg-0lax">Green</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Animal</td>
+    <td class="tg-0lax">Fox</td>
+    <td class="tg-0lax">Horse</td>
+    <td class="tg-0lax">Snail</td>
+    <td class="tg-0lax">Dog</td>
+    <td class="tg-0lax">Zebra</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Drink</td>
+    <td class="tg-0lax">Water</td>
+    <td class="tg-0lax">Tea</td>
+    <td class="tg-0lax">Milk</td>
+    <td class="tg-0lax">OJ</td>
+    <td class="tg-0lax">Coffee</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Cigarette</td>
+    <td class="tg-0lax">Kools</td>
+    <td class="tg-0lax">Chester</td>
+    <td class="tg-0lax">Old Gold</td>
+    <td class="tg-0lax">Lucky Strike</td>
+    <td class="tg-0lax">Parliament</td>
+  </tr>
+</table>
 
 So the answer is that the Norwegian drinks water and the Japanese owns the zebra
