@@ -21,6 +21,8 @@ exports.createPages = ({ graphql, actions }) => {
                     path
                     title
                     tags
+                    subtitle
+                    chapter
                   }
                 }
               }

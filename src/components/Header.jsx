@@ -77,8 +77,8 @@ Header.propTypes = {
     PropTypes.object,
     PropTypes.bool,
   ]),
-  chapter: PropTypes.string,
-  subtitle: PropTypes.string,
+  chapter: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 Header.defaultProps = {
@@ -86,6 +86,4 @@ Header.defaultProps = {
   cover: false,
   date: false,
   title: false,
-  chapter: false,
-  subtitle: false,
 };

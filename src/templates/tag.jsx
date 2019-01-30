@@ -40,6 +40,7 @@ const Tag = ({ pageContext }) => {
           {posts.map((post, index) => (
             <Link key={index} to={post.frontmatter.path}>
               <h3>{post.frontmatter.title}</h3>
+              <h3>{post.frontmatter.chapter}</h3>
             </Link>
           ))}
         </Information>

@@ -94,9 +94,10 @@ const Image = styled.div`
 
 const Info = styled.div`
   color: ${props => props.theme.colors.white.light};
-  margin: 0 1rem 1.25rem 1.25rem;
+  margin: auto;
   bottom: 0;
   left: 0;
+  padding: 0 15%;
 `;
 
 const Title = styled.h2`
@@ -116,14 +117,16 @@ const PostList = ({ cover, path, date, title, chapter, subtitle }) => (
     </Image>
     <StyledLink to={path}>
       <Info>
-        <span>{date}</span>
-        <Title>
-          {title}
-          <br />
-          {chapter}
-          <br />
-          <span>{subtitle}</span>
-        </Title>
+        <div>
+          {date}
+          <Title>
+            {title}
+            <br />
+            {chapter}
+            <br />
+            <span>{subtitle}</span>
+          </Title>
+        </div>
       </Info>
     </StyledLink>
   </Wrapper>

@@ -64,7 +64,11 @@ const Post = ({ data, pageContext }) => {
           {prev && (
             <Link to={prev.frontmatter.path}>
               Previous
-              <h3>{prev.frontmatter.title}</h3>
+              <h3>
+                {prev.frontmatter.title}
+                <br />
+                {prev.frontmatter.subtitle}
+              </h3>
             </Link>
           )}
         </PostSuggestion>
@@ -72,7 +76,11 @@ const Post = ({ data, pageContext }) => {
           {next && (
             <Link to={next.frontmatter.path}>
               Next
-              <h3>{next.frontmatter.title}</h3>
+              <h3>
+                {next.frontmatter.title}
+                <br />
+                {next.frontmatter.subtitle}
+              </h3>
             </Link>
           )}
         </PostSuggestion>
