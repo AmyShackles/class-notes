@@ -6,7 +6,7 @@ date: '2018-11-26'
 title: 'Think Like a Programmer:'
 chapter: 'Chapter One'
 subtitle: 'Strategies for Problem Solving'
-tags: ['problem solving']
+tags: ['problem solving', 'Think Like a Programmer']
 published: true
 ---
 
