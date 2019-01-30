@@ -6,7 +6,7 @@ date: '2018-12-09'
 title: 'Computer Science Distilled'
 chapter: 'Chapter One'
 subtitle: '1.1 Basics & 1.2 Logic'
-tags: ['computer science', 'logic']
+tags: ['computer science', 'Computer Science Distilled', 'logic']
 published: true
 ---
 
