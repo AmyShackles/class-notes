@@ -1,11 +1,13 @@
 ---
 path: '/Algorithm-Design-Manual--Chapter-Ten'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
+slug: 'Algorithm-Design-Manual--Chapter-Ten'
 date: '2019-01-28'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Ten'
 subtitle: 'How to Design Algorithms'
-tags: ['algorithms', 'algorithm design']
+tags: ['algorithms', 'algorithm design', 'Algorithm Design Manual']
+published: true
 ---
 
 The key to algorithm design and problem solving in general is to constantly ask questions to guide your thought process and to answer those questions with clear explanations.

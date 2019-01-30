@@ -6,7 +6,7 @@ date: '2019-01-18'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Six'
 subtitle: 'Weighted Graph Algorithms'
-tags: ['algorithms', 'graphs']
+tags: ['algorithms', 'graphs', 'Algorithm Design Manual']
 published: true
 ---
 

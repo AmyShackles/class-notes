@@ -6,7 +6,7 @@ date: '2019-01-23'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Seven'
 subtitle: 'Combinatorial Search and Heuristic Methods'
-tags: ['algorithms', 'heuristics', 'search']
+tags: ['algorithms', 'heuristics', 'search', 'Algorithm Design Manual']
 published: true
 ---
 

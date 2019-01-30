@@ -6,7 +6,7 @@ date: '2019-01-13'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Three'
 subtitle: 'Data Structures'
-tags: ['algorithms', 'data structures']
+tags: ['algorithms', 'data structures', 'Algorithm Design Manual']
 published: true
 ---
 

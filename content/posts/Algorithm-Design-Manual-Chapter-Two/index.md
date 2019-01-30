@@ -6,7 +6,7 @@ date: '2019-01-11'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Two'
 subtitle: 'Algorithm Analysis'
-tags: ['algorithms', 'algorithm analysis']
+tags: ['algorithms', 'algorithm analysis', 'Algorithm Design Manual']
 published: true
 ---
 

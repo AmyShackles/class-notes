@@ -6,7 +6,7 @@ date: '2019-01-27'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Eight'
 subtitle: 'Dynamic Programming'
-tags: ['algorithms', 'dynamic programming']
+tags: ['algorithms', 'dynamic programming', 'Algorithm Design Manual']
 published: true
 ---
 

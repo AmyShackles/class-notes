@@ -1,11 +1,13 @@
 ---
 path: '/Algorithm-Design-Manual--Chapter-Five'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
+slug: 'Algorithm-Design-Manual--Chapter-Five'
 date: '2019-01-16'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Five'
 subtitle: 'Graph Traversal'
-tags: ['algorithms', 'graphs']
+tags: ['algorithms', 'graphs', 'Algorithm Design Manual']
+published: true
 ---
 
 A graph _G_ = _(V, E)_ consists of vertex _V_ together with a set of _E_ of vertex pairs or edges. The key to using using graph algorithms effectively is modeling your problem to take advantage of existing algorithms. First step in any graph problem is figuring out what type of graph you are dealing with:

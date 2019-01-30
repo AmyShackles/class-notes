@@ -1,11 +1,13 @@
 ---
 path: '/Algorithm-Design-Manual--Chapter-Nine'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
+slug: 'Algorithm-Design-Manual--Chapter-Nine'
 date: '2019-01-27'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Nine'
 subtitle: 'Intractable Problems and Approximation Algorithms'
-tags: ['algorithms', 'NP-complete']
+tags: ['algorithms', 'NP-complete', 'Algorithm Design Manual']
+published: true
 ---
 
 **Reductions** are operations that convert one problem into another

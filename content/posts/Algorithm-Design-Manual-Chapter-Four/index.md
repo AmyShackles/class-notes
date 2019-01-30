@@ -1,11 +1,13 @@
 ---
 path: '/Algorithm-Design-Manual--Chapter-Four'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
+slug: 'Algorithm-Design-Manual--Chapter-Four'
 date: '2019-01-15'
 title: 'Algorithm Design Manual:'
 chapter: 'Chapter Four'
 subtitle: 'Sorting and Searching'
-tags: ['algorithms', 'sorting', 'searching']
+tags: ['algorithms', 'sorting', 'searching', 'Algorithm Design Manual']
+published: true
 ---
 
 ### Applications of Sorting:
