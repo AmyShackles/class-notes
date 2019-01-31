@@ -3,7 +3,7 @@ module.exports = {
   title: 'Notes for Great Good', // Navigation and Site Title
   titleAlt: 'Notes for Great Good', // Title for JSONLD
   description: 'Notes for Great Good',
-  url: 'https://notes-for-great-good.netlify.com/', // Domain of your site. No trailing slash!
+  url: 'https://notes-for-great-good.netlify.com', // Domain of your site. No trailing slash!
   siteUrl: 'https://notes-for-great-good.netlify.com/', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
   logo: 'static/logo/logo.png', // Used for SEO
