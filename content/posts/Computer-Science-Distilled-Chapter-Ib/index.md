@@ -2,7 +2,7 @@
 path: 'Computer-Science-Distilled-Chapter-I-Continued'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Computer-Science-Distilled-Chapter-I-Continued'
-date: '2019-01-30'
+date: '2019-01-29'
 title: 'Computer Science Distilled'
 chapter: 'Chapter One'
 subtitle: '1.2 Logic, 1.3 Counting && 1.4 Probability'
