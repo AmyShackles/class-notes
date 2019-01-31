@@ -20,7 +20,8 @@ const SuggestionBar = styled.div`
 const PostSuggestion = styled.div`
   display: flex;
   align-items: center;
-  margin: 1rem;
+  margin: 15px
+  font-size: 1rem;
 `;
 
 const Post = ({ data, pageContext }) => {
