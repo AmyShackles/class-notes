@@ -61,6 +61,23 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {},
+        allPageHeaders: [
+          'Link: </logo/banner.png>; rel=preload; as=image',
+          'Link: </logo/banner2.png>; rel=preload; as=image',
+          'Link: </logo/favicon.png>; rel=preload; as=image',
+          'Link: </logo/header-logo.png>; rel=preload; as=image',
+          'Link: </logo/logo.png>; rel=preload; as=image',
+          'Link: </logo/logo2.png>; rel=preload; as=image',
+        ],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        generateMatchPathRewrites: true,
+      },
+    },
   ],
 };
