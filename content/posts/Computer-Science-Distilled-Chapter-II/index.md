@@ -66,6 +66,9 @@ When designing, it's important to anticipate the most frequent operations necess
 **Graph I made to represent some Big O notations**
 ![Big O Chart](./bigOchart.png)
 
+**Another graph**
+![Big O Graph](./bigO.png)
+
 ## 2.3 Exponentials:
 
 O(2<sup>n</sup>) is known as _exponential time_. Functions written in exponential time grow so quickly, they're considered not runnable as they work for few input types and require a lot of computing power if inputs aren't tiny.
