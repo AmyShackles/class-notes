@@ -50,7 +50,7 @@ injectGlobal`
   table {
     table-layout: fixed;
     overflow: scroll;
-    width: initial;
+    width: initial !important;
   }
   td, th {
     padding: 10px !important;

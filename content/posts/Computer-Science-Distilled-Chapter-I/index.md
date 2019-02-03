@@ -87,7 +87,8 @@ To negate ideas, use `!` operator (negation operator)
 .tg .tg-1l4x{font-size: x-large;;border-color:inherit;text-align:center}
 .tg .tg-49rs{font-size: x-large;;border-color:inherit;text-align:center;vertical-align:top}
 </style>
-
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-1l4x">A</th>
@@ -140,6 +141,8 @@ To negate ideas, use `!` operator (negation operator)
     <td class="tg-baqh">❌</td>
   </tr>
 </table>
+</div>
+</pre>
 
 ### Boolean Algebra (Simplifies logical expressions)
 
@@ -220,12 +223,13 @@ D   Cache is loaded             IV      D->!A
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:scroll;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:scroll;word-break:normal;border-color:black;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg .tg-uzi9{font-size: x-large;;text-align:center;vertical-align:top}
 .tg .tg-1l4x{font-size: x-large;;border-color:inherit;text-align:center}
 </style>
-
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-1l4x">State #</th>
@@ -432,6 +436,8 @@ D   Cache is loaded             IV      D->!A
     <td class="tg-uzi9">X</td>
   </tr>
 </table>
+</div>
+</pre>
 
 All requirements are met in states 2-4 and 6-8. In those states, A = False, so database can't ever be locked. The cache will not be loaded in states 3 and 7.
 
@@ -507,6 +513,8 @@ Norwegian(1) AND Blue(2)
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-0pky">House</th>
@@ -557,6 +565,8 @@ Norwegian(1) AND Blue(2)
     <td class="tg-0pky">?</td>
   </tr>
 </table>
+</div>
+</pre>
 
 EnglishRed(3) XOR EnglishRed(4) XOR EnglishRed(5)
 
@@ -619,6 +629,8 @@ B: Ivory(4) AND GreenCoffe(5) AND EnglishRed(3)
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th>OK?</th>
@@ -830,6 +842,8 @@ B: Ivory(4) AND GreenCoffe(5) AND EnglishRed(3)
     <td>0</td>
   </tr>
 </table>
+</div>
+</pre>
 
 In all valid combinations, UkraineTea(5) was false, so that can be eliminated
 
@@ -857,6 +871,8 @@ Assume UkraineTea(2) is false and try to fill in the table:
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -907,6 +923,8 @@ Assume UkraineTea(2) is false and try to fill in the table:
     <td class="tg-0pky"></td>
   </tr>
 </table>
+</div>
+</pre>
 
 Ack! That would leave only House II open for the Japanese person and they can't smoke Lucky because they smoke Parliament!
 
@@ -920,6 +938,8 @@ That tells us that the assumption was wrong and therefore UkraineTea(2) has to b
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -970,6 +990,8 @@ That tells us that the assumption was wrong and therefore UkraineTea(2) has to b
     <td class="tg-0lax"></td>
   </tr>
 </table>
+</div>
+</pre>
 
 SpainDog(3) XOR SpainDog(4) XOR SpainDog(5)
 
@@ -999,6 +1021,8 @@ Likewise, Parliament is only capable of being House III, IV or V, Lucky is only 
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1049,6 +1073,8 @@ Likewise, Parliament is only capable of being House III, IV or V, Lucky is only 
     <td class="tg-0lax"></td>
   </tr>
 </table>
+</div>
+</pre>
 
 SpainDog(3) XOR SpainDog(4) XOR SpainDog(5)
 
@@ -1070,6 +1096,8 @@ JapanParliament(3) XOR JapanParliament(4) XOR JapanParliament(5)
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj">OK?</th>
@@ -1281,6 +1309,8 @@ JapanParliament(3) XOR JapanParliament(4) XOR JapanParliament(5)
     <td class="tg-0lax">0</td>
   </tr>
 </table>
+</div>
+</pre>
 
 JapanParliaments(4) is only valid on one line, so we can write:
 
@@ -1296,6 +1326,8 @@ Try to plug it into the table and see if it works!
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1346,6 +1378,8 @@ Try to plug it into the table and see if it works!
     <td class="tg-0lax">Lucky Strike</td>
   </tr>
 </table>
+</div>
+</pre>
 
 That would leave only Spain unaccounted for and restrict it to living in House II. But the Spaniard has a dog, so it can't have a snail!
 
@@ -1375,6 +1409,8 @@ We also know that OldGold and Parliament can only be in houses 3 or 5, so that l
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1425,6 +1461,8 @@ We also know that OldGold and Parliament can only be in houses 3 or 5, so that l
     <td class="tg-0lax"></td>
   </tr>
 </table>
+</div>
+</pre>
 
 EnglishRed(3) AND (Ivory(4) AND GreenCoffee(5))
 
@@ -1452,6 +1490,8 @@ THAT MEANS THAT JAPAN HAS THE ZEBRA!
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
 
+<pre>
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1502,5 +1542,7 @@ THAT MEANS THAT JAPAN HAS THE ZEBRA!
     <td class="tg-0lax">Parliament</td>
   </tr>
 </table>
+</div>
+</pre>
 
 So the answer is that the Norwegian drinks water and the Japanese owns the zebra
