@@ -59,6 +59,9 @@ const prism = css`
     bottom: 2px;
     position: relative;
   }
+  img {
+    margin-bottom: 0;
+  }
   .token.operator {
     color: #bc78d7;
   }
@@ -125,6 +128,10 @@ const prism = css`
   }
   .token.entity {
     cursor: help;
+  }
+  .table {
+    overflow: auto;
+    width: 100%;
   }
 `;
 

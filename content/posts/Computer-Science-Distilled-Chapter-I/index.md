@@ -87,6 +87,7 @@ To negate ideas, use `!` operator (negation operator)
 .tg .tg-1l4x{font-size: x-large;;border-color:inherit;text-align:center}
 .tg .tg-49rs{font-size: x-large;;border-color:inherit;text-align:center;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-1l4x">A</th>
@@ -219,11 +220,12 @@ D   Cache is loaded             IV      D->!A
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 20px;border-style:solid;border-width:1px;overflow:scroll;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 20px;border-style:solid;border-width:1px;overflow:scroll;word-break:normal;border-color:black;}
 .tg .tg-uzi9{font-size: x-large;;text-align:center;vertical-align:top}
 .tg .tg-1l4x{font-size: x-large;;border-color:inherit;text-align:center}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-1l4x">State #</th>
@@ -504,6 +506,7 @@ Norwegian(1) AND Blue(2)
 .tg .tg-0pky{font-size: x-large;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-0pky">House</th>
@@ -615,6 +618,7 @@ B: Ivory(4) AND GreenCoffe(5) AND EnglishRed(3)
 .tg .tg-0pky{font-size: x-large;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 </style>
+
 <table class="tg">
   <tr>
     <th>OK?</th>
@@ -852,6 +856,7 @@ Assume UkraineTea(2) is false and try to fill in the table:
 .tg .tg-xldj{border-color:inherit;text-align:left}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -914,6 +919,7 @@ That tells us that the assumption was wrong and therefore UkraineTea(2) has to b
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -992,6 +998,7 @@ Likewise, Parliament is only capable of being House III, IV or V, Lucky is only 
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1062,6 +1069,7 @@ JapanParliament(3) XOR JapanParliament(4) XOR JapanParliament(5)
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj">OK?</th>
@@ -1287,6 +1295,7 @@ Try to plug it into the table and see if it works!
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1365,6 +1374,7 @@ We also know that OldGold and Parliament can only be in houses 3 or 5, so that l
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>
@@ -1441,6 +1451,7 @@ THAT MEANS THAT JAPAN HAS THE ZEBRA!
 .tg .tg-xldj{font-size: x-large;border-color:inherit;text-align:left}
 .tg .tg-0lax{font-size: x-large;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-xldj"></th>

@@ -49,15 +49,12 @@ injectGlobal`
   }
   table {
     table-layout: fixed;
-    width: 100%;
+    overflow: scroll;
+    width: initial;
   }
-  tbody {
-    display: block;
-    overflow: auto;
-    width: 100%;
-  }
-  thead tr {
-    display: block;
+  td, th {
+    padding: 10px !important;
+    width: max-content;
   }
 
   ${headroom}

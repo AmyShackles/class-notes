@@ -80,6 +80,7 @@ const Information = styled.div`
 
 const Date = styled.div`
   margin-top: 1rem;
+  font-size: 12px;
   color: ${props => props.theme.colors.black.lighter};
 `;
 

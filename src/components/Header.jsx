@@ -39,11 +39,20 @@ const Text = styled.div`
   margin-top: 3rem;
   align-items: center;
   h1 {
-    font-size: 24px;
-    margin: 10px 0;
+    font-size: 28px;
+    margin: 20px 0 5px 0;
+  }
+  h2 {
+    font-size: 22px;
+    padding: 0;
+    margin: 2.5px 0 5px 0;
   }
   h3 {
     font-size: 20px;
+    margin: 2.5px 0;
+  }
+  h4 {
+    font-size: 14px;
     margin: 5px 0;
   }
 `;
@@ -57,9 +66,9 @@ const Header = ({ children, title, chapter, subtitle, date, cover }) => (
     <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
-      <h3>{chapter}</h3>
+      <h2>{chapter}</h2>
       <h3>{subtitle}</h3>
-      <h3>{date}</h3>
+      <h4>{date}</h4>
 
       {children && <Subtitle>{children}</Subtitle>}
     </Text>

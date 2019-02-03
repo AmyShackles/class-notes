@@ -23,6 +23,7 @@ const headroom = css`
   }
   .headroom--unfixed {
     position: relative;
+    justify-content: space-between;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
   }

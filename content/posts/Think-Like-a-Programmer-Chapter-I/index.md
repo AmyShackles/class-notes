@@ -347,128 +347,128 @@ A 9x9 grid is partially filled with single digits (from 1-9) and the player must
 
 44. [0, 8] has to be 5 because that's the only number missing from Col 8
 
-<table class="tg">
-  <tr>
-    <th class="tg-yj5y"></th>
-    <th class="tg-yj5y">Col 0</th>
-    <th class="tg-yj5y">Col 1</th>
-    <th class="tg-yj5y">Col 2</th>
-    <th class="tg-yj5y">Col 3</th>
-    <th class="tg-yj5y">Col 4</th>
-    <th class="tg-yj5y">Col 5</th>
-    <th class="tg-yj5y">Col 6</th>
-    <th class="tg-yj5y">Col 7</th>
-    <th class="tg-yj5y">Col 8</th>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 0</td>
-    <td class="tg-jnby">2</td>
-    <td class="tg-jnby">9</td>
-    <td class="tg-jnby">1</td>
-    <td class="tg-c3ow">3</td>
-    <td class="tg-c3ow">6</td>
-    <td class="tg-c3ow">4</td>
-    <td class="tg-34fe">7</td>
-    <td class="tg-34fe">8</td>
-    <td class="tg-34fe">5</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 1</td>
-    <td class="tg-jnby">7</td>
-    <td class="tg-jnby">6</td>
-    <td class="tg-jnby">4</td>
-    <td class="tg-c3ow">5</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">2</td>
-    <td class="tg-34fe">1</td>
-    <td class="tg-34fe">3</td>
-    <td class="tg-34fe">9</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 2</td>
-    <td class="tg-jnby">5</td>
-    <td class="tg-jnby">8</td>
-    <td class="tg-jnby">3</td>
-    <td class="tg-c3ow">7</td>
-    <td class="tg-c3ow">9</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-34fe">2</td>
-    <td class="tg-34fe">4</td>
-    <td class="tg-34fe">6</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 3</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">5</td>
-    <td class="tg-c3ow">7</td>
-    <td class="tg-34fe">9</td>
-    <td class="tg-34fe">1</td>
-    <td class="tg-34fe">3</td>
-    <td class="tg-c3ow">4</td>
-    <td class="tg-c3ow">6</td>
-    <td class="tg-c3ow">2</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 4</td>
-    <td class="tg-c3ow">9</td>
-    <td class="tg-c3ow">3</td>
-    <td class="tg-c3ow">2</td>
-    <td class="tg-34fe">4</td>
-    <td class="tg-34fe">7</td>
-    <td class="tg-34fe">6</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-c3ow">5</td>
-    <td class="tg-c3ow">1</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 5</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">4</td>
-    <td class="tg-c3ow">6</td>
-    <td class="tg-34fe">8</td>
-    <td class="tg-34fe">2</td>
-    <td class="tg-34fe">5</td>
-    <td class="tg-c3ow">9</td>
-    <td class="tg-c3ow">7</td>
-    <td class="tg-c3ow">3</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 6</td>
-    <td class="tg-34fe">4</td>
-    <td class="tg-34fe">2</td>
-    <td class="tg-34fe">9</td>
-    <td class="tg-c3ow">6</td>
-    <td class="tg-c3ow">3</td>
-    <td class="tg-c3ow">8</td>
-    <td class="tg-34fe">5</td>
-    <td class="tg-34fe">1</td>
-    <td class="tg-34fe">7</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 7</td>
-    <td class="tg-34fe">6</td>
-    <td class="tg-34fe">7</td>
-    <td class="tg-34fe">8</td>
-    <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">5</td>
-    <td class="tg-c3ow">9</td>
-    <td class="tg-34fe">3</td>
-    <td class="tg-34fe">2</td>
-    <td class="tg-34fe">4</td>
-  </tr>
-  <tr>
-    <td class="tg-yj5y">Row 8</td>
-    <td class="tg-34fe">3</td>
-    <td class="tg-34fe">1</td>
-    <td class="tg-34fe">5</td>
-    <td class="tg-c3ow">2</td>
-    <td class="tg-c3ow">4</td>
-    <td class="tg-c3ow">7</td>
-    <td class="tg-34fe">6</td>
-    <td class="tg-34fe">9</td>
-    <td class="tg-34fe">8</td>
-  </tr>
-</table>
+    <table class="tg">
+      <tr>
+        <th class="tg-yj5y"></th>
+        <th class="tg-yj5y">Col 0</th>
+        <th class="tg-yj5y">Col 1</th>
+        <th class="tg-yj5y">Col 2</th>
+        <th class="tg-yj5y">Col 3</th>
+        <th class="tg-yj5y">Col 4</th>
+        <th class="tg-yj5y">Col 5</th>
+        <th class="tg-yj5y">Col 6</th>
+        <th class="tg-yj5y">Col 7</th>
+        <th class="tg-yj5y">Col 8</th>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 0</td>
+        <td class="tg-jnby">2</td>
+        <td class="tg-jnby">9</td>
+        <td class="tg-jnby">1</td>
+        <td class="tg-c3ow">3</td>
+        <td class="tg-c3ow">6</td>
+        <td class="tg-c3ow">4</td>
+        <td class="tg-34fe">7</td>
+        <td class="tg-34fe">8</td>
+        <td class="tg-34fe">5</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 1</td>
+        <td class="tg-jnby">7</td>
+        <td class="tg-jnby">6</td>
+        <td class="tg-jnby">4</td>
+        <td class="tg-c3ow">5</td>
+        <td class="tg-c3ow">8</td>
+        <td class="tg-c3ow">2</td>
+        <td class="tg-34fe">1</td>
+        <td class="tg-34fe">3</td>
+        <td class="tg-34fe">9</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 2</td>
+        <td class="tg-jnby">5</td>
+        <td class="tg-jnby">8</td>
+        <td class="tg-jnby">3</td>
+        <td class="tg-c3ow">7</td>
+        <td class="tg-c3ow">9</td>
+        <td class="tg-c3ow">1</td>
+        <td class="tg-34fe">2</td>
+        <td class="tg-34fe">4</td>
+        <td class="tg-34fe">6</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 3</td>
+        <td class="tg-c3ow">8</td>
+        <td class="tg-c3ow">5</td>
+        <td class="tg-c3ow">7</td>
+        <td class="tg-34fe">9</td>
+        <td class="tg-34fe">1</td>
+        <td class="tg-34fe">3</td>
+        <td class="tg-c3ow">4</td>
+        <td class="tg-c3ow">6</td>
+        <td class="tg-c3ow">2</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 4</td>
+        <td class="tg-c3ow">9</td>
+        <td class="tg-c3ow">3</td>
+        <td class="tg-c3ow">2</td>
+        <td class="tg-34fe">4</td>
+        <td class="tg-34fe">7</td>
+        <td class="tg-34fe">6</td>
+        <td class="tg-c3ow">8</td>
+        <td class="tg-c3ow">5</td>
+        <td class="tg-c3ow">1</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 5</td>
+        <td class="tg-c3ow">1</td>
+        <td class="tg-c3ow">4</td>
+        <td class="tg-c3ow">6</td>
+        <td class="tg-34fe">8</td>
+        <td class="tg-34fe">2</td>
+        <td class="tg-34fe">5</td>
+        <td class="tg-c3ow">9</td>
+        <td class="tg-c3ow">7</td>
+        <td class="tg-c3ow">3</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 6</td>
+        <td class="tg-34fe">4</td>
+        <td class="tg-34fe">2</td>
+        <td class="tg-34fe">9</td>
+        <td class="tg-c3ow">6</td>
+        <td class="tg-c3ow">3</td>
+        <td class="tg-c3ow">8</td>
+        <td class="tg-34fe">5</td>
+        <td class="tg-34fe">1</td>
+        <td class="tg-34fe">7</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 7</td>
+        <td class="tg-34fe">6</td>
+        <td class="tg-34fe">7</td>
+        <td class="tg-34fe">8</td>
+        <td class="tg-c3ow">1</td>
+        <td class="tg-c3ow">5</td>
+        <td class="tg-c3ow">9</td>
+        <td class="tg-34fe">3</td>
+        <td class="tg-34fe">2</td>
+        <td class="tg-34fe">4</td>
+      </tr>
+      <tr>
+        <td class="tg-yj5y">Row 8</td>
+        <td class="tg-34fe">3</td>
+        <td class="tg-34fe">1</td>
+        <td class="tg-34fe">5</td>
+        <td class="tg-c3ow">2</td>
+        <td class="tg-c3ow">4</td>
+        <td class="tg-c3ow">7</td>
+        <td class="tg-34fe">6</td>
+        <td class="tg-34fe">9</td>
+        <td class="tg-34fe">8</td>
+      </tr>
+    </table>
 
 ## Lessons Learned
 

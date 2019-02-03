@@ -21,6 +21,9 @@ const PostSuggestion = styled.div`
   display: flex;
   align-items: center;
   margin: 1rem;
+  h3 {
+    font-size: 16px;
+  }
 `;
 
 const Post = ({ data, pageContext }) => {

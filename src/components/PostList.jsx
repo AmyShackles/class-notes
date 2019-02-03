@@ -98,16 +98,28 @@ const Info = styled.div`
   bottom: 0;
   left: 0;
   padding: 0 15%;
+  span {
+    font-size: 14px;
+  }
 `;
 
 const Title = styled.h2`
   margin: auto;
-  padding-top: 20px;
+  padding-top: 0.5rem;
   text-align: center;
-  font-size: 24px;
-  span {
+  font-size: 26px;
+  h3 {
     font-size: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
+  span {
+    font-size: 16px;
+    display: flex;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const PostList = ({ cover, path, date, title, chapter, subtitle }) => (
@@ -118,12 +130,12 @@ const PostList = ({ cover, path, date, title, chapter, subtitle }) => (
     <StyledLink to={path}>
       <Info>
         <div>
-          {date}
+          <span>{date}</span>
           <Title>
             {title}
-            <br />
-            {chapter}
-            <br />
+            <span>
+              <h3>{chapter}</h3>
+            </span>
             <span>{subtitle}</span>
           </Title>
         </div>

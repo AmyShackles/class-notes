@@ -34,7 +34,7 @@ const Wrapper = styled.footer`
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    padding-top: 7rem;
+    padding-top: 4rem;
   }
 `;
 
@@ -48,6 +48,9 @@ const Text = styled.div`
   }
   span {
     color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-shadow: 0 0 0 white;
   }
 `;
@@ -60,7 +63,6 @@ const Footer = () => (
         <span role="img" aria-label="pawprints">
           🐾
         </span>
-        &nbsp;&nbsp;&nbsp;
         <a href="https://amyshackles.com">Amy Shackles</a>
       </span>
     </Text>

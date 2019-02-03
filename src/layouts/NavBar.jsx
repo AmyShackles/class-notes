@@ -12,15 +12,15 @@ const StyledLink = styled(Link)`
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  flex-grow: 0.1;
+  justify-content: space-between;
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   font-size: 1.1rem;
-  align-items: center;
+  align-self: center;
   height: fit-content;
   a {
     color: ${props => props.theme.colors.white.base};
-    margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       color: ${props => props.theme.colors.white.grey};
