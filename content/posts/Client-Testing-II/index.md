@@ -307,8 +307,9 @@ You'll find some good stuff in there.
 
 No. I think they use it so they can identify at a quick glance. Like software can look at this and knows that anything that ends with this will be a test. I don't know what the name of that is.
 
-### (Amy answer: Maybe they were referring to Binary File Naming?
+#### (Amy answer: Maybe they were referring to Binary File Naming?
 
+```
 Jest uses textRegex to detect test files:
 ├── **tests**
 │ └── component.spec.js # test
@@ -317,6 +318,7 @@ Jest uses textRegex to detect test files:
 ├── foo.test.js # test
 ├── bar.spec.jsx # test
 └── component.js # not test)
+```
 
 ```
 import React from 'react';

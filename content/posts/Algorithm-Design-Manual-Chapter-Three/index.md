@@ -173,23 +173,115 @@ For sorted arrays:
 
 **Take Home**: Data structure design must balance all the different operations it supports. The fastest data structure to support both operations A and B may well not be the fastest data structure to support A or B.
 
-| Dictionary operation                  | Unsorted Array | Sorted Array |
-| ------------------------------------- | -------------- | ------------ |
-| Search (L, k)                         | O(n)           | O(log n)     |
-| Insert (L, x)                         | O(1)           | O(n)         |
-| Delete (L, x)                         | O(1)\*         | O(n)         |
-| Successor (L, x) / Predecessor (L, x) | O(n)           | O(1)         |
-| Min (L) / Max (L)                     | O(n)           | O(1)         |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Dictionary operation</th>
+    <th class="tg-0pky">Unsorted Array</th>
+    <th class="tg-0pky">Sorted Array</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Search (L, k)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(log n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Insert (L, x)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Delete (L, x)</td>
+    <td class="tg-0lax">O(1)\*</td>
+    <td class="tg-0lax">O(n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Successor (L, x) / Predecessor (L, x)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Min (L) / Max (L)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+</table>
+</div>
 
-| Dictionary Operation | Singly Unsorted | Doubly Unsorted | Singly Sorted | Doubly Sorted |
-| -------------------- | --------------- | --------------- | ------------- | ------------- |
-| Search (L, k)        | O(n)            | O(n)            | O(n)          | O(n)          |
-| Insert (L, x)        | O(1)            | O(1)            | O(n)          | O(n)          |
-| Delete (L, x)        | O(n)\*          | O(1)            | O(n)\*        | O(1)          |
-| Successor (L, x)     | O(n)            | O(n)            | O(1)          | O(1)          |
-| Predecessor(L, x)    | O(n)            | O(n)            | O(n)\*        | O(1)          |
-| Minimum(L)           | O(n)            | O(n)            | O(1)          | O(1)          |
-| Maximum(L)           | O(n)            | O(n)            | O(1)          | O(1)          |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Dictionary Operation</th>
+    <th class="tg-0pky">Singly Unsorted</th>
+    <th class="tg-0pky">Doubly Unsorted</th>
+    <th class="tg-0lax">Singly Sorted</th>
+    <th class="tg-0lax">Doubly Sorted</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Search (L, k)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Insert (L, x)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Delete (L, x)</td>
+    <td class="tg-0lax">O(n)\*</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(n)\*</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Successor (L, x)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Predecessor(L, x)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)\*</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Minimum(L)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Maximum(L)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+</table>
+</div>
 
 Deletion from singly linked list is O(n) because you only have pointer to item to be deleted, so you need to traverse the list to find the previous node in order to update that node's next property - a doubly linked list solves that problem.
 Deleting is faster for sorted linked lists than for sorted arrays because there's no need to move elements around following deletion.
@@ -372,11 +464,41 @@ _Problem_: What is the worst-case time complexity of the three basic priority qu
 
 _Solution_:
 
-| Operation         | Unsorted Array | Sorted Array | Balanced Tree |
-| ----------------- | -------------- | ------------ | ------------- |
-| Insert(Q, x)      | O(1)           | O(n)         | O(log n)      |
-| Find-Minimum(Q)   | O(1)           | O(1)         | O(1)          |
-| Delete-Minimum(Q) | O(n)           | O(1)         | O(log n)      |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Operation</th>
+    <th class="tg-0pky">Unsorted Array</th>
+    <th class="tg-0pky">Sorted Array</th>
+    <th class="tg-0pky">Balanced Tree</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Insert(Q, x)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(log n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Find-Minimum(Q)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Delete-Minimum(Q)</td>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(log n)</td>
+  </tr>
+</table>
+</div>
 
 Find-Minimum is constant time because you can use an extra pointer to the minimum entry, updating on insertion if the item inserted is less than the current minimum.
 Delete-Minimum's time is based on time it usually takes to perform a search.
@@ -393,15 +515,57 @@ Alternative: Open addressing -> hash table is maintained as an array of elements
 
 Chaining and open addressing require O(m) to initialize an m-element hash table to null elements prior to first insertion. Traversing all elements takes O(m + n) for chaining because we have to scan all buckets. Reduces to O(m) for open-addressing because n must be at most m.
 
-| Operation         | Hash Table (Expected) | Hash Table (worst case) |
-| ----------------- | --------------------- | ----------------------- |
-| Search(L, k)      | O(n/m)                | O(n)                    |
-| Insert(L, x)      | O(1)                  | O(1)                    |
-| Delete(L, x)      | O(1)                  | O(1)                    |
-| Successor(L, x)   | O(n+m)                | O(n+m)                  |
-| Predecessor(L, x) | O(n+m)                | O(n+m)                  |
-| Minimum(L)        | O(n+m)                | O(n+m)                  |
-| Maximum(L)        | O(n+m)                | O(n+m)                  |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Operation</th>
+    <th class="tg-0pky">Hash Table (Expected)</th>
+    <th class="tg-0pky">Hash Table (worst case)</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Search(L, k)</td>
+    <td class="tg-0lax">O(n/m)</td>
+    <td class="tg-0lax">O(n)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Insert(L, x)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Delete(L, x)</td>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Successor(L, x)</td>
+    <td class="tg-0lax">O(n+m)</td>
+    <td class="tg-0lax">O(n+m)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Predecessor(L, x)</td>
+    <td class="tg-0lax">O(n+m)</td>
+    <td class="tg-0lax">O(n+m)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Minimum(L)</td>
+    <td class="tg-0lax">O(n+m)</td>
+    <td class="tg-0lax">O(n+m)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Maximum(L)</td>
+    <td class="tg-0lax">O(n+m)</td>
+    <td class="tg-0lax">O(n+m)</td>
+  </tr>
+</table>
+</div>
 
 Pragmatically, hash tables are often the best data structure to maintain a dictionary.
 

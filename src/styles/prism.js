@@ -26,7 +26,7 @@ const prism = css`
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
     word-spacing: normal;
-    word-break: normal;
+    word-break: break-word;
     word-wrap: normal;
     line-height: 1.5;
     tab-size: 4;
@@ -131,7 +131,8 @@ const prism = css`
   }
   .table {
     overflow: auto;
-    width: 100%;
+    max-width: fit-content;
+    margin: auto;
   }
 `;
 

@@ -86,13 +86,50 @@ Big-O Notation:
 
 ## Common Big-O Terms
 
-| Notation   | Description   | Example                                                                            |
-| ---------- | ------------- | ---------------------------------------------------------------------------------- |
-| O(1)       | Constant Time | Looking up a single element in an array                                            |
-| O(log n)   | Logarithmic   | Finding an item in a sorted array with a binary search                             |
-| O(n)       | Linear time   | Searching an unsorted array for a specific value                                   |
-| O(n log n) | Log-linear    | Complex sorting algorithms like heap sort and merge sort                           |
-| O(n^2)     | Quadratic     | Simple sorting algorithms, such as bubble sort, selection sort, and insertion sort |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Notation</th>
+    <th class="tg-0pky">Description</th>
+    <th class="tg-0lax">Example</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">O(1)</td>
+    <td class="tg-0lax">Constant Time</td>
+    <td class="tg-0lax">Looking up a single element in an array</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">O(log n)</td>
+    <td class="tg-0lax">Logarithmic</td>
+    <td class="tg-0lax">Finding an item in a sorted array with a binary search</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">O(n)</td>
+    <td class="tg-0lax">Linear time</td>
+    <td class="tg-0lax">Searching an unsorted array for a specific value</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">O(n log n)</td>
+    <td class="tg-0lax">Log-linear</td>
+    <td class="tg-0lax">Complex sorting algorithms like heap sort and merge sort</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">O(n^2)</td>
+    <td class="tg-0lax">Quadratic</td>
+    <td class="tg-0lax">Simple sorting algorithms, such as bubble sort, selection sort, and insertion sort</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Data Structures
 

@@ -79,17 +79,89 @@ A farmer with a fox, a goose, and a sack of corn needs to cross a river. The far
 
 ## Solution Sketching
 
-| **Point A**<br /> Items on shore | **Toward origin** | **Boat** | **Across River** | **Point B**<br /> Items on shore |
-| -------------------------------- | ----------------- | -------- | ---------------- | -------------------------------- |
-| corn, fox, goose                 |                   |          |                  |                                  |
-| corn, fox                        |                   | goose    | =>               |                                  |
-| corn, fox                        | <=                |          |                  | goose                            |
-| fox                              |                   | corn     | =>               | goose                            |
-| fox                              | <=                | goose    |                  | corn                             |
-| goose                            |                   | fox      | =>               | corn                             |
-| goose                            | <=                |          |                  | corn, fox                        |
-|                                  |                   | goose    | =>               | corn, fox                        |
-|                                  |                   |          |                  | corn, fox, goose                 |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0lax">**Point A**<br>Items on shore</th>
+    <th class="tg-0lax">**Toward origin**</th>
+    <th class="tg-0lax">**Boat**</th>
+    <th class="tg-0lax">**Across River**</th>
+    <th class="tg-0lax">**Point B**<br>Items on shore</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">corn, fox, goose</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">corn, fox</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">goose</td>
+    <td class="tg-0lax">=&gt;</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">corn, fox</td>
+    <td class="tg-0lax">&lt;=</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">goose</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">fox</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">corn</td>
+    <td class="tg-0lax">=&gt;</td>
+    <td class="tg-0lax">goose</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">fox</td>
+    <td class="tg-0lax">&lt;=</td>
+    <td class="tg-0lax">goose</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">corn</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">goose</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">fox</td>
+    <td class="tg-0lax">=&gt;</td>
+    <td class="tg-0lax">corn</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">goose</td>
+    <td class="tg-0lax">&lt;=</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">corn, fox</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">goose</td>
+    <td class="tg-0lax">=&gt;</td>
+    <td class="tg-0lax">corn, fox</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">corn, fox, goose</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table>
+</div>
+</pre>
 
 #### By restating a problem in more formal terms, we can often uncover so9ltuions that would have otherwise eluded us
 
@@ -132,6 +204,7 @@ A 9x9 grid is partially filled with single digits (from 1-9) and the player must
 
 ## Board
 
+<div class="table">
 <table class="tg">
   <tr>
     <th class="tg-yj5y"></th>
@@ -254,6 +327,7 @@ A 9x9 grid is partially filled with single digits (from 1-9) and the player must
     <td class="tg-34fe"></td>
   </tr>
 </table>
+</div>
 
 ## Steps
 
@@ -347,6 +421,7 @@ A 9x9 grid is partially filled with single digits (from 1-9) and the player must
 
 44. [0, 8] has to be 5 because that's the only number missing from Col 8
 
+  <div class="table">
     <table class="tg">
       <tr>
         <th class="tg-yj5y"></th>
@@ -469,6 +544,7 @@ A 9x9 grid is partially filled with single digits (from 1-9) and the player must
         <td class="tg-34fe">8</td>
       </tr>
     </table>
+    </div>
 
 ## Lessons Learned
 
@@ -885,17 +961,157 @@ That's easy enough, but you have to avoid setting off the alarms, which work as 
 
 Given all of this, how would you slide the Kratzz to open the door without activating either alarm?
 
-| L   | e   | f   | t   |     |     |     | R   | i   | g   | h   | t   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ‖   | ‖   | ‖   | ‖   |     |     |     |     | ‖   | ‖   | ‖   | ‖   |
-|     |     |     |     |     |     |     |     |     |     |     |     |
-| -   | -   | -   | -   | -   | -   | -   | -   | ★   |     | ★   | ★   |
-|     |     |     |     |     |     |     |     |     |     |     |     |
-| -   | -   | -   | -   | -   | -   | -   | -   | ★   | ★   |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |
-| -   | -   | -   | -   | -   | -   | -   | -   |     | ★   |     |     |
-|     |     |     |     |     |     |     |     |     |     |     |     |
-| 0   | 0   | 0   | 0   |     |     |     |     | 1   | 1   | 0   | 0   |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">L</th>
+    <th class="tg-0pky">e</th>
+    <th class="tg-0pky">f</th>
+    <th class="tg-0pky">t</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax">R</th>
+    <th class="tg-0lax">i</th>
+    <th class="tg-0lax">g</th>
+    <th class="tg-0lax">h</th>
+    <th class="tg-0lax">t</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax">‖</td>
+    <td class="tg-0lax">‖</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">★</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">★</td>
+    <td class="tg-0lax">★</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">★</td>
+    <td class="tg-0lax">★</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">★</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+</table>
+</div>
 
 ## Restate Problem Constraints
 
@@ -920,19 +1136,173 @@ Given all of this, how would you slide the Kratzz to open the door without activ
 
 1. Top bar + bottom bar
 
-| Left                        | Left<br/>Suppressor |     | ⇦   |     | In Transit |     | ⇨   |     | Right<br/>Suppressor | Right                       |
-| --------------------------- | ------------------- | --- | --- | --- | ---------- | --- | --- | --- | -------------------- | --------------------------- |
-|                             |                     |     |     |     |            |     |     |     |                      | Top,<br/>Middle,<br/>Bottom |
-|                             |                     |     | ⇦   |     | Middle     |     |     |     |                      | Top,<br/>Bottom             |
-| Middle                      |                     |     |     |     |            |     | ⇨   |     |                      | Top,<br/>Bottom             |
-| Middle                      |                     |     | ⇦   |     | Top        |     |     |     |                      | Bottom                      |
-| Top,<br/>Middle             | Yes                 |     |     |     |            |     |     |     |                      | Bottom                      |
-| Top                         |                     |     |     |     | Middle     |     | ⇨   |     |                      | Bottom                      |
-| Top                         |                     |     |     |     |            |     |     |     | Yes                  | Middle,<br/>Bottom          |
-| Top                         |                     |     | ⇦   |     | Bottom     |     |     |     |                      | Middle                      |
-| Top,<br/>Bottom             |                     |     |     |     |            |     | ⇨   |     |                      | Middle                      |
-| Top,<br/>Bottom             |                     |     | ⇦   |     | Middle     |     |     |     |                      |                             |
-| Top,<br/>Middle,<br/>Bottom |                     |     |     |     |            |     |     |     |                      |                             |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Left</th>
+    <th class="tg-0pky">Left <br>Suppressor</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">⇦</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">In Transit</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">⇨</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">Right<br>Suppressor</th>
+    <th class="tg-0pky">Right</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Top,<br>Middle,<br>Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇦</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Middle</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Top,<br>Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Middle</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇨</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Top,<br>Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Middle</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇦</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Top</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top,<br>Middle</td>
+    <td class="tg-0lax">Yes</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Middle</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇨</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Yes</td>
+    <td class="tg-0lax">Middle,<br>Bottom</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇦</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Bottom</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Middle</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top,<br>Bottom</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇨</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Middle</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top,<br>Bottom</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">⇦</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Middle</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Top,<br>Middle,<br>Bottom</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table>
+</div>
 
 ## Lesson Learned
 

@@ -243,45 +243,677 @@ int string_compare(char *s, char* t) {
 
 Example of a dynamic programming matrix for editing distance computation, with optimal alignment path highlighted in bold:
 
-|     | T   |       | y     | o     | u     | -     | s     | h     | o     | u     | l     | d     | -     | n     | o     | t     |
-| --- | --- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| P   | pos | 0     | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    | 14    |
-| :   |     | **0** | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    | 14    |
-| t:  | 1   | **1** | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    | 13    |
-| h:  | 2   | 2     | **2** | 2     | 3     | 4     | 5     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    |
-| o:  | 3   | 3     | 3     | **2** | 3     | 4     | 5     | 6     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
-| u:  | 4   | 4     | 4     | 3     | **2** | 3     | 4     | 5     | 6     | 5     | 6     | 7     | 8     | 9     | 10    | 11    |
-| -:  | 5   | 5     | 5     | 4     | 3     | **2** | 3     | 4     | 5     | 6     | 6     | 7     | 7     | 8     | 9     | 10    |
-| s:  | 6   | 6     | 6     | 5     | 4     | 3     | **2** | 3     | 4     | 5     | 6     | 7     | 8     | 8     | 9     | 10    |
-| h:  | 7   | 7     | 7     | 6     | 5     | 4     | 3     | **2** | **3** | 4     | 5     | 6     | 7     | 8     | 9     | 10    |
-| a:  | 8   | 8     | 8     | 7     | 6     | 5     | 4     | 3     | 3     | **4** | 5     | 6     | 7     | 8     | 9     | 10    |
-| l:  | 9   | 9     | 9     | 8     | 7     | 6     | 5     | 4     | 4     | 4     | **4** | 5     | 6     | 7     | 8     | 9     |
-| l:  | 10  | 10    | 10    | 9     | 8     | 7     | 6     | 5     | 5     | 5     | 5     | **5** | 6     | 7     | 8     | 8     |
-| -:  | 11  | 11    | 11    | 10    | 9     | 8     | 7     | 6     | 6     | 6     | 6     | 6     | **5** | 6     | 7     | 8     |
-| n:  | 12  | 12    | 12    | 11    | 10    | 9     | 8     | 7     | 7     | 7     | 7     | 7     | 6     | **5** | 6     | 7     |
-| o:  | 13  | 13    | 13    | 12    | 11    | 10    | 9     | 8     | 7     | 8     | 8     | 8     | 7     | 6     | **5** | 6     |
-| t:  | 14  | 14    | 14    | 13    | 12    | 11    | 10    | 9     | 8     | 8     | 9     | 9     | 8     | 7     | 6     | **5** |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">T</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">y</th>
+    <th class="tg-0pky">o</th>
+    <th class="tg-0pky">u</th>
+    <th class="tg-0pky">-</th>
+    <th class="tg-0pky">s</th>
+    <th class="tg-0pky">h</th>
+    <th class="tg-0pky">o</th>
+    <th class="tg-0pky">u</th>
+    <th class="tg-0lax">l</th>
+    <th class="tg-0lax">d</th>
+    <th class="tg-0lax">-</th>
+    <th class="tg-0lax">n</th>
+    <th class="tg-0lax">o</th>
+    <th class="tg-0lax">t</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">P</td>
+    <td class="tg-0lax">pos</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">14</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">:</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">14</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">t:</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">**1**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">13</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">h:</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">13</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">o:</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">12</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">u:</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-:</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">s:</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">h:</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">**3**</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">a:</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">**4**</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">l:</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">**4**</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">l:</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">**5**</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-:</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">**5**</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">n:</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">**5**</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">o:</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">**5**</td>
+    <td class="tg-0lax">6</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">t:</td>
+    <td class="tg-0lax">14</td>
+    <td class="tg-0lax">14</td>
+    <td class="tg-0lax">14</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">**5**</td>
+  </tr>
+</table>
+</div>
 
 Parent matrix for edit distance computation, with the optimal alignment path highlighted in bold:
 
-|     | T   |        | y     | o     | u     | -     | s     | h     | o     | u     | l     | d     | -     | n     | o     | t     |
-| --- | --- | ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| P   | pos | 0      | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    | 13    | 14    |
-| :   |     | **-1** | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     |
-| t:  | 1   | **2**  | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     | 0     |
-| h:  | 2   | 2      | **0** | 0     | 0     | 0     | 0     | 0     | 1     | 1     | 1     | 1     | 1     | 1     | 1     | 1     |
-| o:  | 3   | 2      | 0     | **0** | 0     | 0     | 0     | 0     | 0     | 1     | 1     | 1     | 1     | 1     | 0     | 1     |
-| u:  | 4   | 2      | 0     | 2     | **0** | 1     | 1     | 1     | 1     | 0     | 1     | 1     | 1     | 1     | 1     | 1     |
-| -:  | 5   | 2      | 0     | 2     | 2     | **0** | 1     | 1     | 1     | 1     | 0     | 0     | 0     | 1     | 1     | 1     |
-| s:  | 6   | 2      | 0     | 2     | 2     | 2     | **0** | 1     | 1     | 1     | 1     | 0     | 0     | 0     | 0     | 0     |
-| h:  | 7   | 2      | 0     | 2     | 2     | 2     | 2     | **0** | **1** | 1     | 1     | 1     | 1     | 1     | 0     | 0     |
-| a:  | 8   | 2      | 0     | 2     | 2     | 2     | 2     | 2     | 0     | **0** | 0     | 0     | 0     | 0     | 0     | 0     |
-| l:  | 9   | 2      | 0     | 2     | 2     | 2     | 2     | 2     | 0     | 0     | **0** | 1     | 1     | 1     | 1     | 1     |
-| l:  | 10  | 2      | 0     | 2     | 2     | 2     | 2     | 2     | 0     | 0     | 0     | **0** | 0     | 0     | 0     | 0     |
-| -:  | 11  | 2      | 0     | 2     | 2     | 0     | 2     | 2     | 0     | 0     | 0     | 0     | **0** | 1     | 1     | 1     |
-| n:  | 12  | 2      | 0     | 2     | 2     | 2     | 2     | 2     | 0     | 0     | 0     | 0     | 2     | **0** | 1     | 1     |
-| o:  | 13  | 2      | 0     | 0     | 2     | 2     | 2     | 2     | 0     | 0     | 0     | 0     | 2     | 2     | **0** | 1     |
-| t:  | 14  | 2      | 0     | 2     | 2     | 2     | 2     | 2     | 2     | 0     | 0     | 0     | 2     | 2     | 2     | **0** |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">T</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">y</th>
+    <th class="tg-0pky">o</th>
+    <th class="tg-0pky">u</th>
+    <th class="tg-0pky">-</th>
+    <th class="tg-0pky">s</th>
+    <th class="tg-0pky">h</th>
+    <th class="tg-0pky">o</th>
+    <th class="tg-0pky">u</th>
+    <th class="tg-0pky">l</th>
+    <th class="tg-0pky">d</th>
+    <th class="tg-0pky">-</th>
+    <th class="tg-0pky">n</th>
+    <th class="tg-0pky">o</th>
+    <th class="tg-0pky">t</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">P</td>
+    <td class="tg-0lax">pos</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">14</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">:</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">**-1**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">t:</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">**2**</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">h:</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">o:</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">u:</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-:</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">s:</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">h:</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">**1**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">a:</td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">l:</td>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">l:</td>
+    <td class="tg-0lax">10</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-:</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">n:</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">o:</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+    <td class="tg-0lax">1</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">t:</td>
+    <td class="tg-0lax">14</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">**0**</td>
+  </tr>
+</table>
+</div>
 
 #### Reconstructing the Path
 
@@ -427,10 +1059,53 @@ How to tell that numbers can be skipped? Can use recurrence.
 
   _l<sub>0</sub> = 0_
 
-| Sequence s<sub>i</sub>    | 2   | 4   | 3   | 5   | 1   | 7   | 6   | 9   | 8   |
-| ------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Length l<sub>i</sub>      | 1   | 2   | 2   | 3   | 1   | 4   | 4   | 5   | 5   |
-| Predecessor P<sub>i</sub> |     | 1   | 1   | 2   | -   | 4   | 4   | 6   | 6   |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Sequence s&lt;sub&gt;i&lt;/sub&gt;</th>
+    <th class="tg-0pky">2</th>
+    <th class="tg-0pky">4</th>
+    <th class="tg-0pky">3</th>
+    <th class="tg-0pky">5</th>
+    <th class="tg-0pky">1</th>
+    <th class="tg-0pky">7</th>
+    <th class="tg-0pky">6</th>
+    <th class="tg-0pky">9</th>
+    <th class="tg-0pky">8</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Length l&lt;sub&gt;i&lt;/sub&gt;</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax">5</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Predecessor P&lt;sub&gt;i&lt;/sub&gt;</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">6</td>
+  </tr>
+</table>
+</div>
 
 ### Take Home:
 

@@ -283,28 +283,174 @@ Two possibilities for possible_values:
 
 - _Look ahead_: Testing to see if another open square has no options under local count criteria, allowing us to backtrack sooner
 
-| Printing Condition |                 |           | Puzzle Complexity |                |
-| ------------------ | --------------- | --------- | ----------------- | -------------- |
-| next_square        | possible_values | Easy      | Medium            | Hard           |
-| arbitrary          | local count     | 1,904,832 | 863,305           | never finishes |
-| arbitrary          | look ahead      | 127       | 142               | 12,507,212     |
-| most contrained    | local count     | 48        | 84                | 1,243,838      |
-| most constrained   | look ahead      | 48        | 65                | 10,374         |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Printing Condition</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">Puzzle Complexity</th>
+    <th class="tg-0pky"></th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">next_square</td>
+    <td class="tg-0lax">possible_values</td>
+    <td class="tg-0lax">Easy</td>
+    <td class="tg-0lax">Medium</td>
+    <td class="tg-0lax">Hard</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">arbitrary</td>
+    <td class="tg-0lax">local count</td>
+    <td class="tg-0lax">1,904,832</td>
+    <td class="tg-0lax">863,305</td>
+    <td class="tg-0lax">never finishes</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">arbitrary</td>
+    <td class="tg-0lax">look ahead</td>
+    <td class="tg-0lax">127</td>
+    <td class="tg-0lax">142</td>
+    <td class="tg-0lax">12,507,212</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">most contrained</td>
+    <td class="tg-0lax">local count</td>
+    <td class="tg-0lax">48</td>
+    <td class="tg-0lax">84</td>
+    <td class="tg-0lax">1,243,838</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">most constrained</td>
+    <td class="tg-0lax">look ahead</td>
+    <td class="tg-0lax">48</td>
+    <td class="tg-0lax">65</td>
+    <td class="tg-0lax">10,374</td>
+  </tr>
+</table>
+</div>
 
 Easy board: Easy for humans
 Medium board: Stumbed finalists of World Sudoku Championship in March 2006
 Hard: Contains only 17 fixed numbers - fewest specified known number of positions with only one complete solution (seen below)
 
-|     |     |     |     |     |     |     | 1   | 2   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     | 3   | 5   |     |     |     |
-|     |     |     | 6   |     |     |     | 7   |     |
-| 7   |     |     |     |     |     | 3   |     |     |
-|     |     |     | 4   |     |     | 8   |     |     |
-| 1   |     |     |     |     |     |     |     |     |
-|     |     |     | 1   | 2   |     |     |     |     |
-|     | 8   |     |     |     |     |     | 4   |     |
-|     | 5   |     |     |     |     | 6   |     |     |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax">1</th>
+    <th class="tg-0lax">2</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</table>
+</div>
 
 ### Take Home:
 

@@ -56,13 +56,45 @@ first.isHardback = false;
 ```
 
 What's the difference between a struct and a class?
-| struct | class |
-|:---------------------------------:|:-----------------------------------:|
-| only data - no behavior | behavior and data |
-| simple creation | explicit instantiation (new, alloc) |
-| value types | reference types |
-| no object-oriented-features | polymorphism, inheritance, etc. |
-| "Plain Old Data Structure" (PODS) | |
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-c3ow">struct</th>
+    <th class="tg-c3ow">class</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">only data - no behavior</td>
+    <td class="tg-baqh">behavior and data</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">simple creation</td>
+    <td class="tg-baqh">explicit instantiation (new, alloc)</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">value types</td>
+    <td class="tg-baqh">reference types</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">no object-oriented-features</td>
+    <td class="tg-baqh">polymorphism, inheritance, etc.</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">"Plain Old Data Structure" (PODS)</td>
+    <td class="tg-baqh"></td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Plain Old Data Structure: Examples
 
@@ -102,13 +134,43 @@ myWindow.setBackground(backgroundColor);
 
 ## Language support for structs
 
-| Language       | Support                                                |
-| -------------- | ------------------------------------------------------ |
-| Objective-C    | As in C, used in many Apple frameworks                 |
-| C# /other .NET | Also allows basic behavior to be added                 |
-| Java           | Do not exist - closest equivalent is lightweight class |
-| Python         | Do not exist                                           |
-| Ruby           | Exist, though implemented as lightweight class         |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">As in C, used in many Apple frameworks</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C# /other .NET</td>
+    <td class="tg-0lax">Also allows basic behavior to be added</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">Do not exist - closest equivalent is lightweight class</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">Do not exist</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">Exist, though implemented as lightweight class</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Array
 
@@ -214,33 +276,124 @@ NSMutableArray *resizeable = [[NSMutableArray alloc]init];
 
 ## Appending items at the end of the array
 
-| Language    | Method          |
-| ----------- | --------------- |
-| Java        | add(value)      |
-| Objective-C | addObject:value |
-| JavaScript  | push(value)     |
-| Ruby        | push(value)     |
-| Python      | append(value)   |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Method</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">add(value)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">addObject:value</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JavaScript</td>
+    <td class="tg-0lax">push(value)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">push(value)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">append(value)</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Inserting items at a specific index
 
-| Language    | Method                                          |
-| ----------- | ----------------------------------------------- |
-| Java        | add(index, value)                               |
-| Objective-C | addObject:value atIndex:index                   |
-| JavaScript  | splice(index, items_to_remove, items_to_insert) |
-| Ruby        | insert(index, value)                            |
-| Python      | insert(index, value)                            |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Method</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">add(index, value)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">addObject:value atIndex:index</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JavaScript</td>
+    <td class="tg-0lax">splice(index, items_to_remove, items_to_insert)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">insert(index, value)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">insert(index, value)</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Removing items from an array
 
-| Language    | Method                    |
-| ----------- | ------------------------- |
-| Java        | remove(index)             |
-| Objective-C | removeObjectAtIndex:index |
-| JavaScript  | pop / slice               |
-| Ruby        | pop / delete_at           |
-| Python      | pop / remove              |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Method</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">remove(index)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">removeObjectAtIndex:index</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JavaScript</td>
+    <td class="tg-0lax">pop / slice</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">pop / delete_at</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">pop / remove</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Five requirements of any data structure
 
@@ -342,14 +495,54 @@ end if
 
 ## Searching for existence / location
 
-| Language    | Method for existence | Method for location |
-| ----------- | -------------------- | ------------------- |
-| Java        | contains             | indexOf             |
-| Objective-C | containsObject       | indexOfObject       |
-| JavaScript  |                      | indexOf             |
-| Ruby        |                      | index / find_index  |
-| Python      |                      | index               |
-| C#          | contains             | indexOf             |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Method for existence</th>
+    <th class="tg-0lax">Method for location</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">contains</td>
+    <td class="tg-0lax">indexOf</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">containsObject</td>
+    <td class="tg-0lax">indexOfObject</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JavaScript</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">indexOf</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">index / find_index</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">index</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">contains</td>
+    <td class="tg-0lax">indexOf</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Binary Searching
 
@@ -365,14 +558,48 @@ If the values in your array are in descending or ascending order
 
 ## Binary Searching - Language Support
 
-| Language    | Method                       |
-| ----------- | ---------------------------- |
-| Java        | binarySearch                 |
-| C#          | Array.BinarySearch           |
-| JavaScript  | n/a                          |
-| Ruby        | bsearch                      |
-| C++         | binary_search                |
-| Objective-C | indexOfObject:inSortedRange: |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Method</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">binarySearch</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">Array.BinarySearch</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JavaScript</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">bsearch</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">binary_search</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">indexOfObject:inSortedRange:</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 Although binary search is great for sorted array, we'll see it again going forward because it's not just useful for arrays
 
@@ -416,11 +643,39 @@ Removing is just as easy, changing pointers.
 
 ## Comparison of Arrays and Linked Lists
 
-|                 |                  Arrays                   |          Linked Lists           |
-| :-------------: | :---------------------------------------: | :-----------------------------: |
-|  Direct Access  |      **Good** <br />fixed time O(1)       | **Poor** <br />linear time O(n) |
-| Adding/Removing |      **Poor** <br />linear time O(n)      | **Good** <br />fixed time O(1)  |
-|    Searching    | O(n) linear search O(log n) binary search |       O(n) linear search        |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-c3ow"></th>
+    <th class="tg-c3ow">Arrays</th>
+    <th class="tg-baqh">Linked Lists</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Direct Access</td>
+    <td class="tg-baqh">**Good**<br>fixed time O(1)</td>
+    <td class="tg-baqh">**Poor**<br>linear time O(n)</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Adding/Removing</td>
+    <td class="tg-baqh">**Poor**<br>linear time O(n)</td>
+    <td class="tg-baqh">**Good**<br>fixed time O(1)</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Searching</td>
+    <td class="tg-baqh">O(n) linear search <br>O(log n) binary search</td>
+    <td class="tg-baqh">O(n) linear search</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Linked Lists
 
@@ -439,14 +694,48 @@ Java - interface (describes behavior that another class can implement)
 
 ## Language Support for Linked Lists
 
-| Language    | Support                                                |
-| ----------- | ------------------------------------------------------ |
-| Java        | LinkedList in java.util                                |
-| C#          | LinkedList in System.Collections.Generic               |
-| Objective-C | n/a                                                    |
-| Ruby        | n/a                                                    |
-| Python      | n/a - "lists" are dynamic arrays, **not** linked lists |
-| C++         | std::list                                              |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">LinkedList in java.util</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">LinkedList in System.Collections.Generic</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">n/a - "lists" are dynamic arrays, **not** linked lists</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::list</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Stacks
 
@@ -460,14 +749,48 @@ Things you can do with a stack:
 
 ## Language Support for Stacks
 
-| Language    | Support                   |
-| ----------- | ------------------------- |
-| Java        | Stack (push / pop / peek) |
-| C#          | Stack (Push / Pop / Peek) |
-| Objective-C | use NSMutableArray        |
-| Ruby        | use Array (push / pop)    |
-| Python      | use lists (append / pop)  |
-| C++         | std::stack (push / pop)   |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">Stack (push / pop / peek)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">Stack (Push / Pop / Peek)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">use NSMutableArray</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">use Array (push / pop)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">use lists (append / pop)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::stack (push / pop)</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Abstract Data Types
 
@@ -490,14 +813,48 @@ Used in multithreading and concurrency situations
 
 ## Language Support for Queue
 
-| Language    | Support                                            |
-| ----------- | -------------------------------------------------- |
-| Java        | LinkedList (add / remove)                          |
-| C#          | Queue (enqueue / dequeue)                          |
-| Objective-C | NSMutableArray (addObject / removeObjectAtIndex:0) |
-| Ruby        | use Array (push / shift)                           |
-| Python      | queue (put / get)                                  |
-| C++         | std::queue (push_back / pop_front)                 |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">LinkedList (add / remove)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">Queue (enqueue / dequeue)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">NSMutableArray (addObject / removeObjectAtIndex:0)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">use Array (push / shift)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">queue (put / get)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::queue (push_back / pop_front)</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Priority Queues
 
@@ -507,14 +864,47 @@ Allows you to add elements to the array that can be moved closer to the front of
 
 ## Language Support for Priority Queues
 
-| Language    | Support             |
-| ----------- | ------------------- |
-| Java        | PriorityQueue       |
-| C#          | n/a                 |
-| Objective-C | CFBinaryHeap        |
-| Ruby        | n/a                 |
-| Python      | n/a                 |
-| C++         | std::priority_queue |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">PriorityQueue</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">CFBinaryHeap</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::priority_queue</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 NOTE:
 Course says n/a for Python, but Python website indicates there is a PriorityQueue class:
@@ -534,14 +924,48 @@ Can behave like a stack or a queue
 
 ## Language Support for Deque
 
-| Language    | Support                             |
-| ----------- | ----------------------------------- |
-| Java        | LinkedList implements Deque         |
-| C#          | n/a - use LinkedList for equivalent |
-| Objective-C | n/a - use NSMutableArray            |
-| Ruby        | n/a - use Array                     |
-| Python      | collections.deque                   |
-| C++         | std::deque                          |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">LinkedList implements Deque</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">n/a - use LinkedList for equivalent</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">n/a - use NSMutableArray</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">n/a - use Array</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">collections.deque</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::deque</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Associative Arrays
 
@@ -553,15 +977,52 @@ Can behave like a stack or a queue
 
 ## Language Support for Associative Arrays
 
-| Language    | Support               |
-| ----------- | --------------------- |
-| Java        | HashMap, HashTable    |
-| C#          | Hashtable, Dictionary |
-| Objective-C | NSDictionary          |
-| Ruby        | Hash                  |
-| Python      | dict                  |
-| C++         | std::unordered_map    |
-| Javascript  | objects               |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">HashMap, HashTable</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">Hashtable, Dictionary</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">NSDictionary</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">Hash</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">dict</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::unordered_map</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Javascript</td>
+    <td class="tg-0lax">objects</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 Behind the scenes, most associative arrays are implemented using a hash table
 
@@ -653,14 +1114,48 @@ Other ways of managing collisions:
 
 ## Default Hash Behavior
 
-| Language    | Method        |
-| ----------- | ------------- |
-| Java        | hashCode()    |
-| C#          | GetHashCode() |
-| Objective-C | -hash         |
-| Ruby        | hash()        |
-| Python      | hash()        |
-| C++         | std::hash     |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Method</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">hashCode()</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">GetHashCode()</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">-hash</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">hash()</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">hash()</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::hash</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Hashing in Custom Classes
 
@@ -676,14 +1171,48 @@ This behavior is already provided for string objects
 
 ## Language Support for Associative Arrays
 
-| Language    | Support                                         |
-| ----------- | ----------------------------------------------- |
-| Java        | HashTable, HashMap, ConcurrentHashMap           |
-| C#          | Hashtable, StringDictionary, Dictionary<>, etc. |
-| Objective-C | NSDictionary, NSMutableDictionary               |
-| Ruby        | Hash                                            |
-| Python      | dict                                            |
-| C++         | std::unordered_map                              |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">HashTable, HashMap, ConcurrentHashMap</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">Hashtable, StringDictionary, Dictionary&lt;&gt;, etc.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">NSDictionary, NSMutableDictionary</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">Hash</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">dict</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::unordered_map</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Working with Sets
 
@@ -707,14 +1236,48 @@ To go to any specific object in a set, already need the object
 
 ## Language Support for Sets
 
-| Language    | Support             |
-| ----------- | ------------------- |
-| Java        | HashSet             |
-| C#          | HashSet             |
-| Objective-C | NSSet, NSMutableSet |
-| Ruby        | Set                 |
-| Python      | set / frozenset     |
-| C++         | std::set            |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">HashSet</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">HashSet</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">NSSet, NSMutableSet</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">Set</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">set / frozenset</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::set</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 In C++, sets are implemented not with hash tables but with binary search trees
 
@@ -765,21 +1328,77 @@ Self-Balancing algorithms include:
 
 ## BST/ Hash Table Comparison
 
-| Binary Search Tree                          | Hash Table                     |
-| ------------------------------------------- | ------------------------------ |
-| Fast insertion, fast retrieval              | Fast insertion, fast retrieval |
-| Stays sorted - iterate elements in sequence | Retrieval not guaranteed order |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Binary Search Tree</th>
+    <th class="tg-0pky">Hash Table</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fast insertion, fast retrieval</td>
+    <td class="tg-0lax">Fast insertion, fast retrieval</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Stays sorted - iterate elements in sequence</td>
+    <td class="tg-0lax">Retrieval not guaranteed order</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## BST - Language Support
 
-| Language    | Implementation   |
-| ----------- | ---------------- |
-| Java        | TreeMap          |
-| C#          | SortedDictionary |
-| Python      | n/a              |
-| Ruby        | n/a              |
-| Objective-C | n/a              |
-| C++         | std::set         |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Implementation</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">TreeMap</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">SortedDictionary</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::set</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Heap Implementation
 
@@ -809,14 +1428,48 @@ Good for implementing priority queue
 
 ## Language Support for Heap
 
-| Language    | Support             |
-| ----------- | ------------------- |
-| Java        | PriorityQueue       |
-| C#          | n/a                 |
-| Python      | heapq               |
-| Ruby        | n/a                 |
-| Objective-C | CFBinaryHeap        |
-| C++         | std::priority_queue |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<pre>
+<div class="table">
+<table class="tg">
+  <tr>
+    <th class="tg-0pky">Language</th>
+    <th class="tg-0pky">Support</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Java</td>
+    <td class="tg-0lax">PriorityQueue</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C#</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Python</td>
+    <td class="tg-0lax">heapq</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Ruby</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Objective-C</td>
+    <td class="tg-0lax">CFBinaryHeap</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">C++</td>
+    <td class="tg-0lax">std::priority_queue</td>
+  </tr>
+</table>
+</div>
+</pre>
 
 ## Introduction to Graphs
 
