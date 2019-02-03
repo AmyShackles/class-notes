@@ -1,5 +1,5 @@
 ---
-path: 'Computer-Science-Distilled-Chapter-II'
+path: '/Computer-Science-Distilled-Chapter-II'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Computer-Science-Distilled-Chapter-II'
 date: '2019-01-30'
