@@ -112,6 +112,7 @@ export const query = graphql`
         chapter
         subtitle
         tags
+        path
         cover {
           childImageSharp {
             fluid(
