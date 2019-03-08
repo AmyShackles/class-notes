@@ -1,29 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'react-emotion';
-
-const reverseRave = keyframes`
-  0% {
-    color: violet;
-  }
-  14% {
-    color: indigo;
-  }
-  28% {
-    color: blue;
-  }
-  42% {
-    color: green;
-  }
-  56% {
-    color: yellow;
-  }
-  70% {
-    color: orange;
-  }
-  84% {
-    color: red;
-  }
-`;
+import styled from 'react-emotion';
 
 const Wrapper = styled.footer`
   padding-top: 15px;
@@ -42,6 +18,7 @@ const Text = styled.div`
   margin: 0;
   padding-bottom: 15px;
   text-align: center;
+  justify-content: center;
   display: flex;
   color: ${props => props.theme.colors.white.light};
   a {
@@ -66,9 +43,7 @@ const Footer = () => (
         <span role="img" aria-label="pawprints">
           🐾
         </span>
-        <a href="https://amyshackles.com">
-          Created by Amy Shackles - click to see my other projects
-        </a>
+        <a href="https://amyshackles.com">Created by Amy Shackles</a>
       </span>
     </Text>
   </Wrapper>
