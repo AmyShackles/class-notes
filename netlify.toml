@@ -1,0 +1,18 @@
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "sameorigin"
+        X-XSS-Protection = "1; mode=block"
+        X-Content-Type-Options = "nosniff"
+        Content-Security-Policy = "default src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; script-src 'self'; style-src 'self'
+        Referrer-Policy = "no-referrer-when-downgrade"
+    
+[[headers]]
+    for = "sw.js"
+    [headers.values]
+        Cache-Control = "max-age=0,no-cache,no-store,must-revalidate"
+
+[[headers]]
+    for = "*.css"
+    [headers.values]
+        Cache-Control = "public, max-age=604800"
