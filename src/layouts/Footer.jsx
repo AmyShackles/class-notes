@@ -29,6 +29,7 @@ const Wrapper = styled.footer`
   padding-top: 15px;
   bottom: 0;
   position: static;
+  height: 60px;
   width: 100%;
   justify-content: center;
   box-shadow: ${props => props.theme.shadow.footer};
@@ -39,8 +40,9 @@ const Wrapper = styled.footer`
 
 const Text = styled.div`
   margin: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 15px;
   text-align: center;
+  display: flex;
   color: ${props => props.theme.colors.white.light};
   a {
     color: #62fdfe;
