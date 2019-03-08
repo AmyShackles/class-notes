@@ -26,16 +26,15 @@ const reverseRave = keyframes`
 `;
 
 const Wrapper = styled.footer`
-  position: relative;
-  padding-top: 2rem;
+  padding-top: 15px;
   bottom: 0;
+  position: static;
+  width: 100%;
+  justify-content: center;
   box-shadow: ${props => props.theme.shadow.footer};
   background: ${props => props.theme.gradient.leftToRight};
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    padding-top: 4rem;
-  }
 `;
 
 const Text = styled.div`
@@ -49,7 +48,7 @@ const Text = styled.div`
   span {
     color: transparent;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-shadow: 0 0 0 white;
   }
