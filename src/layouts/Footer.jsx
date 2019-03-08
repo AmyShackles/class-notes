@@ -64,7 +64,9 @@ const Footer = () => (
         <span role="img" aria-label="pawprints">
           🐾
         </span>
-        <a href="https://amyshackles.com">Created by Amy Shackles - click to see my other projects</a>
+        <a href="https://amyshackles.com">
+          Created by Amy Shackles - click to see my other projects
+        </a>
       </span>
     </Text>
   </Wrapper>
