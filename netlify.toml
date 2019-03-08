@@ -4,7 +4,7 @@
         X-Frame-Options = "sameorigin"
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
-        Content-Security-Policy = "default src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; script-src 'self'; style-src 'self'
+        Content-Security-Policy = "default src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; script-src 'self'; style-src 'self'"
         Referrer-Policy = "no-referrer-when-downgrade"
     
 [[headers]]
