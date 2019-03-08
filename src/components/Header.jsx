@@ -65,10 +65,10 @@ const Header = ({ children, title, chapter, subtitle, date, cover }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
     <Text>
-      <h1>{title}</h1>
-      <h2>{chapter}</h2>
-      <h3>{subtitle}</h3>
-      <h4>{date}</h4>
+      {title ? <h1>{title}</h1> : null}
+      {chapter ? <h2>{chapter}</h2> : null}
+      {subtitle ? <h3>{subtitle}</h3> : null}
+      {date ? <h4>{date}</h4> : null}
 
       {children && <Subtitle>{children}</Subtitle>}
     </Text>
