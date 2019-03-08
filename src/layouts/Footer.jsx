@@ -43,7 +43,9 @@ const Text = styled.div`
   text-align: center;
   color: ${props => props.theme.colors.white.light};
   a {
-    animation: ${reverseRave} 1.5s alternate infinite;
+    color: #62fdfe;
+    font-weight: bold;
+    margin: 0 15px;
   }
   span {
     color: transparent;
@@ -62,7 +64,7 @@ const Footer = () => (
         <span role="img" aria-label="pawprints">
           🐾
         </span>
-        <a href="https://amyshackles.com">Amy Shackles</a>
+        <a href="https://amyshackles.com">Created by Amy Shackles - click to see my other projects</a>
       </span>
     </Text>
   </Wrapper>
