@@ -1,26 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'react-emotion';
 import PropTypes from 'prop-types';
-
-const TagsContainer = styled.div`
-  margin: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  a {
-    margin: 0 1rem 1rem 0;
-    color: ${props => props.theme.colors.black.blue};
-    padding: .3rem .6rem;
-    background: ${props => props.theme.colors.white.grey};
-    border-radius: 10px;
-    &:hover {
-      color: ${props => props.theme.colors.white.light};
-      background: ${props => props.theme.colors.primary.light};
-      border: ${props => props.theme.colors.primary.light};
-    }
-`;
+import { TagsContainer } from '../styles/TagsBlock.js';
 
 const TagsBlock = ({ list }) => (
   <TagsContainer>
