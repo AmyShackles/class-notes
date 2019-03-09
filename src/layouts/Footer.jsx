@@ -1,33 +1,12 @@
 import React from 'react';
 import styled, { keyframes } from 'react-emotion';
 
-const reverseRave = keyframes`
-  0% {
-    color: violet;
-  }
-  14% {
-    color: indigo;
-  }
-  28% {
-    color: blue;
-  }
-  42% {
-    color: green;
-  }
-  56% {
-    color: yellow;
-  }
-  70% {
-    color: orange;
-  }
-  84% {
-    color: red;
-  }
-`;
-
 const Wrapper = styled.footer`
-  position: relative;
-  padding-top: 2rem;
+  padding-top: 15px;
+  position: static;
+  height: 60px;
+  width: 100%;
+  justify-content: center;
   bottom: 0;
   box-shadow: ${props => props.theme.shadow.footer};
   background: ${props => props.theme.gradient.leftToRight};
@@ -40,16 +19,20 @@ const Wrapper = styled.footer`
 
 const Text = styled.div`
   margin: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 15px;
+  justify-content: center;
+  display: flex;
   text-align: center;
   color: ${props => props.theme.colors.white.light};
   a {
-    animation: ${reverseRave} 1.5s alternate infinite;
+    color: #62fdfe;
+    font-weight: bold;
+    margin: 0 15px;
   }
   span {
     color: transparent;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-shadow: 0 0 0 white;
   }
