@@ -60,7 +60,7 @@ module.exports = {
         icon: config.favicon,
       },
     },
-    'gatsby-plugin-remove-servicworker',
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-netlify',
   ],
 };
