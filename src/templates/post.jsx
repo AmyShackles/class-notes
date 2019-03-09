@@ -1,30 +1,10 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header, SEO } from 'components';
-// import Header from '../components/Header';
-// import Container from '../layouts/Container';
-// import Content from '../layouts/Content';
-// import SEO from '../components/SEO';
+import { SuggestionBar, PostSuggestion } from '../styles/post.js';
 import '../styles/prism';
-
-const SuggestionBar = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
-  box-shadow: ${props => props.theme.shadow.suggestion};
-`;
-const PostSuggestion = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-  h3 {
-    font-size: 16px;
-  }
-`;
 
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
