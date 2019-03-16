@@ -11,7 +11,7 @@ const Wrapper = styled.header`
     clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
   }
   background: ${props => props.theme.gradient.rightToLeft};
-  height: 300px;
+  height: 250px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
   }
