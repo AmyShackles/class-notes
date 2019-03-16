@@ -10,7 +10,7 @@ tags: ['Cracking the Coding Interview', 'technical interviews', 'algorithms', 'd
 published: true
 ---
 
-# Technical Question
+# Technical Interviews
 <br/>
 
 ## Steps
