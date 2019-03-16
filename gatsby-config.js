@@ -60,7 +60,6 @@ module.exports = {
         icon: config.favicon,
       },
     },
-    'gatsby-plugin-csp',
     'gatsby-plugin-netlify',
     'gatsby-plugin-offline',
   ],
