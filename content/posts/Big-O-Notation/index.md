@@ -2,7 +2,7 @@
 path: '/Big-O-Notation'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: 'Big-O-Notation'
-date: '2018-04-20'
+date: '2019-04-20'
 title: 'Big O Notation'
 tags: ['Big O Notation', 'time complexity']
 published: true
