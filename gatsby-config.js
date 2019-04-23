@@ -18,6 +18,11 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        frontmatter: {
+          defaultValues: {
+            cover: 'static/logo/speed.jpg',
+          }
+        },
         plugins: [
           {
             resolve: 'gatsby-remark-images',

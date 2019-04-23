@@ -109,8 +109,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
     }}
   />
 );
-//   }
-// }
+
 
 export default SEO;
 
