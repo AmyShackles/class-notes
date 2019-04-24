@@ -12,6 +12,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
+    "stats": "webpack-bundle-analyzer public/chunk-map.json",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "rm -rf public && rm -rf .cache",
@@ -42,7 +43,6 @@
     "gatsby-remark-prismjs": "^3.0.2",
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.1.8",
-    "gatsby-transformer-sharp": "^2.1.5",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
@@ -51,6 +51,7 @@
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "source-map-explorer": "^1.8.0",
     "typeface-candal": "0.0.54",
     "typeface-open-sans": "0.0.54",
     "typography": "^0.16.17",
@@ -65,6 +66,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "lighthouse": "^3.2.1",
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "webpack-bundle-analyzer": "^3.3.2"
   }
 }

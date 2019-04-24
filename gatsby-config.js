@@ -14,14 +14,13 @@ module.exports = {
         path: `${__dirname}/content/posts`,
       },
     },
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         frontmatter: {
           defaultValues: {
             cover: 'static/logo/speed.jpg',
-          }
+          },
         },
         plugins: [
           {
