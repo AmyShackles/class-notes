@@ -14,7 +14,6 @@ const Blog = ({ data }) => {
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}
-          cover={node.frontmatter.cover.childImageSharp.fluid}
           path={node.frontmatter.path}
           title={node.frontmatter.title}
           chapter={node.frontmatter.chapter}
@@ -38,7 +37,6 @@ Blog.propTypes = {
           node: PropTypes.shape({
             excerpt: PropTypes.string,
             frontmatter: PropTypes.shape({
-              cover: PropTypes.object.isRequired,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
               chapter: PropTypes.string,
@@ -67,17 +65,6 @@ export const query = graphql`
             path
             tags
             date(formatString: "MM.DD.YYYY")
-            cover {
-              childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
           }
         }
       }

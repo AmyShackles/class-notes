@@ -1,8 +1,23 @@
 const config = require('./config/site');
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
   siteMetadata: {
-    ...config,
+    pathPrefix: config.pathPrefix,
+    siteUrl: config.siteUrl + pathPrefix,
+    siteLanguage: config.siteLanguage,
+    logo: config.logo,
+    banner: config.banner,
+    favicon: config.favicon,
+    themeColor: config.themeColor,
+    backgroundColor: config.backgroundColor,
+    twitter: config.twitter,
+    title: config.title,
+    titleAlt: config.titleAlt,
+    author: config.author,
+    description: config.description,
+    url: config.url,
+    shortName: config.shortName,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,11 +32,6 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        frontmatter: {
-          defaultValues: {
-            cover: 'static/logo/speed.jpg',
-          },
-        },
         plugins: [
           {
             resolve: 'gatsby-remark-images',
@@ -36,20 +46,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-emotion',
-      options: {
-        autoLabel: process.env.NODE_ENV !== 'production',
-        // eslint-disable-next-line
-        labelFormat: `[filename]--[local]`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'config/typography.js',
       },
     },
-    'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

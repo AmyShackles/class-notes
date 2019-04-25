@@ -1,30 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Layout, Container } from 'layouts';
 import { Header } from 'components';
 import config from '../../config/site';
-
-const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.white.light};
-  padding: 5px 10px;
-  border: solid 1px #fff;
-  border-radius: 20px;
-  &:hover {
-    color: ${props => props.theme.colors.black.blue};
-    background: ${props => props.theme.colors.white.light};
-  }
-`;
-
-const Information = styled.div`
-  text-align: center;
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1.25rem;
-  }
-`;
+import '../styles/tag.css';
 
 const Tag = ({ pageContext }) => {
   const { posts, tagName } = pageContext;
@@ -33,17 +14,19 @@ const Tag = ({ pageContext }) => {
     <Layout>
       <Helmet title={`${tagName} | ${config.siteTitle}`} />
       <Header title={upperTag}>
-        <StyledLink to="/tags">All Tags</StyledLink>
+        <Link className="tag-styledLink" to="/tags">
+          All Tags
+        </Link>
       </Header>
       <Container>
-        <Information>
+        <div className="tag-information">
           {posts.map((post, index) => (
             <Link key={index} to={post.frontmatter.path}>
               <h3>{post.frontmatter.title}</h3>
               <h3>{post.frontmatter.chapter}</h3>
             </Link>
           ))}
-        </Information>
+        </div>
       </Container>
     </Layout>
   );
