@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import '../styles/header.css';
 import cover from '../templates/speed.jpg';
 
-
 const Header = ({ children, title, chapter, subtitle, date }) => (
   <div className="header-wrapper">
     <img src={cover || {} || [] || ''} alt="" />

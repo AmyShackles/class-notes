@@ -8,7 +8,6 @@ import '../styles/headroom.css';
 const Layout = ({ children }) => (
   <div>
     <Fragment>
-
       <NavBar />
       {children}
       <Footer />

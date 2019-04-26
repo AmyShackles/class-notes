@@ -5,7 +5,6 @@ import { TagsBlock } from 'components';
 import '../styles/bloglist.css';
 import cover from '../templates/speed.jpg';
 
-
 const BlogList = ({ path, title, date, chapter, subtitle, tags }) => (
   <article>
     <div className="bloglist-image">

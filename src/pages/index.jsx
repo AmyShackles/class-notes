@@ -70,7 +70,6 @@ export const query = graphql`
             path
             tags
             date(formatString: "MM.DD.YYYY")
-
           }
         }
       }
