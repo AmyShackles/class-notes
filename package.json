@@ -12,7 +12,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "yarn clean && gatsby build",
     "serve": "gatsby serve",
     "clean": "rm -rf public && rm -rf .cache",
     "format-output": "prettier src/**/*.{js,jsx}",
