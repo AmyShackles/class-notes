@@ -24,7 +24,7 @@ Measure of time / performance, calculated by the number of steps or operations t
 
 ### Examples for Rule 3:
 
-```
+```javascript{numberLines: true}
   function summingTwoArrays(a, b) {
     let sum = 0;
     for (let i = 0; i < a.length; i++) {
@@ -38,7 +38,7 @@ Measure of time / performance, calculated by the number of steps or operations t
 
 In this `summingTwoArrays` function, each for loop works on every element of a given array independent of one another.  Because they are different input and can't be simplified, we would characterize the Big O to be _O(n + m)_ because it is _O(n)_ and then _O(m)_ and we have to add those together to get the time complexity.
 
-```
+```javascript{numberLines: true}
   function bothContainNumber(a, b) {
     for (let j = 0; j < a.length; j++) {
       for (let i = 0; i < b.length; i++) {
@@ -97,7 +97,7 @@ isFirstElementEven([10,2,1])
 
 #### Function
 
-```
+```javascript{numberLines: true}
 function findNeedleInSortedHaystack(needle, haystack) {
   let length = haystack.length;
   let mid = Math.floor(length/2);
@@ -133,7 +133,7 @@ findNeedleInSortedHaystack(100, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 
 
 #### Console Output:
 
-```
+```text
 currentPosition 0 mid 50
 currentPosition 50 mid 25
 currentPosition 75 mid 12
@@ -149,7 +149,7 @@ currentPosition 99 mid 6
 
 #### Function:
 
-```
+```javascript{numberLines: true}
 function reverseString(n) {
   let reversed = "";
   let count = 0;
@@ -168,7 +168,7 @@ reverseString("Wobblewobble")
 
 #### Console Output:
 
-```
+```text
 reversed e
 count 1
 reversed el
@@ -207,7 +207,7 @@ Others consider it O(nm) where n is number of rows and m is number of columns
 
 #### Function:
 
-```
+```javascript{numberLines: true}
 function nWithNesting(matrix) {
   let count = [0,0];
   let rows = [];
@@ -245,7 +245,7 @@ console.log(nWithNesting(matrix))
 
 #### Console Output
 
-```
+```text
 count [ 1, 1 ] 		i 0 j 0
 count [ 1, 2 ] 		i 0 j 1
 count [ 1, 3 ] 		i 0 j 2
@@ -354,7 +354,7 @@ count [ 9, 81 ] 	i 8 j 8
 
 #### Function:
 
-```
+```javascript{numberLines: true}
 function printCurrentNum(arr) {
   let count = 0;
    for (let i = arr; i > 0; i--) {
@@ -376,7 +376,7 @@ This is the best time complexity achievable by comparison-based sorting algorith
 
 #### Function
 
-```
+```javascript{numberLines: true}
 let length;
 function quickSort(nums) {
    console.count('Number of times quickSort is called');
@@ -942,7 +942,6 @@ count [ 2, 15 ] 	i 1 j 6
 count [ 2, 16 ] 	i 1 j 7
 
 
-
 count [ 3, 17 ] 	i 2 j 0
 
 count [ 3, 18 ] 	i 2 j 1
@@ -1208,7 +1207,7 @@ Function taken from [here](https://adrianmejia.com/blog/2018/04/05/most-popular-
 
 #### Function
 
-```
+```javascript{numberLines: true}
 function getSubsets(n = '') {
   const array = Array.from(n);
   const base = [''];
@@ -1231,7 +1230,7 @@ getSubsets('abacab')
 
 #### Console Output
 
-```
+```javascript{numberLines: true}
 getSubsets(abacab) // , a, b, ab, a, aa, ba, aba, c, ac, bc, abc, ac, aac, bac... 
 n: 6, counter: 64;
 => [ '',
@@ -1304,7 +1303,7 @@ n: 6, counter: 64;
 Recursive fibonacci exmaple:
 In order to compute fib(5), a tree 
 
-```
+```text
                                       fib(5)
                                   /           \
                                 /               \
@@ -1329,7 +1328,7 @@ fib(1) fib(0)   |           |       |          |      |
 
 This illustrative example found on [Stack Overflow](https://stackoverflow.com/questions/8845154/how-does-the-fibonacci-recursive-function-work)
 
-```
+```javascript{numberLines: true}
 let calls = 0;
 function fibonacci(n, c) {
   calls++;
@@ -1354,7 +1353,7 @@ console.log({'n': 8, 'answer': fibonacci(8, 0), '# of calls': calls});
 
 #### Console Output
 
-```
+```text
 fibonacci(7)
     fibonacci(5)
         fibonacci(3)
@@ -1475,7 +1474,7 @@ Function taken from [here](https://adrianmejia.com/blog/2018/04/05/most-popular-
 
 #### Function
 
-```
+```javascript{numberLines: true}
 function getPermutations(string, prefix = '') {
   console.log('prefix', prefix)
   if(string.length <= 1) {
