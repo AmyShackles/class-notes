@@ -85,7 +85,7 @@ In `bothContainNumber`, we operate on both inputs nested together so that for ev
 
 ### O(1) - Constant time example
 
-```
+```javascript{numberLines: true}
 function isFirstElementEven(arr) {
   return arr[0] % 2 === 0;
 }
@@ -654,7 +654,7 @@ Number of times quickSort is called: 25
 As the input size increases, performance is directly proprotional to the square of `n`.
 #### Function
 
-```
+```javascript{numberLines: true}
 function containsDuplicates(string) {
   let count = [0, 0]
   let truth;
@@ -3218,7 +3218,7 @@ Number of times getPermutations is run: 720
 
 #### Function
 
-```
+```javascript{numberLines: true}
 function fibDynamic(n) {
   console.count('Number of times fibDynamic is called');
   let minus1 = 1;
