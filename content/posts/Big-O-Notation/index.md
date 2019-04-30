@@ -1156,2067 +1156,2068 @@ getPermutations('abacab')
 ```
 
 #### Console Output
-
-&nbsp;&nbsp;&nbsp;&nbsp;prefix 
-&nbsp;&nbsp;&nbsp;&nbsp;prefix a
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 1
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 2
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 3
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 4
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 5
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 6
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 7
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 8
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 9
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 10
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 11
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 12
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 13
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 14
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 15
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 16
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 17
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 18
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 19
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 20
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 21
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 22
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 23
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 24
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 25
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 26
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 27
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 28
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 29
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 30
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 31
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 32
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 33
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 34
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 35
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 36
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 37
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 38
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 39
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 40
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 41
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 42
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 43
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 44
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 45
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 46
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 47
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 48
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 49
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 50
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 51
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 52
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 53
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 54
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 55
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 56
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 57
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 58
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 59
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 60
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 61
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 62
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 63
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 64
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 65
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 66
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 67
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 68
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 69
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 70
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 71
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 72
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 73
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 74
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 75
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 76
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 77
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 78
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 79
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 80
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 81
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 82
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 83
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 84
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 85
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 86
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 87
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 88
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 89
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 90
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 91
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 92
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 93
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 94
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 95
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 96
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 97
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 98
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 99
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 100
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 101
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 102
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 103
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 104
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 105
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 106
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 107
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 108
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 109
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 110
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 111
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 112
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 113
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 114
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 115
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 116
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 117
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 118
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 119
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 120
-&nbsp;&nbsp;&nbsp;&nbsp;prefix b
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 121
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 122
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 123
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 124
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 125
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 126
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 127
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 128
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 129
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 130
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 131
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 132
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 133
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 134
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 135
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 136
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 137
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 138
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bab
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 139
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 140
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babc
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 141
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 142
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 143
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 144
-&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 145    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 146    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 147    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 148    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 149    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 150    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 151    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 152    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 153    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 154    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 155    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 156    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 157    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 158    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 159    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 160    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 161    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 162    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 163    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 164    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 165    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 166    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 167    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 168    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 169    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 170    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 171    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 172    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 173    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 174    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 175    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 176    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 177    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 178    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 179    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 180    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 181    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 182    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 183    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 184    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 185    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 186    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 187    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 188    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 189    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 190    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 191    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 192    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 193    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 194    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 195    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 196    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 197    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 198    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 199    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 200    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 201    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 202    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 203    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 204    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 205    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 206    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 207    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 208    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 209    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 210    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 211    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 212    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 213    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 214    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 215    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 216    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 217    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 218    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 219    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 220    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 221    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 222    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 223    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 224    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 225    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 226    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 227    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 228    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 229    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 230    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 231    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 232    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 233    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 234    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 235    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 236    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 237    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 238    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 239    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 240    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix a    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 241    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 242    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 243    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 244    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 245    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 246    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 247    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 248    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 249    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 250    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 251    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 252    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 253    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 254    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 255    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 256    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 257    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 258    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 259    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 260    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 261    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 262    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 263    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 264    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 265    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 266    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 267    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 268    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 269    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 270    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 271    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 272    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 273    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 274    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 275    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 276    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 277    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 278    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 279    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 280    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 281    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 282    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 283    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 284    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 285    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 286    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 287    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 288    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 289    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 290    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 291    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 292    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 293    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 294    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 295    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 296    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 297    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 298    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 299    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 300    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 301    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 302    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 303    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 304    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 305    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 306    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 307    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 308    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 309    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 310    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 311    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 312    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 313    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 314    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 315    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 316    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 317    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 318    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 319    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 320    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 321    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 322    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 323    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 324    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 325    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 326    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 327    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 328    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 329    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 330    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 331    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 332    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 333    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 334    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 335    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 336    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 337    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 338    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 339    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 340    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 341    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 342    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 343    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 344    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 345    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 346    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 347    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 348    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 349    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 350    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 351    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 352    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 353    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 354    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 355    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 356    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 357    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 358    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 359    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 360    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix c    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 361    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 362    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 363    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 364    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 365    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 366    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 367    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 368    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 369    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 370    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 371    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 372    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 373    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 374    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 375    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 376    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 377    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 378    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 379    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 380    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 381    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 382    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 383    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 384    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 385    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 386    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 387    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 388    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 389    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 390    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 391    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 392    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 393    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 394    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 395    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 396    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 397    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 398    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 399    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 400    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 401    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 402    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 403    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 404    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 405    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 406    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 407    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 408    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 409    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 410    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 411    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 412    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 413    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 414    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 415    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 416    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 417    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 418    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 419    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 420    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 421    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 422    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 423    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 424    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 425    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 426    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 427    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 428    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 429    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 430    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 431    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 432    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 433    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 434    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 435    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 436    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 437    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 438    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 439    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 440    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 441    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 442    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 443    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 444    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 445    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 446    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 447    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 448    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 449    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 450    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 451    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 452    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 453    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 454    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 455    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 456    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 457    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 458    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 459    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 460    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 461    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 462    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 463    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 464    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 465    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 466    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 467    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 468    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 469    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 470    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 471    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 472    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 473    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 474    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 475    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 476    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 477    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 478    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 479    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 480    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix a    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 481    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 482    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 483    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 484    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 485    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 486    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 487    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 488    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 489    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 490    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 491    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 492    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 493    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 494    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 495    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 496    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 497    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 498    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 499    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 500    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 501    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 502    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 503    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 504    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 505    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 506    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 507    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 508    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 509    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 510    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 511    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 512    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 513    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 514    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 515    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 516    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 517    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 518    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 519    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 520    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 521    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 522    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 523    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 524    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 525    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 526    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 527    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 528    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 529    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 530    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 531    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 532    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 533    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 534    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 535    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 536    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 537    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 538    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 539    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 540    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 541    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 542    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 543    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 544    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 545    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 546    prefix aab
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aaba
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabab
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 547
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabac
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 548
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabb
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabba
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 549
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabbc
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 550
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabc
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabca
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 551
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aabcb
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 552
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix ac
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix aca
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acab
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acaba
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 553
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acabb
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 554
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acaa
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acaab
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 555
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acaab
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 556
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acab
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acabb
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 557
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acaba
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 558
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acb
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acba
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acbaa
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 559
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acbab
-&nbsp;&nbsp;&nbsp;&nbsp;    Number of times getPermutations is run: 560
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acba
-&nbsp;&nbsp;&nbsp;&nbsp;    prefix acbaa
-&nbsp;&nbsp;&nbsp;&nbsp;    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 561    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 562    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 563    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 564    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 565    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 566    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 567    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 568    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 569    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 570    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 571    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 572    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 573    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 574    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 575    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 576    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 577    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 578    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 579    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 580    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 581    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 582    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 583    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 584    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 585    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 586    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 587    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 588    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 589    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 590    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 591    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 592    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 593    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 594    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 595    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 596    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 597    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 598    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 599    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 600    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix b    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 601    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 602    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 603    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 604    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 605    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 606    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 607    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 608    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 609    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 610    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 611    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 612    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 613    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 614    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 615    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 616    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 617    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 618    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 619    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 620    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 621    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 622    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 623    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 624    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 625    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 626    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 627    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 628    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 629    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 630    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 631    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 632    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 633    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 634    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 635    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 636    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 637    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 638    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 639    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 640    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 641    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 642    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 643    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 644    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 645    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 646    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 647    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 648    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 649    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 650    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 651    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 652    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 653    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 654    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 655    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 656    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 657    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 658    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 659    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 660    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 661    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 662    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 663    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 664    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 665    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 666    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 667    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 668    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 669    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 670    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 671    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 672    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 673    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 674    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 675    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 676    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 677    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 678    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 679    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 680    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 681    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 682    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 683    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 684    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 685    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 686    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 687    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 688    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 689    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 690    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 691    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 692    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 693    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 694    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 695    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 696    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 697    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 698    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 699    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 700    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 701    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 702    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 703    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 704    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 705    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 706    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 707    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 708    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 709    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 710    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 711    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 712    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 713    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 714    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 715    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 716    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 717    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 718    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 719    
-&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    
-&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 720    
-&nbsp;&nbsp;&nbsp;&nbsp;=> [ 'abacab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abacba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abaacb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abaabc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'ababca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'ababac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abcaab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abcaba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abcaab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abcaba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abcbaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abcbaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abaacb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abaabc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abacab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abacba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'ababac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'ababca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbaca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbaac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbaac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbaca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    
-&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbaca',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbaac',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    
-&nbsp;&nbsp;&nbsp;&nbsp;... 620 more items ]
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix a<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 1<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 2<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 3<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 4<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 5<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 6<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 7<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 8<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 9<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 10<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 11<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 12<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 13<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 14<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 15<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 16<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 17<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 18<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 19<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 20<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 21<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 22<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 23<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 24<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 25<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 26<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 27<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 28<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 29<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 30<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 31<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 32<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 33<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 34<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 35<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 36<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 37<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 38<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 39<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 40<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 41<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 42<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 43<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 44<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 45<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 46<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 47<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 48<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 49<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 50<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 51<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 52<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 53<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 54<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 55<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 56<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 57<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 58<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 59<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 60<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 61<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 62<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 63<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 64<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 65<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 66<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 67<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 68<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 69<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 70<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 71<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 72<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 73<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 74<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 75<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 76<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 77<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 78<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 79<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 80<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 81<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 82<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 83<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 84<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 85<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 86<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 87<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 88<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 89<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 90<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 91<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 92<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 93<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 94<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 95<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 96<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 97<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 98<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 99<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 100<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 101<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 102<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 103<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 104<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 105<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 106<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 107<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 108<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 109<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 110<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 111<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 112<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 113<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 114<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 115<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 116<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 117<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 118<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 119<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 120<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix b<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 121<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 122<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 123<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 124<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 125<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 126<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 127<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 128<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 129<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 130<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 131<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 132<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 133<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 134<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 135<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 136<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 137<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 138<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 139<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 140<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 141<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 142<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 143<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 144<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 145    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 146    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 147    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 148    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 149    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 150    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 151    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 152    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 153    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 154    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 155    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 156    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 157    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 158    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 159    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 160    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 161    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 162    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 163    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 164    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 165    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 166    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 167    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 168    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 169    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 170    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 171    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 172    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 173    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 174    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 175    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 176    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 177    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 178    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 179    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 180    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 181    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 182    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 183    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 184    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 185    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 186    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 187    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 188    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 189    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 190    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 191    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 192    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 193    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 194    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 195    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 196    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 197    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 198    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 199    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 200    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 201    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 202    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 203    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 204    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 205    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 206    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 207    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 208    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 209    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 210    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 211    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 212    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 213    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 214    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 215    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 216    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 217    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 218    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 219    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 220    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 221    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 222    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 223    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 224    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 225    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 226    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 227    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 228    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 229    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 230    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 231    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 232    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 233    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 234    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 235    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 236    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 237    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 238    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 239    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 240    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix a    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 241    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 242    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 243    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 244    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 245    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 246    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 247    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 248    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 249    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 250    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 251    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 252    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 253    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 254    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 255    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 256    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 257    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 258    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 259    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 260    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 261    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 262    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 263    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 264    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 265    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 266    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 267    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 268    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 269    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 270    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 271    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 272    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 273    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 274    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 275    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 276    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 277    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 278    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 279    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 280    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 281    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 282    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 283    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 284    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 285    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 286    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 287    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 288    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 289    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 290    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 291    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 292    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 293    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 294    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 295    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 296    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 297    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 298    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 299    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 300    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 301    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 302    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 303    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 304    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 305    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 306    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 307    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 308    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 309    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 310    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 311    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 312    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 313    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 314    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 315    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 316    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 317    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 318    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 319    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 320    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 321    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 322    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 323    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 324    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 325    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 326    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 327    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 328    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 329    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 330    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 331    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 332    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 333    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 334    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 335    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 336    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 337    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 338    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 339    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 340    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 341    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 342    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 343    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 344    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 345    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 346    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 347    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 348    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 349    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 350    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 351    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 352    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 353    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 354    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 355    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 356    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 357    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 358    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 359    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 360    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix c    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 361    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 362    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 363    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 364    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 365    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 366    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 367    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 368    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 369    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 370    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 371    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 372    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 373    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 374    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 375    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 376    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 377    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 378    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 379    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 380    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 381    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 382    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 383    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 384    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 385    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 386    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 387    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 388    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 389    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 390    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 391    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 392    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 393    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 394    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 395    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 396    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 397    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 398    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 399    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 400    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 401    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 402    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 403    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 404    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 405    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 406    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 407    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 408    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 409    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 410    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 411    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 412    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 413    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 414    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 415    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 416    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 417    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 418    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 419    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 420    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 421    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 422    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 423    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 424    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 425    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 426    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 427    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 428    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 429    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 430    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 431    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 432    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 433    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 434    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 435    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 436    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 437    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 438    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 439    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 440    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 441    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 442    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 443    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 444    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 445    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 446    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 447    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 448    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 449    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 450    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 451    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 452    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 453    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 454    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix caba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 455    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 456    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 457    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 458    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 459    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 460    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 461    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 462    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 463    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 464    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 465    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 466    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 467    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 468    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 469    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 470    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 471    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 472    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 473    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 474    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 475    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 476    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 477    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 478    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 479    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix cbaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 480    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix a    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 481    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 482    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 483    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 484    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 485    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 486    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 487    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 488    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 489    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 490    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 491    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 492    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 493    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 494    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 495    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 496    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 497    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 498    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 499    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 500    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 501    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 502    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 503    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 504    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 505    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 506    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 507    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 508    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 509    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 510    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 511    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 512    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 513    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 514    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 515    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 516    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 517    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 518    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 519    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 520    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 521    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 522    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 523    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 524    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 525    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 526    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 527    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 528    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 529    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 530    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 531    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 532    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 533    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 534    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 535    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 536    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 537    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 538    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 539    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 540    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 541    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 542    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 543    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 544    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 545    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aacbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 546<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 547<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 548<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 549<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabbc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 550<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 551<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aabcb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 552<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ac<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aca<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 553<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 554<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 555<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 556<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 557<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 558<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acb<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 559<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 560<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 561    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 562    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 563    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 564    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 565    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 566    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 567    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 568    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 569    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acabb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 570    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 571    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 572    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 573    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 574    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 575    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix acbab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 576    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 577    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 578    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 579    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 580    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 581    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 582    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 583    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 584    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 585    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 586    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 587    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 588    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix aba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 589    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 590    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 591    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ababc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 592    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 593    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 594    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 595    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 596    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 597    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 598    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 599    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix abcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 600    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix b    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 601    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 602    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 603    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 604    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 605    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 606    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 607    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 608    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 609    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 610    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 611    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 612    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 613    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 614    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 615    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 616    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 617    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 618    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 619    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 620    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 621    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 622    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 623    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 624    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 625    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 626    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 627    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 628    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 629    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 630    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 631    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 632    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 633    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 634    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 635    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 636    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 637    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 638    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 639    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 640    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 641    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 642    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 643    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 644    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 645    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 646    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 647    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bbaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 648    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 649    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 650    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 651    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 652    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 653    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 654    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 655    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 656    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 657    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 658    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 659    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 660    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 661    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 662    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 663    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 664    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 665    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 666    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 667    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 668    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 669    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 670    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 671    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 672    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 673    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 674    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 675    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 676    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 677    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 678    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 679    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 680    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 681    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 682    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 683    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcbaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 684    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 685    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 686    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 687    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 688    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 689    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 690    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 691    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 692    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 693    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 694    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 695    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bcaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 696    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix ba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 697    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 698    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 699    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 700    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 701    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 702    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 703    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 704    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 705    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 706    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 707    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix babca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 708    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 709    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 710    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 711    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baabc    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 712    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baaca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 713    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 714    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bac    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 715    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 716    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacb    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 717    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacba    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 718    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix baca    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacaa    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 719    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;prefix bacab    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Number of times getPermutations is run: 720    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;=> [ 'abacab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abacba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abaacb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abaabc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'ababca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'ababac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abcaab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abcaba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abcaab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abcaba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abcbaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abcbaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abaacb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abaabc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abacab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abacba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'ababac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'ababca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbaca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbaac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbaac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbaca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acaabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acabab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbbaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'acbaab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaacbb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabbc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aaabcb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacabb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aacbab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabbca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aababc',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabacb',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcba',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'aabcab',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbaca',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbaac',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;'abbcaa',    <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;... 620 more items ]<br/>
 
 
 ### BONUS - O(n) solution for nth Fibonacci with constant space
