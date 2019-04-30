@@ -1,0 +1,62 @@
+.headroom-wrapper {
+    position: fixed;
+    height: 102px;
+    z-index: 2000;
+    top: 0;
+}
+.headroom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    height: 2.5rem;
+}
+.headroom svg {
+    padding: 1rem 1.5rem;
+}
+.headroom svg g {
+        fill: #fff;
+}
+    
+.headroom--unfixed {
+    position: relative;
+    justify-content: space-between;
+    transform: translateY(0);
+    transition: all 0.25s ease-in-out;
+  }
+.headroom--scrolled {
+    transition: all 0.25s ease-in-out;
+}
+.headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: all 0.25s ease-in-out;
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0);
+    transition: all 0.25s ease-in-out;
+    background-color: #3e5fbc;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .headroom--pinned nav a {
+        color: white;
+  }
+  .headroom--pinned nav a:hover {
+          border-color: #333438;
+          color: #333438;
+}
+.headroom--pinned nav a:focus {
+    color: #333438;
+}
+.headroom--pinned svg {
+      height: 2.5rem;
+}
+.headroom---pinned svg g {
+        fill: #333438;
+}
+.headroom--pinned span {
+      color: #333438;
+}

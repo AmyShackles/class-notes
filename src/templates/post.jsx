@@ -1,35 +1,19 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
-import { TagsBlock, Header, SEO } from 'components';
+import { TagsBlock, Header } from 'components';
 // import Header from '../components/Header';
 // import Container from '../layouts/Container';
 // import Content from '../layouts/Content';
 // import SEO from '../components/SEO';
-import '../styles/prism';
-
-const SuggestionBar = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
-  box-shadow: ${props => props.theme.shadow.suggestion};
-`;
-const PostSuggestion = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-  h3 {
-    font-size: 16px;
-  }
-`;
+import '../styles/prism.css';
+import '../styles/post.css';
 
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
   const post = data.markdownRemark;
-  const image = post.frontmatter.cover.childImageSharp.fluid;
+  const image = post.frontmatter.cover;
   const title = post.frontmatter.title;
   const chapter = post.frontmatter.chapter;
   const subtitle = post.frontmatter.subtitle;
@@ -37,20 +21,6 @@ const Post = ({ data, pageContext }) => {
   const html = post.html;
   return (
     <Layout>
-      <SEO
-        title={title}
-        chapter={chapter}
-        subtitle={subtitle}
-        description={
-          post.frontmatter.description ||
-          post.excerpt ||
-          post.frontmatter.subtitle ||
-          ' '
-        }
-        image={image}
-        pathname={post.frontmatter.path}
-        article
-      />
       <Header
         title={title}
         chapter={chapter}
@@ -62,8 +32,8 @@ const Post = ({ data, pageContext }) => {
         <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
-      <SuggestionBar>
-        <PostSuggestion>
+      <div className="post-suggestionBar">
+        <div className="post-postSuggestion">
           {prev && (
             <Link to={prev.frontmatter.path}>
               Previous
@@ -74,8 +44,8 @@ const Post = ({ data, pageContext }) => {
               </h3>
             </Link>
           )}
-        </PostSuggestion>
-        <PostSuggestion>
+        </div>
+        <div className="post-postSuggestion">
           {next && (
             <Link to={next.frontmatter.path}>
               Next
@@ -86,8 +56,8 @@ const Post = ({ data, pageContext }) => {
               </h3>
             </Link>
           )}
-        </PostSuggestion>
-      </SuggestionBar>
+        </div>
+      </div>
     </Layout>
   );
 };
@@ -113,20 +83,6 @@ export const query = graphql`
         subtitle
         tags
         path
-        cover {
-          childImageSharp {
-            fluid(
-              maxWidth: 1920
-              quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
-            ) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-            resize(width: 1200, quality: 90) {
-              src
-            }
-          }
-        }
       }
     }
   }

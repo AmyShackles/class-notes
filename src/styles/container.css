@@ -1,0 +1,21 @@
+.container-wrapper {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  min-height: calc(100vh - 310px);
+  flex: 1;
+}
+.container-wrapper section {
+  padding: 3rem 1.5rem;
+}
+  @media (max-width: 900px) {
+    .container-wrapper {
+        width: 90%;
+        min-height: calc(100vh - 360px);
+    }
+}
+@media (max-width: 600px) {
+    .container-wrapper {
+        width: 95%;
+    }
+}

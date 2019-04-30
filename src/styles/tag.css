@@ -1,0 +1,18 @@
+.tag-styledLink {
+  color:#f0f0f0;
+  padding: 5px 10px;
+  border: solid 1px #fff;
+  border-radius: 20px;
+}
+.tag-styledLink:hover {
+    color: #2e3246;
+    background: #f0f0f0;
+}
+
+.tag-information {
+  text-align: center;
+}
+.tag-information h1 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
