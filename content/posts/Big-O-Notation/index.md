@@ -85,7 +85,7 @@ In `bothContainNumber`, we operate on both inputs nested together so that for ev
 
 ### O(1) - Constant time example
 
-```
+```javascript{numberLines: true}
 function isFirstElementEven(arr) {
   return arr[0] % 2 === 0;
 }
@@ -133,17 +133,17 @@ findNeedleInSortedHaystack(100, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 
 
 #### Console Output:
 
-~~~~
-currentPosition 0 mid 50
-currentPosition 50 mid 25
-currentPosition 75 mid 12
-currentPosition 87 mid 12
-currentPosition 99 mid 6
-=> { '# of loops in while': 5,
-  'list of positions': [ 0, 50, 75, 87, 99 ],
-  'size of input': 100,
-  'percentage of array input accessed': '5%' }
-~~~~
+
+    currentPosition 0 mid 50
+    currentPosition 50 mid 25
+    currentPosition 75 mid 12
+    currentPosition 87 mid 12
+    currentPosition 99 mid 6
+    => { '# of loops in while': 5,
+      'list of positions': [ 0, 50, 75, 87, 99 ],
+      'size of input': 100,
+      'percentage of array input accessed': '5%' }
+    
 
 ### O(n) - Linear time example
 
@@ -194,7 +194,6 @@ reverseString("Wobblewobble")
     count 12
     size of input 12
     => { '# of loops of i': 12, 'size of input': 12 }
-```
 
 ### Advice: Not all Nested Loops are Quadratic
 
@@ -872,7 +871,7 @@ console.log(containsDuplicates('fastereee'))
     count [ 9, 78 ] 	i 8 j 5
     count [ 9, 79 ] 	i 8 j 6
     count [ 9, 80 ] 	i 8 j 7
-    
+
     { '# of i loops': 9,
       '# of total loops': 8
       inputSize: 9,
@@ -977,28 +976,29 @@ n: 6, counter: 64;
 ```
 
 ### Another O(c^n) example
+
 Recursive fibonacci exmaple:
+
 In order to compute fib(5), a tree 
 
-```text
-                                      fib(5)
-                                  /           \
-                                /               \
-                              /                   \
-                            /                       \
-                          /                           \
-                       /                                \           
-                  fib(4)                               fib(3)
-                /         \                           /       \
-              /             \                       /           \
-          fib(3)             fib(2)            fib(2)         fib(1)
-        /      \             /    \             /   \            |
-      /         \           /       \         /       \          1 
-    fib(2)    fib(1)     fib(1)  fib(0)     fib(1) fib(0)        
-fib(1) fib(0)   |           |       |          |      |
-  |       |     1           1       0          1      0 
-  1       0
-```
+                                          fib(5)
+                                      /           \
+                                    /               \
+                                  /                   \
+                                /                       \
+                              /                           \
+                           /                                \           
+                      fib(4)                               fib(3)
+                    /         \                           /       \
+                  /             \                       /           \
+              fib(3)             fib(2)            fib(2)         fib(1)
+            /      \             /    \             /   \            |
+          /         \           /       \         /       \          1 
+        fib(2)    fib(1)     fib(1)  fib(0)     fib(1) fib(0)        
+    fib(1) fib(0)   |           |       |          |      |
+      |       |     1           1       0          1      0 
+      1       0
+    
 
 
 #### Function
@@ -1030,7 +1030,6 @@ console.log({'n': 8, 'answer': fibonacci(8, 0), '# of calls': calls});
 
 #### Console Output
 
-    
     fibonacci(7)
         fibonacci(5)
             fibonacci(3)
@@ -1073,7 +1072,6 @@ console.log({'n': 8, 'answer': fibonacci(8, 0), '# of calls': calls});
                             fibonacci(0)
                             fibonacci(1)
     { n: 7, answer: 21, '# of calls': 41 }
-    
     
     fibonacci(8)
         fibonacci(6)
@@ -1146,6 +1144,7 @@ console.log({'n': 8, 'answer': fibonacci(8, 0), '# of calls': calls});
     
 
 ### O(n!) - Factorial time example
+
 Function taken from [here](https://adrianmejia.com/blog/2018/04/05/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
 
 #### Function
@@ -3236,7 +3235,7 @@ getPermutations('abacab')
 
 #### Function
 
-```
+```javascript{numberLines: true}
 function fibDynamic(n) {
   console.count('Number of times fibDynamic is called');
   let minus1 = 1;
@@ -3258,16 +3257,17 @@ console.log(fibDynamic(8))
 
 #### Console Output
 
-Number of times fibDynamic is called: 1
-Number of value swaps in for loop: 1
-Number of value swaps in for loop: 2
-Number of value swaps in for loop: 3
-Number of value swaps in for loop: 4
-Number of value swaps in for loop: 5
-Number of value swaps in for loop: 6
-21
-
+    Number of times fibDynamic is called: 1
+    Number of value swaps in for loop: 1
+    Number of value swaps in for loop: 2
+    Number of value swaps in for loop: 3
+    Number of value swaps in for loop: 4
+    Number of value swaps in for loop: 5
+    Number of value swaps in for loop: 6
+    21
+    
 ### Resources I've found helpful
+
 - https://www.topcoder.com/blog/learning-understanding-big-o-notation/
 
 - http://bigocheatsheet.com/
