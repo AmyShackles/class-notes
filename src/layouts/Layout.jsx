@@ -56,6 +56,17 @@ injectGlobal`
     padding: 10px !important;
     width: max-content;
   }
+  .fibTree {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 769px) {
+      display: block;
+    }
+  }
+  .tree {
+    min-width: fit-content;
+  }
 
   ${headroom}
 `;
