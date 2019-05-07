@@ -1,11 +1,9 @@
 import React, { Fragment } from 'react';
-import { ThemeProvider } from 'emotion-theming';
-import { injectGlobal } from 'react-emotion';
 import PropTypes from 'prop-types';
 import 'typeface-open-sans';
 import 'typeface-candal';
-import { SEO } from 'components';
 import { NavBar, Footer } from 'layouts';
+<<<<<<< HEAD
 import theme from '../../config/theme';
 import headroom from '../styles/headroom';
 
@@ -70,16 +68,18 @@ injectGlobal`
 
   ${headroom}
 `;
+=======
+import '../styles/headroom.css';
+>>>>>>> 98503c87d99aa727633d1b421b85dbc6fbc7adb7
 
 const Layout = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <div>
     <Fragment>
-      <SEO />
       <NavBar />
       {children}
       <Footer />
     </Fragment>
-  </ThemeProvider>
+  </div>
 );
 
 export default Layout;
