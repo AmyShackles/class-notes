@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/header.css';
-import cover from '../templates/speed.jpg';
 
 const Header = ({ children, title, chapter, subtitle, date }) => (
   <div className="header-wrapper">
-    <img src={cover || {} || [] || ''} alt="" />
     <div className="header-text">
       {title ? <h1>{title}</h1> : null}
       {chapter ? <h2>{chapter}</h2> : null}
@@ -33,7 +31,6 @@ Header.propTypes = {
 
 Header.defaultProps = {
   children: false,
-  cover: false,
   date: false,
   title: false,
 };

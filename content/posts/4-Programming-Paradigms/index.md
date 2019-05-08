@@ -2,9 +2,9 @@
 path: '/4-Programming-Paradigms'
 cover: '../Programming-Foundations-Coding-Efficiency/speed.jpg'
 slug: '4-Programming-Paradigms'
-date: '2019-05-07
+date: '2019-05-07'
 title: '4 Programming Paradigms in 40 Minutes'
-tags: ['languages', 'programming', 'object-oriented']
+tags: ['languages', 'programming', 'object-oriented', 'functional', 'logic/constraint', 'procedural']
 published: true
 ---
 

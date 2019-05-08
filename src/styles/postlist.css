@@ -81,6 +81,7 @@
 }
 .postlist-image img {
     border-radius: 0.4rem;
+    height: fit-content;
 }
 .postlist-image img > div {
     position: static !important;
@@ -94,7 +95,6 @@
   margin: auto;
   bottom: 0;
   left: 0;
-  padding: 0 15%;
 }
 .postlist-info span {
     font-size: 14px;
