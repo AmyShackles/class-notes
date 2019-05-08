@@ -21,6 +21,7 @@
 .headroom--unfixed {
     position: relative;
     padding-left: 15px;
+    padding-top: 15px;
     justify-content: space-between;
     transform: translateY(0);
     transition: all 0.25s ease-in-out;
