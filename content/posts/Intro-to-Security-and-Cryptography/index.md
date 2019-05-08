@@ -135,7 +135,7 @@ If you're using the same pad, it's vulnerable to the Man in the Middle attack.
 
 Example of using XOR:
 
-```
+```javascript
 message = 'foo'
 
 pad = 'bar'

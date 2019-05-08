@@ -22,7 +22,7 @@ _Output_: Which tour {v<sub>1</sub>, v<sub>2</sub>,...v<sub>n</sub>} minimizes
 
 Any weighted graph defines an instance of TSP. Each _instance_ has at least one minimum cost tour. The general traveling salesman _problem_ asks for an algorithm to find the optimal tour for all possible instances.
 
-```
+```text
 Bandersnatch(G)
     Translate the input G to an instance Y of Bo-Billy Problem
     Call the subroutine Bo-Billy on Y to solve Bandersnatch(G)

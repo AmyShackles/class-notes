@@ -51,7 +51,7 @@ Typescript is not related to content of class, just superset of things that will
 
 db from mongo-films project:
 
-```
+```javascript
 const mongoose = require('mongoose');
 module.exports = {
     connectTo: function(database = 'sandbox', host = 'localhost') {
@@ -67,7 +67,7 @@ module.exports = {
   - If you don't pass anything, it will use default values from ES6 and connect to Sandbox and will use localhost as the host if you don't pass the second argument
 - So now mongoose is in the /data/db.js file instead of the server
 
-```
+```javascript
 router.get('/', function(req, res) {
     Character.find().then(characters => res.status(200).json(characters)).catch(err => { res.status(500).json(err);
     })
@@ -84,7 +84,7 @@ Populate:
 Works the same as
 `Character.findById(req.params.id)`
 
-```
+```javascript
 router.get('/:id', function(req, res) {
     Character.findById(req.params.id)
         .populate('homeworld')
@@ -117,7 +117,7 @@ To get rid of \_id, .populate('homeworld', '-\_id')
 
 // /api/films?released=2005 /api/films?producer=gary kurtz
 
-```
+```javascript
 router.get('/', function(req, res) {
    let query = Film.find().select('producer release_date')
    const { producer, released } = req.query;
@@ -161,7 +161,7 @@ In order to populate data automatically, first:
 
 - Need to add relations
 
-```
+```javascript
 router.get('/', (req, res) => {
     let query = Film.find()
     .select('episode producer title director release_date characters planets')
@@ -183,7 +183,7 @@ router.get('/', (req, res) => {
 })
 ```
 
-```
+```javascript
 router.get('/:id', (req, res) => {
     const { id } = req.params;
 
@@ -207,7 +207,7 @@ router.get('/:id', (req, res) => {
 
 Someone asked how you would do it for the root route for Characters
 
-```
+```javascript
 router.get('/', (req, res) => {
     Character.find()
     .then(chars => {
@@ -227,7 +227,7 @@ router.get('/', (req, res) => {
 
 Multiple thens you'll see a lot.
 
-```
+```javascript
 router.get('/:id', (req, res) => {
     const { id } = req.params;
 

@@ -33,7 +33,7 @@ When you make the call, you need to remember where to come back to when you retu
 
 ## Subroutine Example:
 
-```
+```text
 PC  ->  00: LDI, R0, 15                 Stack:
         03: LDI, R1, 0B
         06: CALL R1

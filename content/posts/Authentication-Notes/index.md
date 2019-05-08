@@ -23,7 +23,7 @@ How do you authenticate users and let them perform actions on your website based
 
 Normally when we define route handlers
 
-```
+```javascript
 server.get('/greet', (req, res) => {
 // when the server receives a request to /greet
 // or client makes request to /greet, both are equivalent,
@@ -44,7 +44,7 @@ Middleware can do things to help route handler out
 
 - Parameter checking, validation, etc.
 
-```
+```javascript
 const STATUS_USER_ERROR = 422
 sever.get('/greet', (req, res) => {
     const name = req.query.name;
@@ -57,7 +57,7 @@ sever.get('/greet', (req, res) => {
 });
 ```
 
-```
+```javascript
 server.get('/farewell', (req, res) => {
     const name = req.query.name;
     if (!name) {
@@ -82,7 +82,7 @@ Middleware says that it's done with its job and next() tells system to go to nex
 
 In case of 422 or some other error, might not want to call next()
 
-```
+```javascript
 server.use((req, res, next) => {
     const name = req.query.name;
     if (!name) {
@@ -95,7 +95,7 @@ server.use((req, res, next) => {
 }) <--- middleware now takes care of validation
 ```
 
-```
+```javascript
 server.get('/greet', (req, res) => {
     res.json({ greeting: `Hello ${req.name}` })
 }) // could use $req.query.name instead of passing down value
@@ -105,7 +105,7 @@ server.get('/farewell', (req, res) => {
 })
 ```
 
-```
+```javascript
 server.get('/', (req, res) => {
     res.json({ success: true });
 });
@@ -116,7 +116,7 @@ This is because server.use() is global middleware so applied to every route
 
 #### Locally scoping middleware:
 
-```
+```javascript
 const validateName = (req, res, next) => {
     const name = req.query.name;
     if (!name) {
@@ -161,7 +161,7 @@ pwgen is a way to generate a secret
 `pwgen -s 50`
 The dash s makes it machine readable. Otherwise it tries to make it human-readable
 
-```
+```javascript
 const session = require('express-session')
 server.use(session({
     secret: '6rbjkIyQ2NvCvnQ9kyVvgbndfTWnVmztpEhSV4cjvJEPVkiQni'
@@ -170,7 +170,7 @@ server.use(session({
 
 We now have a way to persist information across requests
 
-```
+```javascript
 server.get('/view-counter', (req, res) => {
     const session = req.session
     if (!session.viewCount) {
@@ -197,7 +197,7 @@ object that persists across requests for a specific client that you can modify a
 Sites store your credentials so that it can authenticate
 How should we store passwords?
 
-```
+```javascript
 const UserSchema = new mongoose.Schema({
     email: String,
     password: String
@@ -236,7 +236,7 @@ Hypothetically, my password is a single letter
 
 Applying the hash function to a bunch of inputs and comparing them to a hash
 
-```
+```javascript
 const hashA = hash("a")
 const hashB = hash("b")
 const hashC = hash("c")
@@ -309,7 +309,7 @@ In order to use bcrypt, we use bcrypt module
 
 bcrypt.hash(takes plaintext password, cost, and a callback):
 
-```
+```javascript
 const bcrypt = require('bcrypt')
 bcrypt.hash('asdf', 11, (err, hash) => {
     if (err) {
@@ -330,7 +330,7 @@ bcrypt.compare
 
 - Accepts plaintext password and compares with a hash
 
-```
+```javascript
 bcrypt.compare('wrong', hash, (err, isValid) => {
     if (err) {
         throw err;

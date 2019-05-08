@@ -94,7 +94,7 @@ That is, works the same if you have if `(true) {...} else { ... }` and if you ha
 
 ##### POST REQUEST EXAMPLE
 
-```
+```javascript
 router.put('/:id), (req, res) => {
 const { id } = req.params;
     Bear.findByIdAndUpdate(id, req.body).then(bear => {
@@ -110,14 +110,14 @@ const { id } = req.params;
 
 Default is to return original object.
 
-```
+```javascript
 const update = req.body;
     const options = {
         new: true
 };
 ```
 
-```
+```javascript
 Bear.findByIdAndUpdate(id, update, options).then(bear => {
     if (bear) {
         res.status(200).json(bear);

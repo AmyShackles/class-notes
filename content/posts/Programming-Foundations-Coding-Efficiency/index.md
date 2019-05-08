@@ -270,7 +270,7 @@ Recommended: Lazy instantiation
 Any time you can put it off, do so.
 Example:
 
-```
+```java
 // Normal instantiation:
 class Employee {
     String name;
@@ -304,7 +304,7 @@ class Employee {
 
 ### Memory Management Pro / Con
 
-```
+```text
 Manual                      Automatic (GC)
 --------------------------------------------
 Con: Harder to write        Pro: Easier to write
@@ -375,7 +375,7 @@ console.info
 
 Simple time measurement:
 
-```
+```javascript
 window.onload = function () {
     console.time("myTimer");
     complexFunction();
@@ -385,7 +385,7 @@ window.onload = function () {
 
 JS Profiling:
 
-```
+```javascript
 window.onload = function () {
     console.profile();
     complexFunction();
@@ -397,19 +397,19 @@ window.onload = function () {
 
 Writing console messages
 
-```
+```text
 Console.writeLine("..."); // can keep in code and will get taken out of production
 ```
 
 Using debug class:
 
-```
+```text
 Debug.WriteLine("..."); // can keep in code and will get taken out of production
 ```
 
 Using Trace class:
 
-```
+```text
 Trace.WriteLine("..."); // stays in production code -> can be saved to log files
 ```
 
@@ -425,7 +425,7 @@ Testing a function - Two Approaches
 
 ### Example 1 - Constant Time - O(1)
 
-```
+```text
 bool isLastNumberEven (array unsortedArray) {
     int length = unsortedArray.length;
     if (unsortedArray[length] % 2 == 0) {
@@ -437,7 +437,7 @@ bool isLastNumberEven (array unsortedArray) {
 
 ### Example 2 - Linear Time - O(n)
 
-```
+```text
 int CountAllEvenNumbers(array unsorted Array) {
     int evenNumberCount = 0;
     for (int i = 0; i < unsortedArray.length; i++) {
@@ -449,7 +449,7 @@ int CountAllEvenNumbers(array unsorted Array) {
 
 ### Example 3 - Quadratic Time - O(n^2)
 
-```
+```text
 bool findDuplicates (array unsortedArray) {
     for each integer A in unsortedArray {
         for each integer B in unsortedArray {

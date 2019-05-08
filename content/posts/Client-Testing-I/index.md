@@ -145,7 +145,7 @@ When you're installing Jest, it could be a dev dependency but what happens in so
 
 Jest has a few Globals
 
-```
+```javascript
 it('run the tests', () => {})
 ```
 
@@ -153,7 +153,7 @@ As long as second argument is a function, this is a valid function
 
 - Naming is very important
 
-```
+```javascript
 "scripts": {
     "test": "jest" // does not subscribe to changes
 }
@@ -161,7 +161,7 @@ As long as second argument is a function, this is a valid function
 yarn start
 ```
 
-```
+```javascript
 function add(a, b) {
     return a + b;
 }
@@ -175,7 +175,7 @@ Since we're usiung Node, we need to export functions from other files
 
 If you were doing everything on create-react-app, it would be transpiled and work
 
-```
+```javascript
 it('should add two numbers', () => {
     // arrange (where you set up environment)
     const expected = 5
@@ -189,11 +189,11 @@ it('should add two numbers', () => {
 
 Another way to import function:
 
-```
+```javascript
 const sut = require('../index)
 ```
 
-```
+```javascript
 const utilities = require('../index');
 it ('should add two numbers', () => {
     const expected = 7
@@ -211,13 +211,13 @@ Always fail first
 - You want to see if your test is checking values
 - Even if you're not doing TDD, you should see a test fail first
 
-```
+```javascript
 "scripts": {
     "tests": "jests --watchAll" // updates on save
 }
 ```
 
-```
+```text
 Watch Usage:
 > Press f to run only failed tests
 > Press o to only run tests related to changed files
@@ -236,7 +236,7 @@ Watch Usage:
 
 Some people do:
 
-```
+```javascript
 it('should add two numbers', () => {
     const expected = 7;
     const add = utilities.add;
@@ -247,7 +247,7 @@ it('should add two numbers', () => {
 
 Don't do this:
 
-```
+```javascript
 it('should add two numbers', () => {
     const expected = 7
     const add = utilities.add;
@@ -289,7 +289,7 @@ This is a problem that's going to go away, so don't worry too much about this (r
 
 - I'm okay with something like this:
 
-```
+```javascript
 it('should add two numbers', () => {
     const add = utilities.add;
 
@@ -325,7 +325,7 @@ https://facebook.github.io/jest/docs/en/cli.html
 
 You can group tests by whatever you're testing.
 
-```
+```javascript
 const utilities = require('../index');
 
 describe('default', () => {
@@ -351,7 +351,7 @@ describe('add function, () => {
 **_Describe_**:
 A global that's a way for you to organize pieces of code and the display of the code.
 
-```
+```javascript
 it('checks identity', () => {
     const numbers = [1, 2, 3];
 
@@ -360,7 +360,7 @@ it('checks identity', () => {
 })
 ```
 
-```
+```javascript
 it('checks identity', () => {
     const numbers = [1, 2, 3];
 
@@ -375,7 +375,7 @@ it('checks identity', () => {
   - Equal checks if it quacks like a duck and walks like a duck, it's a duck. It may not be the same duck, but it's a duck.
   - toBe checks if it's the same identity, if it's the same array. It's not the same array.
 
-```
+```javascript
 it('checks identity', () => {
     const numbers = [1, 2, 3];
 
@@ -389,7 +389,7 @@ People tend to use toBe and toEqual and they sometimes feel the same, but they'r
 
 What if I want to check the type of something?
 
-```
+```javascript
 it('checks that it is an array', () => {
     const numbers = [1, 2, 3];
     const expected = 'array'

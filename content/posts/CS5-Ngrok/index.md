@@ -31,13 +31,13 @@ What has to happen in order for your end users to interface with your code?
 
 ## [Ngrok](https://ngrok.com/)
 
-```
+```text
 npm init -y
 npm install --save express body-parser
 touch server.js
 ```
 
-```
+```javascript
 const express = require('express')
 const bodyParser = require('bodyparser')
 const port = process.env.PORT || 3030
@@ -66,7 +66,7 @@ We are hosting and ngrok takes our local host and exposes it to the WWW. If my s
 
 If you don't know what port your web server is listening on, it's probably on port 80 for the default for HTTP.
 
-```
+```text
 ngrok http 3030
 ```
 
@@ -74,7 +74,7 @@ Gives us a HTTP port and a HTTPS port
 
 Demo:
 
-```
+```text
 - Created public Github repo
 - git clone
 - npm init
@@ -84,7 +84,7 @@ Demo:
 
 server.js
 
-```
+```javascript
 const express = require('express')
 const bodyParser = require('bodyparser')
 const corst = require('cors')
@@ -115,7 +115,7 @@ server.listen(port, err => {
 .gitignore
 `/node_modules`
 
-```
+```text
 - git add .
 - git commit -m "init"
 - git push -u origin master
@@ -151,7 +151,7 @@ Since Ryan subscribed to the webhook to hit the URL on this post route of payloa
 
 ngrok is hosting this URL, but they're propping up/ piggybacking off of your local machine's port and builds it as a live URL.
 
-```
+```text
 Forwarding http//9146070a.ngrok.io -> localhost:3030
 ```
 

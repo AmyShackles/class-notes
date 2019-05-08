@@ -46,7 +46,7 @@ Integration tests can be written after the model is created
 Mongoose model should have at least a method or static that is tested
 (i.e., strings being lowercased)
 
-```
+```javascript
 const User = {};
 
     User.remove({_id: 'asdfafere'})
@@ -96,7 +96,7 @@ server.spec.js
 
 server.spec.js
 
-```
+```javascript
 const request = require('supertest');
 const server = require('./server');
 
@@ -116,7 +116,7 @@ describe('server', () => {
 
 server.js
 
-```
+```javascript
 const express = require('express')
 const server = express();
 
@@ -138,7 +138,7 @@ The second time that the test ran, it broke with a EADDRINUSE error because the 
 
 If server is not separated from the use:
 
-```
+```javascript
 if(process.env.NODE_ENV !== 'test') {
     server.listen(9000)
     // if the environment is not test, it will spin up the server
@@ -148,7 +148,7 @@ if(process.env.NODE_ENV !== 'test') {
 
 `yarn add cross-env`
 
-```
+```javascript
 "scripts": {
     "test": "cross-env NODE_ENV=test jest test --watch --verbose" // some people put && between NODE_ENV=test and jest test
 }
@@ -157,7 +157,7 @@ if(process.env.NODE_ENV !== 'test') {
 File, Preferences, User Snippets:
 javascriptreact.json:
 
-```
+```javascript
 "Named Import": {
     "prefix": "nim",
     "body": "import { $2 } from '$1'; $0"
@@ -207,7 +207,7 @@ Integration test example:
 
 User.spec.js
 
-```
+```javascript
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const User = require('./User')
@@ -247,7 +247,7 @@ describe('User model, () => {
 
 User.js
 
-```
+```javascript
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 

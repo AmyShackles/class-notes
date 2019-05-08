@@ -29,7 +29,7 @@ Structures of fixed-sized data records where each element can be efficiently acc
 
 **Pointers** represent the address of a location in memory
 
-```
+```c
 typedef struct list {
     item_type item; /* data item */
     struct list *next; /* point to successor */
@@ -44,7 +44,7 @@ typedef struct list {
 
 Recursive implementation of a search:
 
-```
+```c
 list *search_list(list *l, item_type x) {
     if (l == NULL) return (NULL);
     if (l -> item == x)
@@ -56,7 +56,7 @@ list *search_list(list *l, item_type x) {
 
 **Insertion** - insertion at the beginning avoides traversal, but have to update pointer
 
-```
+```c
 void insert_list(list **l, item_type x) {
     list *p;
     p = malloc(sizeof(list));
@@ -68,7 +68,7 @@ void insert_list(list **l, item_type x) {
 
 **Deletion from a list** - more complicated because you need to find the pointedr for the predecessor of the item you want to delete. Recursion!
 
-```
+```c
 list *predecessor_list(list *l, item_type x) {
     if ((l == NULL) || (l->next == NULL)) {
         /* predecessor sought on null list */
@@ -85,7 +85,7 @@ Predecessor is necessary because we need to change 'next' reference.
 
 Deletion is simple after ruling out that the delete item does not exist. Have to make sure to reset pointer to head if deleting first element.
 
-```
+```c
 delete_list(list **l, item_type x) {
     list *p; /* item pointer */
     list *pred; /* predecessor pointer */
@@ -306,7 +306,7 @@ The order among brother nodes matters in rooted trees such that left is differen
 
 Binary tree nodes have left and right pointer fields, an optional parent pointer, and a data field.
 
-```
+```c
 typedef struct tree {
     item_type item; /* data item */
     struct tree *parent; /* pointer to parent */
@@ -319,7 +319,7 @@ Basic operations supported by binary trees: searching, traversal, deletion, inse
 
 **Search in a tree**
 
-```
+```c
 tree *search_tree(tree *l, item_type x) {
     if (l == NULL) return (NULL);
     if (l->item == x) return (l);
@@ -334,7 +334,7 @@ Runs in O(h) time where h denotes the height of the tree.
 
 **Finding maximum and minimum**
 
-```
+```c
 tree *find_minimum(tree *t) {
     tree *min;
     if (t == NULL) return (NULL);
@@ -347,7 +347,7 @@ tree *find_minimum(tree *t) {
 
 Traverse, visiting nodes recursively in accordance with the policy that all keys smaller than root lie in left subtree of root and all keys bigger than root lie in right subtree, produces an in-order traversal of the search tree.
 
-```
+```c
 void traverse_tree(tree *l) {
     if (l != NULL) {
         traverse_tree(l->left);
@@ -363,7 +363,7 @@ Changing the position of process_item to be before traversing left and right sub
 
 **Insertion**:
 
-```
+```c
 insert_tree(tree **l, item_type x, tree *parent) {
     tree *p;
     if (*l == NULL) {
@@ -404,7 +404,7 @@ Random search trees are usually good, but if you're unlucky you can end up with 
 
 **Solution**:
 
-```
+```c
 sort1()
     initialize_tree(t)
     while (not EOF)
@@ -413,7 +413,7 @@ sort1()
     Traverse(t)
 ```
 
-```
+```c
 sort2()
     initialize_tree(t)
     while (not EOF)
@@ -425,7 +425,7 @@ sort2()
         y = successor(y, t)
 ```
 
-```
+```c
 sort3()
     initialize_tree(t)
     while (not EOF)

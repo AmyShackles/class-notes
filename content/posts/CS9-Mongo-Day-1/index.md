@@ -138,7 +138,7 @@ If yarn start does not work, try deleting Yarn Lock, yarn, yarn start
 **Reason you create schema: compile into model**
 `{ species: String }` <- shorthand syntax (when only one property)
 
-```
+```javascript
 species: {
     type: String,
     required: true
@@ -152,7 +152,7 @@ species: {
 `const schemaName = mongoose.Schema(definition, options)`
 Definition example:
 
-```
+```javascript
 const definition = {
     type: String,
     required: true,
@@ -173,7 +173,7 @@ Options example:
 
 `const options = { timestamps: true }` - this will create createdAt and modifiedOn fields in addition to fields specified in the schema
 
-```
+```javascript
 const schemaName = new mongoose.Schema(definition, options)
 const \_\_\_\_model = mongoose.model('ModelName', schemaName, 'collectionName')
 ```
@@ -183,7 +183,7 @@ If you have an existing collection name that might conflict, you might want to s
 
 ### Optional Syntax for Routing:
 
-```
+```javascript
 router.route('/').get(get).post(post)
 
 function get (req, res) {

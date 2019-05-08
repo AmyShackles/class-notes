@@ -14,7 +14,7 @@ published: true
 
 Write a program that uses only two output statements, cout << "#" and cout << "\n" to produce a pattern of hash symbols shaped like half of a perfect 5x5 square (or a right triangle)
 
-```
+```text
 #####
 ####
 ###
@@ -22,7 +22,7 @@ Write a program that uses only two output statements, cout << "#" and cout << "\
 #
 ```
 
-```
+```c++
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -43,7 +43,7 @@ int main() {
 
 Write a problem theat uses only two output statements, cout << "#" and cout << "\n", to produce a pattern of hash symbols like a perfect 5x5 square:
 
-```
+```text
 #####
 #####
 #####
@@ -51,7 +51,7 @@ Write a problem theat uses only two output statements, cout << "#" and cout << "
 #####
 ```
 
-```
+```c++
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -70,7 +70,7 @@ int main() {
 
 Write a program that ueses only two output statements, cout << "@" and cout "\n" to produce a line of five symbols.
 
-```
+```c++
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -87,7 +87,7 @@ int main() {
 
 Write a line of code that goes in the desginated position in the loop in the listing below. The program redisplays the numbers 5 through 1, in that order, with each number on a separate line.
 
-```
+```c++
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -99,7 +99,7 @@ int main() {
 }
 ```
 
-```
+```c++
 for (int row = 1; row <= 5; row++) {
     for (int hashNum = 1; hashNum <= 6 - row; hashNum++) {
         cout << "#";
@@ -112,7 +112,7 @@ for (int row = 1; row <= 5; row++) {
 
 Write a program that uses only two output statements, cout << "#" and cout << "\n" to produce a pattern of hash symbols shaped like a sideways triangle:
 
-```
+```text
 #
 
 ##
@@ -134,7 +134,7 @@ Write a program that uses only two output statements, cout << "#" and cout << "\
 
 ### Steps:
 
-```
+```c++
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -172,7 +172,7 @@ int main() {
 | 2       | -2      | 2            | 2                |
 | 1       | -3      | 3            | 1                |
 
-```
+```c++
 #include <iostream>
 #include <stdlib.h>
 using std::cin;
@@ -216,7 +216,7 @@ List of issues:
 
 What are the ranges of possible values? If you start from 0-9 and double, the max value is 18. That means if the doubled value is 10 or greater, it has to be in the range of 10 to 18, which means that the first digit is always 1.
 
-```
+```c++
 int digit;
 cout << "Enter a single digit number, 0-9: ";
 cin >> digit;
@@ -229,7 +229,7 @@ cout << "Sum of digits in doubled number: " << sum << "\n";
 
 Transformed into a function:
 
-```
+```c++
 int doubleDigitValue(int digit) {
     int doubleDigit = digit * 2;
     int sum;
@@ -245,7 +245,7 @@ If we read as a numeric type, we'd get one long number and have a lot of work on
 
 ### If we took character value and used it as an integer expression directly:
 
-```
+```c++
 char digit;
 cout << "Enter a one-digit number: ";
 digit = cin.get();
@@ -255,7 +255,7 @@ cout << "Is the sum of the digits " << sum << "? \n";
 
 Possible output:
 
-```
+```text
 Enter a one-digit number: 7
 Is the sum of the digits 55?
 ```
@@ -268,7 +268,7 @@ Write a program that reads a character from the user representing a digit, 0 thr
 
 Like earlier when we checked the difference between original values and desired values, this is an analogous problem. There is a difference of 48 between original value and desired value. 48 is the character code in ASCII of 0, so we can use that to perform subtraction.
 
-```
+```c++
 char digit;
 cout << "Enter a one-digit number: ";
 cin >> digit;
@@ -292,7 +292,7 @@ As before, we can reduce even farther to make getting started as easy as possibl
 
 Write a program that takews an identification number (including its check digit) of length six and determines whether the number is valid under a simple formula where the values of each digit are summed and the result is checked to see whether it is divisible by 10. The program must process each character before reading the next one.
 
-```
+```c++
 #include <iostream>
 #include <stdlib.h>
 using std::cin;
@@ -326,7 +326,7 @@ int main() {
 
 Now we need to add the logic for the Luhn validation formula (doubling every other digit from the right). Since we're currently only working with six-digit numbers, we need to double the digits in position one, position three, and position five counting from the left. In other words, double if position is odd. We can use the modulo operator because even numbers would be divisible by 2 with no remainder. So if position % 2 is 1, we know that the position is odd and the digit should be doubled. Note that means both doubling and summing the digits of the doubled number if it's 10 or greater. Now if we need to double, we can send the digit to the previously defined function and use the result.
 
-```
+```c++
 int main() {
  char digit;
  int checksum = 0;
@@ -353,7 +353,7 @@ First issue -> how do you tell when you've reached the end of the number? Charac
 
 Experiment:
 
-```
+```c++
 cout << "Enter a number: ";
 char digit;
 while (true) {
@@ -364,7 +364,7 @@ while (true) {
 
 Typing 17 into the prompt returned 49 55 10 - 49 is ASCII for 1, 55 is ASCII for 7, which means that 10 is the value we're looking for to indicate the end of a number.
 
-```
+```c++
 char digit;
 int checksum = 0;
 int position = 1;
@@ -390,7 +390,7 @@ Position is no longer the control variable in a for loop, so needs to be initial
 
 Write a program that reads 10 integers from the user. After all the numbers have been entered, the user may ask to display the count of positive numbers or the count of negative numbers.
 
-```
+```c++
 int number;
 int positiveCount = 0;
 int negativeCount = 0;
@@ -413,7 +413,7 @@ Keep track of running checksum both ways -- as if the ID is an odd length and as
 
 ## Putting the Pieces Together
 
-```
+```c++
 char digit;
 int oddLengthChecksum = 0;
 int evenLengthChecksum = 0;
@@ -540,7 +540,7 @@ Consider a two-diigit numbr. In a two-digit number, the first digit is the tens 
 
 Example: 35 would be integers 3 and 5 and overall integer would be computed by 3 \* 10 + 5
 
-```
+```c++
 cout << "Enter a two-digit number: ";
 char digitChar1 = cin.get();
 char digitChar2 = cin.get();
@@ -552,7 +552,7 @@ cout << "That number as an integer: " << overallNumber << "\n";
 
 While the above code works, it won't be very useful in extending past two-digit numbers because we would exponentially increase the number of variables necessary to accomplish the task. We need to reduce:
 
-```
+```c++
 cout << "Enter a two-digit number: ";
 char digitChar = cin.get();
 int overallNumber = (digitChar - '0') * 10;
@@ -571,7 +571,7 @@ Write a program to read a number character by character and convert it to an int
 
 Write a program to read a number character by character and convert it to an integer, using just one char variable and two int variables. The number will have either 3 or 4 digits.
 
-```
+```c++
 cout << "Enter a three-digit or four-digit number: ";
 char digitChar = cin.get();
 int threeDigitNum = (digitChar - '0') * 100;
@@ -593,7 +593,7 @@ if (digitChar == 10) {
 
 In general, since the multiplers for fourDigitNum are 10 times those of threeDigitNum, the former would always be 10 times the latter.
 
-```
+```c++
 cout << "Enter a three-digit or four-digit number: ";
 char digitChar = cin.get();
 int number = (digitChar - '0') * 100;
@@ -614,7 +614,7 @@ Now we have an exploitable pattern.
 
 To extend to use 5-digit values, you would repeat the process for reading the fourth character instead of displaying the result immediately -> Read the 5th character, check to see if it's an end-of-line. If so, display previous computed number. If not, multiply the computed number by 10 and add the current character to it.
 
-```
+```c++
 cout << "Enter a number with three, four, or five digits: ";
 char digitChar = cin.get();
 int number = (digitChar - '0') * 100;
@@ -639,7 +639,7 @@ if (digitChar == 10) {
 
 Pattern: if the next value is a digit, multiply the running total by 10 before adding the integer digit value of the character.
 
-```
+```c++
 cout << "Enter a number with as many digits as you please: ";
 char digitChar = cin.get();
 int number = (digitChar - '0');
@@ -653,7 +653,7 @@ cout << "Number entered: " << number << "\n";
 
 ##### Explanation (Given input: 12356)
 
-```
+```text
 Outside while loop:
 First pass:         number = (digitChar - '0')
                     digitChar - '0' = 1
@@ -681,7 +681,7 @@ This handles the conversion of one series of characters, but the main problem is
 
 For 101, 22[EOL] (end of line), we would need to check for either a comma or the end of the line, then place code that processes one number inside a larger loop that continues until all values are read. The inner loop should stop for EOL and commas. The outer loop should only stop for EOL.
 
-```
+```c++
 cout << "Enter a number: ";
 char digitChar;
 do {
@@ -702,7 +702,7 @@ Note: Remember not to include spaces when entering values.
 
 Converting a number 1-26 to a letter A-Z. This is like the opposite of what we did to get the individual digit characters to their integer equivalents. If we subtract the character code '0' to translate from 0-9 character range to 0-9 integer range, we should be able to add a character code to translate from 1-26 to A-Z. What if we add 'A'?
 
-```
+```c++
 cout << "Enter a number 1-26: ";
 int number;
 cin >> number;
@@ -715,7 +715,7 @@ This results in an off-by-one error - namely, 1 gives you B, 2 gives you C, etc.
 
 #### Convert 1-26 to A-Z:
 
-```
+```c++
 cout << "Enter a number 1-26: ";
 int number;
 cin >> number;
@@ -726,7 +726,7 @@ cout << "Equivalent symbol: " << outputCharacter << "\n";
 
 #### Convert 1-26 to a-z:
 
-```
+```c++
 cout << "Enter a number 1-26: ";
 int number;
 cin >> number;
@@ -739,7 +739,7 @@ cout << "Equivalent symbol: " << outputCharacter << "\n";
 
 Punctuation is harder because it's not in ASCII order and so can't be translated dynamically. Instead, a brute force method is required:
 
-```
+```c++
 cout << "Enter a number 1-8: ";
 int number;
 cin >> number;
@@ -761,7 +761,7 @@ cout << "Equivalent symbol: " << outputCharacter << "\n";
 
 We need a variable to store the current mode. It could be an integer, but it's more readable as an enumeration. Rule of thumb: If a variable is only tracking state and there is no inherent meaning to any particular value, an enumeration is a good idea. Enum allows us to know what the mode is without having to decode it (as we would have to if it were an arbitrary value to represent each mode).
 
-```
+```c++
 enum modeType {UPPERCASE, LOWERCASE, PUNCTUATION};
 int number;
 modeType mode = UPPERCASE;
@@ -801,7 +801,7 @@ do {
 
 ### Putting it all Together
 
-```
+```c++
 char outputCharacter;
 enum modeType {UPPERCASE, LOWERCASE, PUNCTUATION};
 modeType mode = UPPERCASE;
@@ -861,7 +861,7 @@ cout << "\n";
 
 Using only single character output statements that output a hash mark, space, or end of line, write a program that produces the following shape:
 
-```
+```text
 ########
  ######
   ####
@@ -872,7 +872,7 @@ Using only single character output statements that output a hash mark, space, or
 
 Using only single character output statements that output a hash mark, space, or end of line, write a program that produces the following shape:
 
-```
+```text
    ##
   ####
  ######
@@ -887,7 +887,7 @@ Using only single character output statements that output a hash mark, space, or
 
 Using only single character output statements that output a hash mark, space, or end of line, write a program that produces the following shape:
 
-```
+```text
 #            #
  ##        ##
   ###    ###

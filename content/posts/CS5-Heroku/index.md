@@ -50,7 +50,7 @@ When you have active changes:
 
 App Ryan deployed:
 
-```
+```javascript
 const bodyParser = require('body-parser')
 const express = require('express')
 const fs = require('fs')
@@ -132,7 +132,7 @@ Question:
 
 Heroku gives you a URL you can use for your application
 
-```
+```text
 - git add .
 - git status
 - git commit -m "made the h1 say foobar"

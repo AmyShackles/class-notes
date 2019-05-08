@@ -29,7 +29,7 @@ published: true
 
 #### Example:
 
-```
+```text
 function maximum (A, B, C)
 if A > B
     if A > C
@@ -50,7 +50,7 @@ print max
 
 Your farm has two types of livestock. You have 100 units of barbed wire to make a rectangular fence for the animals with a straight division for separating them. How do you frame the fence in order to maximize the pasture area?
 
-```
+```text
 A = w x l
 100 = 2w + 3l
 l = (100 - 2w)/3
@@ -66,7 +66,7 @@ In mathematical logic, variables and operators represent validity or truth of th
 Example statement:
 "If the water is warm, I'll swim" can be broken down into two logical variables, A and B
 
-```
+```text
 A: The water is warm
 B: I swim
 ```
@@ -148,14 +148,14 @@ To negate ideas, use `!` operator (negation operator)
 
 **Associativity**: Parentheses are irrelevant for sequences of AND or OR operations - can be calculated in any order.
 
-```
+```text
 A AND (B AND C) = (A AND B) AND C,
 A OR (B OR C) = (A OR B) OR C
 ```
 
 **Distributivity**: ANDing after an OR is equivalent to ORing results of ANDs and vice versa
 
-```
+```text
 A AND (B OR C) = (A AND B) OR (A AND C)
 A OR (B AND C) = (A OR B) AND (A OR C)
 ```
@@ -163,7 +163,7 @@ A OR (B AND C) = (A OR B) AND (A OR C)
 **DeMorgan's Law**
 "It can't be summer and winter at once, so it's either not summer or not winter. And it's not summer and not winter if and only if it's not the case it's either summer or winter" Following this logic, ANDs can be transformed into ORs and vice versa:
 
-```
+```text
 !(A AND B) = !A OR !B,
 !A AND !B = !(A OR B)
 ```
@@ -174,7 +174,7 @@ A server crashes if it's overheating while the air conditioning is off. It also 
 
 #### Modeling it in logical variables:
 
-```
+```text
 A:  Server overheats
 B:  Air conditioning is off
 C:  Chassis cooler fails
@@ -203,7 +203,7 @@ Columns for each variable, rows for possible combinations. One variable requires
 
 We have to create a database system with the following requirements:
 
-```
+```text
 I       If database is locked, we can save data
 II      A database lock on a full write queue cannot happen
 III     Either the write queue is full or the cache is loaded
@@ -214,7 +214,7 @@ Is it possible?  Under which conditions will it work?
 
 #### Model the database
 
-```
+```text
 A   The database is locked      I       A->B
 B   Able to save data           II      !(A AND C)
 C   Write queue is full         III     C OR D

@@ -36,7 +36,7 @@ How do we implement records/fields/tuples in a programming language?
 
 ## Using C-Style structs
 
-```
+```c
 // define the struct
 struct Book {
 string title;
@@ -98,7 +98,7 @@ What's the difference between a struct and a class?
 
 ## Plain Old Data Structure: Examples
 
-```
+```c
 struct Point {
     int x;
     int y;
@@ -115,7 +115,7 @@ finishPosition.y = 100;
 myObject.animate(startPosition, finishPosition);
 ```
 
-```
+```c
 struct Color {
     int red;
     int green;
@@ -208,7 +208,7 @@ Example: If you need to represent days in a month, there are varying numbers of 
 
 Pseudocode:
 
-```
+```text
 int[][] ticketSales = new int[12][]
 for each month in ticketSales
     if april, june, september, november
@@ -228,7 +228,7 @@ end for
 
 ### Simple fixed-size arrays: Java
 
-```
+```java
 String[] fixedArray = new String[3];
 
 fixedArray[0] = "This";
@@ -238,7 +238,7 @@ fixedArray[2] = "Grow";
 
 ### Resizable arrays: Java
 
-```
+```java
 // need to import
 import java.util.*;
 
@@ -252,14 +252,14 @@ resizeable.add("Resizeable");
 
 ### Fixed arrays: Objective-C
 
-```
+```objective-c
 //NSArray used for arrays of objects - fixed size
 NSArray \*myFiexedArray = @[@"one", @"two", @"three"];
 ```
 
 ### Resizeable arrays: Objective-C
 
-```
+```objective-c
 // NSMutableArray is the resizeable version
 NSMutableArray *resizeable = [[NSMutableArray alloc]init];
 
@@ -432,7 +432,7 @@ Sorting is hard, comparing is easy
 
 ### Example Comparator/ Compare Function:
 
-```
+```text
 PseudoCompare (Employee a, Employee b)
     if a.lastName < b.lastname return -1 // less than
     if a.lastname > b.lastname return 1 // greater than
@@ -448,7 +448,7 @@ end
 
 ### Linear (sequential) search: O(n) complexity
 
-```
+```text
 set i to 0
 while i < array.length
     if array[i] == 99
@@ -476,13 +476,13 @@ Asking a data structure to sort is computationally demanding.
 
 ## Using built-in search behavior
 
-```
+```text
 if (myArray.contains(99) ) {
     log("Yes, it exists")
 }
 ```
 
-```
+```text
 // for specific location
 int result = myArray.indexOf(99);
 
@@ -1042,7 +1042,7 @@ Information is lost when hashing
 
 ## Hash Function Example
 
-```
+```java
 Public Class Person {
     String firstname;
     String lastname;

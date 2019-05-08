@@ -86,7 +86,7 @@ console.cloud.google.com
 
 Dockerfile:
 
-```
+```text
 FROM node:8.7
 COPY package.json package-lock.json ./
 WORKDIR /
@@ -98,7 +98,7 @@ CMD ["npm", "start"]
 
 server.js:
 
-```
+```javascript
 /*******************************
 * Express Setup
  **********************************/
@@ -168,7 +168,7 @@ yml - YAML Ain't Markup Language
 
 deployment.yml
 
-```
+```text
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
@@ -283,7 +283,7 @@ Firebase is a back-end as a service
 
 You could accomplish similar deployment features as Docker with a virtual machine like Vagrant
 
-```
+```text
 # Delete the Kubernetes load balancer service
 kubectl delete service/${NAME_OF_DEPLOYMENT}
 

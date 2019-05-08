@@ -120,7 +120,7 @@ Quicksort is a case where random is cheap, easy, and efficient
 
 #### Counter example of dynamic programming
 
-```
+```javascript
 const fib = (n) => {
     if (n === 0) {
         return 0;
@@ -136,7 +136,7 @@ const fib = (n) => {
 
 Not dynamic yet:
 
-```
+```javascript
 const fib = (n) => {
     let fibs = [0, 1];
     for (let i = 2; i <= n; i++) {
@@ -147,7 +147,7 @@ const fib = (n) => {
 
 With memoization:
 
-```
+```javascript
 let fibbs = [0, 1];
 const fib = (n) => {
     if (n in fibbs) {

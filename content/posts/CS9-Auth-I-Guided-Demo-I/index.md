@@ -20,7 +20,7 @@ For this exercise, we'll need MogoDB to be running
 yarn add /npm install express mongoose
 change main from index.js to server.js
 
-```
+```json
 {
     "scripts": {
         "start": "nodemon server.js"
@@ -30,7 +30,7 @@ change main from index.js to server.js
 
 - yarn add nodemon --dev / npm install nodemon --save-dev
 
-```
+```javascript
 const express = require('express')
 const mongoose  require('mongoose')
 
@@ -68,7 +68,7 @@ server.listen(8000, () => console.log('\n=== api running on 8k ===\jn'));
 Global middleware is added to the server and it will be available for all requests.
 Local middleware runs only before certain requests/routes
 
-```
+```javascript
 function greet(req, res, next) {
     req.message = 'Hello World';
     next();
@@ -77,7 +77,7 @@ function greet(req, res, next) {
 
 #### Global:
 
-```
+```javascript
 server.use(greet);
 
 server.get('/', (req, res) => {
@@ -91,7 +91,8 @@ server.get('/hello', (req, res) => {
 
 #### Local:
 
-```// server.use(greet);
+```javascript
+// server.use(greet);
 server.get('/', (req, res) => {
     res.send({ route: '/', message: req.message })
 }) <--- no longer using greet
@@ -105,7 +106,7 @@ server.get('/hello', greet, (req, res) => {
 What if instead of greet this had been authenticate?
 And what if instead of adding something there, I did something like ....
 
-```
+```javascript
 function authenticate(req, res, next) {
     if (req.body.password === 'mellon') {
         next()
@@ -143,7 +144,7 @@ client -> request -> [ (middleware) api ({middleware queue} mongoose) ]-> databa
 - They're called lifecycle hooks because they behave the same as the lifecycle hooks from React
   - Some event happens (like )
 
-```
+```javascript
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
@@ -163,7 +164,7 @@ const userSchema = new mongoose.Schema({
 module.exports = mongoose.model('User', userSchema);
 ```
 
-```
+```javascript
 server.post('/register', (req, res) => {
     const user = new User(req.body);
     user
@@ -182,7 +183,7 @@ Lifecycle methods have both a pre- and a -post
 
 - Can execute a function before save and after save
 
-```
+```javascript
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -245,7 +246,7 @@ Go to website: https://www.grc.com/haystack.htm
 - Somewhere around 12 characters, even if they have a massive operation it will be difficult to find your password
 - Think of a song or a book or a movie or something your kid says and use that (maybe)
 
-```
+```javascript
 const bcrypt = require('bcrypt')
 
 userSchema.pre('save', function (next) { // can't use arrow function here because bcrypt uses 'this'

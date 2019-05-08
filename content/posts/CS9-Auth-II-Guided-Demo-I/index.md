@@ -11,7 +11,7 @@ published: true
 
 morgan: method/ Route/ status / time /
 
-```
+```javascript
 const express = require('express')
 const db = require('./_config/db')
 const setupMiddleware = require('./config/middleware')
@@ -137,7 +137,7 @@ Payload Data:
 "sub" - subject
 "iat" - issued at (timestamp)
 
-```
+```javascript
 const router = require('express').Router()
 const jwt = require('jsonwebtoken')
 const User = require('.../users/User');
@@ -320,7 +320,7 @@ Configure router:
 
 Build the forms
 
-```
+```javascript
 const router = require('express').Router()
 
 const jwt = require('jsonwebtoken')

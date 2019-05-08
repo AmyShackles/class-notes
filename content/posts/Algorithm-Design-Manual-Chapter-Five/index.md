@@ -65,7 +65,7 @@ Adjacency lists are the right data structure for most applications of graphs.
 
 We represent a graph using following data type. For each graph, we keep a count of number of vertices and assign each vertex a unique ID from 1 to _n_ vertices. Represent edges with linked lists.
 
-```
+```c
 #define MAXV    1000 /* max number of vertices */
 
 typedef struct {
@@ -75,7 +75,7 @@ typedef struct {
 } edgenode;
 ```
 
-```
+```c
 typedef struct {
     edgenode *edges[MAXV + 1]; /* adjacency info */
     int degree[MAXV + 1]; /* outdegree of each vertex */
@@ -89,7 +89,7 @@ Degree field counts the number of meaningful entries for a given vertex.
 
 A typical graph format consists of an initial line with the number of vertices and edges in the graph followed by a listing of the edges at one vertex pair per line.
 
-```
+```c
 initialize_graph(graph *g, bool directed) {
     int i; /* counter */
     g->nvertices = 0;
@@ -102,7 +102,7 @@ initialize_graph(graph *g, bool directed) {
 
 Reading the graph means inserting each edge into the structure.
 
-```
+```c
 read_graph(graph *g, bool directed) {
     int i; /* counter */
     int m; /* number of edges */
@@ -118,7 +118,7 @@ read_graph(graph *g, bool directed) {
 
 The critical routine is insert_edge. New edgenodes are inserted at the beginning of adjacency list. We pass boolean flag to determine whether to insert two copies of each node or one.
 
-```
+```c
 insert_edge(graph *g, int x, int y, bool directed) {
     edgenode *p; /* temporary pointer */
     p = malloc(sizeof(edgenode)); /* allocate edgenode storage */
@@ -136,7 +136,7 @@ insert_edge(graph *g, int x, int y, bool directed) {
 
 Printing is just a matter of two nested loops - one to go through vertices and one to go through adjacent edges.
 
-```
+```c
 print_graph(graph *g) {
     int i; /* counter */
     edgenode *p; /* temporary pointer */
@@ -164,7 +164,7 @@ Start at one vertex, which is now considered discoverred but not yet processed. 
 
 Every undirected edge will be looked at twice - one for each endpoint - while directed edges will get assessed once.
 
-```
+```c
 bool processed[MAXV+1]; /* which vertices have been processed */
 bool discovered[MAXV+1]; /* which vertices have been discovered */
 int parent[MAXV+1]; /* discovery relation */
@@ -180,7 +180,7 @@ initialize_search(graph *g) {
 
 Once vertex discovered, added to a queue. Since we process vertices FIFO, oldes vertices are expanded first, which are closest to the root.
 
-```
+```c
 bfs(graph *g, int start) {
     queue q; /* queue of vertices to visit */
     int v; /* current vertex */
@@ -214,7 +214,7 @@ process_vertex_late, process_vertex_early, and process_edge allow us to customiz
 
 Initially, we'll do all vertex processing on entry, so process_vertex_late() returns without action:
 
-```
+```c
 process_vertex_late(int v) {}
 process_vertex_early(int v) {
     printf("Processed vertex %d\n", v);
@@ -228,7 +228,7 @@ We print each vertex and edge exactly once.
 
 If we instead set process_edge to:
 
-```
+```c
 process_edge(int x, int y) {
     nedges = nedges + 1;
 }
@@ -238,7 +238,7 @@ we get an accurate count of the number of edges.
 
 ### Finding Paths
 
-```
+```c
 find_path(int start, int end, int parents []) {
     if ((start == end) || (end == -1))
         printf("\n%d", start);
@@ -251,7 +251,7 @@ find_path(int start, int end, int parents []) {
 
 The tree constructed from breadth-first-search discovers vertices in order of increasing distance from root and so can be used to get the shortest path. The shortest path tree is only useful if breadth-first search was performed with one of the vertices you're interested in computing a path from used as root. It is also important to note that it only gives the shortest path if the graph is unweighted.
 
-```
+```c
 connected_components(graph *g) {
     int c; /* component number */
     int i; /* counter */
@@ -268,7 +268,7 @@ connected_components(graph *g) {
 }
 ```
 
-```
+```c
 process_vertex_early(int v) {
     printf(" %d", v);
 }
@@ -280,7 +280,7 @@ Seeks to assign a label (or color) to each vertex of a graph such that no edge l
 
 A graph is bipartite if it can be colored without conflict using only two colors.
 
-```
+```c
 twocolor(graph *g) {
     int i; /* counter */
     for (i = 1; i <=(g->nvertices); i++) {
@@ -295,7 +295,7 @@ twocolor(graph *g) {
 }
 ```
 
-```
+```c
 process_edge(int x, it y) {
     if (color[x] == color[y]) {
     bipartite = False;
@@ -305,7 +305,7 @@ process_edge(int x, it y) {
 }
 ```
 
-```
+```c
 complement(int color) {
     if (color == white) return black;
     if (color == black) return white;
@@ -325,7 +325,7 @@ Difference between depth and breadth-first search is the order in which vertices
 
 Our implementation of dfs maintains a notion of time for each vertex. Time clock ticks each time we enter or exit any vertex. We then keep track of the entry and exit times for each vertex. Depth first search has a neat recursive implementation which eliminates the need to explicitly use a stack:
 
-```
+```c
 DFS(G, u)
     state[u] = "undiscovered"
     process vertex u if desired
@@ -350,7 +350,7 @@ Depth first search partitions edges of an undirected graph into two classes - tr
 
 A depth first search can be thought of as a bread-first search with a stack instead of a queue.
 
-```
+```c
 dfs(graph *g, int v) {
     edgenode *p; /* temporary pointer */
     int y; /* successor vertex */
@@ -387,7 +387,7 @@ DFS organizes vertices by entry/exit times and edges into tree and back edges. T
 
 Back edges are key in finding cycles in undirected graphs. If there is no back edge, all edges are tree edges and no cycle exists in the tree. Any back edge going from _x_ to ancestor _y_ creates a cycle with tree path from _y_ to _x_. These cycles are easy to find with DFS:
 
-```
+```c
 process_edge(int x, int y) {
     if (discovered[y] && (parent[x] != y)) { /* found back edge */
         printf("Cycle from %d to %d: ", y, x);
@@ -406,7 +406,7 @@ Back edges act like security cables, ensuring none of the vertices between the v
 
 Let reachable*answer[v] denote earliest reachable ancestor of vertex \_v* from an ancestor of _v_ using a back edge. Initially reachable_ancestor[v] = v;
 
-```
+```c
 int reachable_ancestor[MAXV+1]; /* earliest reachable ancestor of v */
 int tree_out_degree[MAXV+1]; /* dfs tree outdegree */
 process_vertex_early(int v) {
@@ -416,7 +416,7 @@ process_vertex_early(int v) {
 
 We update reachable_ancestor[v] when we ssee a back edge that takes us to an earlier ancestor than we've previously seen. Relative age can be determined from entry_times.
 
-```
+```c
 process_edge(int x, int y) {
     int class; /* edge class */
     class = edge_classification(x, y);
@@ -435,7 +435,7 @@ process_edge(int x, int y) {
 - Bridge cut-nodes - if earlies reachable vertex from _v_ is _v_, deleting the single edge (parent[v], v) disconnects the graph. Clearly, parent[v] must be an articulation vertex. Vertex _v_ is also, unless it is a leaf.
 - Parent cut-nodes - if the earlies reachable vertex from _v_ is the parent of _v_, deleting the parent must sever _v_ from the tree unless the parent is the root.
 
-```
+```c
 process_vertex_late(v) {
     bool root; /* is the vertex the root of the DFS tree? */
     int time_v; /* earliest reachable time for v */
@@ -470,7 +470,7 @@ Edge(x, y) is a bridge if it is a tree edge and no back edge connects from _y_ o
 
 For directed graphs, the correct labeling of each edge can be determined from the state, discovery time, and parent of each vertex.
 
-```
+```c
 int edge_classification(int x, int y) {
     if (parent[y] == x) return true;
     if (discovery[y] && !processed[y]) return BACK;
@@ -496,7 +496,7 @@ Consider what happens to each directed edge {x, y} as we encounter it exploring 
 
 - if _y_ is processed, it will have been labeled before _x_ and therefore _x_ appears before _y_ in topological order, as it must.
 
-```
+```c
 process_vertex_late(int v) {
     push(&sorted, v);
 }
@@ -525,7 +525,7 @@ A directed graph is strongly connected if there is a directed path between any t
 
 We update our notion of oldest reachable vertex in response to (1) nontree edges and (2) backing up from a vertex. Because it's a directed graph, we have to worry about forward edges (from a vertex to a descendant) and cross edges (from a vertex back to a nonaancestor but previously discovered vertex). This algorithm will peel one strong component off at a time and assign each of its vertices the number of the component it is in:
 
-```
+```c
 strong_components(graph *g) {
     int i; /* counter */
     for (i = 1; i <= (g->nvertices); i++) {
@@ -544,7 +544,7 @@ strong_components(graph *g) {
 
 Define low[v] to be the oldest vertex known to be in the same strongly connected component as v. Not necessarily an ancestor, but may be a distant cousin of v because of cross edges. Cross edges that point vertices from previous strongly connected components of the graph can't help because there is no way back from them to v, but otherwise they are fair game. Forward edges have no impact on reachability over depth-first tree edges and can be disregarded.
 
-```
+```c
 int low[MAXV+1] /* oldest vertex surely in component of v */
 int scc[MAXV+1] /* strong component number of each vertex */
 
@@ -565,7 +565,7 @@ process_edge (int x, int y) {
 
 A new strongly connected component is found whenever the lowest reachable vertex from v is v. If so, we clear the stack of the component. Otherwise, we give our parent the benefit of the oldest ancestor we can reach and backtrack.
 
-```
+```c
 process_vertex_early(int v) {
     push(&active, v);
 }

@@ -108,7 +108,7 @@ Optimal solution, then, would be to use a hash table - add values of the array t
 Print all the possible solutions to the equation a<sup>3</sup> + b<sup>3</sup> = c<sup>3</sup> + d<sup>3</sup> where a, b, c, and d are integers between 1 and 1000
 
 **Brute force**
-```
+```text
 n = 1000
 for a from 1 to n
     for b from 1 to n
@@ -121,7 +121,7 @@ The runtime complexity of this approach is O(N)<sup>4</sup>
 
 By the time we get to the for loop for d, we know there's only one valid value for d, so we can just do math to figure it out rather than iterating through 1000 possibilities because d = the cube root of a<sup>3</sup> + b<sup>3</sup> - c<sup>3</sup>
 
-```
+```text
 ...
     d = pow(a^3 + b^3 - c^3, 1/3) // will round to int
     if a^3 + b^3 = c^3 + d^3 // validate it works
@@ -135,7 +135,7 @@ Working with the same problem from unnecessary work:
 
 You could create a list of (c, d) pairs once and when there's an (a, b) pair, find the matches within the (c, d) list.  We can locate these easily if we store them in a hash table with the sum as the key.
 
-```
+```text
 n = 1000
 for c from 1 to n
     for d from 1 to n
@@ -150,7 +150,8 @@ for a from 1 to n
 ```
 
 One better: Map all of (c, d) pairs will be the same as (a, b) pairs, so we can use the map directly rather than re-computing the pairs!
-```
+
+```text
 n = 1000
 for c from 1 to n
     for d from 1 to n
@@ -197,7 +198,7 @@ Design an algorithm to print all permutations of a string.  For simplicity, assu
 
 abcdefg
 
-```
+```text
 case "a" -> { "a" }
 case "ab" -> { "ab", "ba" }
 case "abc" -> ???
@@ -205,7 +206,7 @@ case "abc" -> ???
 
 How can we generate "abc" from "ab"?
 
-```
+```text
 P("abc") = insert "c" into all locations of all strings in { "ab", "ba" }
 P("abc") = merge ({ "cab", "acb", "abc" }, { "abc", "bca", "bac" })
 P("abc") = { "cab", "acb", "abc", "cba", "bca", "bac" }
@@ -297,7 +298,7 @@ Does not support negative or non-integer exponents.  Requires an array of the le
 
 Store expression as 2 arrays - coefficients and exponents
 
-```
+```text
 double [] coef1, double[] exp1, double[] coef2, double[] exp2
 ```
 
@@ -306,7 +307,7 @@ This approach doesn't have the same restriction the previous one did as the inde
 #### Good
 
 Create your own data structure!
-```
+```text
 struct ExprTerm {
     double coefficient;
     double exponent;

@@ -16,7 +16,7 @@ published: true
 
 **Recursive**
 
-```
+```c
 long fib_recursive (int n) {
     if (n === 0) return 0;
     if (n === 1) return 1;
@@ -29,7 +29,7 @@ long fib_recursive (int n) {
 
 **Caching**
 
-```
+```c
 #define MAXN 45 /* longest interesting n */
 #define UNKNOWN -1 /* contents denote empty cell */
 
@@ -61,7 +61,7 @@ Explicit caching of the results of recursive calls provides most of the benefits
 
 **Dynamic Fib**
 
-```
+```c
 long fib_dynamic(int n) {
     int i; /* counter */
     long f[MAXN+1]; /* array of cache completed fib values */
@@ -76,7 +76,7 @@ This uses O(n) time and space. We can do better.
 
 **Ultimate Fib - Using Constant Space**
 
-```
+```c
 long fib_ultimate(int n) {
     int i; /* counter */
     long back2 = 0, back1 = 1; /* last two values of f[n] */
@@ -97,7 +97,7 @@ Class of counting numbers where _(<sup>n</sup><sub>k</sub>)_ (note: place imagin
 
 **Pascal's Triangle**
 
-```
+```text
                     1
                 1       1
             1       2       1
@@ -134,7 +134,7 @@ Recurrence relation implicit in this is that:<br/>
 
 No recurrence is complete without a base case: Empty set and complete set.
 
-```
+```c
 long binomial_coefficient(n, k) int n, k; /* compute n, choose k */
 {
     int i, j; /* counters */
@@ -169,7 +169,7 @@ _D[i, j]_ -> minimum number of differences between _P<sub>1</sub>, P<sub>2</sub>
 - _D[i, j-1] + 1_ - Means there is an extra character in the text to account for - so don't need to advance pattern pointer and do need to pay cost of insertion
 - _D[i-1, j]+1_ - Means there is an extra character in the pattern to remove, so we do not need to advance the text pointer and do have to pay the cost of deletion
 
-```
+```c
 #define MATCH 0 /* enumerated type symbol for match */
 #define INSERT 1 /* enumerated type symbol for insert */
 #define DELETE 2 /* enumerated type symbol for delete */
@@ -201,7 +201,7 @@ This is correct, but slow. Since at every string position, the recursion branche
 
 Important observation is that most of the recursive calls are computing things that have already been computed.
 
-```
+```c
 typedef struct {
     int cost; /* cost of reaching this cell */
     int parent; /* parent cell */
@@ -216,7 +216,7 @@ Differences of note from recursive version:
 - Updates parent field of each cell, which allows us to reconstruct the edit sequence later
 - It's implemented using a goal_cell() function instead of returning m[|P|][|t|].cost -> can apply to a wider class of problems
 
-```
+```c
 int string_compare(char *s, char* t) {
     int i, j, k; /* counters */
     int opt[3]; /* cost of the three options */
@@ -919,7 +919,7 @@ Parent matrix for edit distance computation, with the optimal alignment path hig
 
 Walk decisions back from goal state following the parent pointer to earlier cell until you hit the initial cell
 
-```
+```c
 reconstruct_path(char *s, char* t, int i, int j) {
     if (m[i][j].parent == -1) return;
     if (m[i][j].parent == MATCH) {
@@ -946,7 +946,7 @@ reconstruct_path(char *s, char* t, int i, int j) {
 
 - _Table initialization_:
 
-```
+```c
 row_init(int i) {
     m[0][i].cost = i;
     if (i > 0) m[0][i].parent = INSERT;
@@ -963,7 +963,7 @@ column_init(int i) {
 - _Priority costs_:
   _match(c, d)_ and _indel(c)_ present costs for transforming character _c_ to _d_ and inserting/deleting character _c_. For standard edit distance, match should cost nothing if characters are identical and 1 otherwise. _indel_ r4eturns 1 regardless of what the argument is.
 
-```
+```c
 int match(char c, char d) {
     if (c == d) return 0;
     else return 1;
@@ -976,7 +976,7 @@ int indel(char c) {
 
 - _Goal Cell Identification_: returns the indices of the cell marking the endpoing of the solution. For edit distance, length of the two input strings.
 
-```
+```c
 goal_cell(char *s, char *t, int *i, int* j) {
     *i = strlen(s) - 1;
     *j = strlen(t) - 1;
@@ -985,7 +985,7 @@ goal_cell(char *s, char *t, int *i, int* j) {
 
 - _Traceback Actions_: _match_out_, _insert_out_, and _delete_out_ perform actions for edit ops during traceback. For edit distance, might mean printing the name of the operation or character involved.
 
-```
+```c
 insert_out(char *t, int j) {
     printf("I");
 }
@@ -1004,7 +1004,7 @@ Several poroblems can now be solved as special cases of edit distance using mino
 
 - _Substring Matching_: Want an edit distance where the cost of starting the match is independent of position in the text so that a match in the middle is not prejudiced against. Goal state then is chapest place to match entire pattern in the text rather than the end of both strings.
 
-```
+```c
 row_init(int i) {
     m[0][i].cost = 0;
     m[0][i].parent = -1;
@@ -1024,7 +1024,7 @@ goal_cell(char *s, char *t, int *i, int *j) {
 
 _Common sequence_ - all the identical-character matches in an edit trace. To maximize the number of matches, prevent the substitution of non-identical characters. Only way to get rid of noncommon sequences is through deletion/insertion. Minimum cost alignment has fewest _indels_ to preserve longest common substring. Change match_cost to make substitutions expensive.
 
-```
+```c
 int match(char c, char d) {
     if (c == d) return 0;
     else return MAXLEN;
@@ -1118,7 +1118,7 @@ Given a shelf of books, partition work between three people without rearranging 
 _Input_: An arrangement _S_ of nonnegative numbers {s<sub>1</sub>,...s<sub>n</sub>} and an integer _k_
 _Output_: Partition _S_ into _k_ or fewer ranges to minimize maximum sum over all ranges without reordering.
 
-```
+```c
 partition (int s[], int n, int k) {
     int m[MAXN+1][MAXK+1]; /* DP table for values */
     int d[MAXN+1][MAXK+1]; /* DP table for dividers */
@@ -1147,7 +1147,7 @@ partition (int s[], int n, int k) {
 }
 ```
 
-```
+```c
 reconstruct_partitions(int s[], int d[MAXN+1][MAXK+1], int n, int k) {
     if (k == 1) print_books(s, 1, n);
     else {
@@ -1157,7 +1157,7 @@ reconstruct_partitions(int s[], int d[MAXN+1][MAXK+1], int n, int k) {
 }
 ```
 
-```
+```c
 print_books(int s[], int start, int end) {
     int i;                  /* counter */
     for (i = start; i <= end; i++) printf(" %d ", s[i]);

@@ -41,7 +41,7 @@ Values on left are input, values on left are result:
 
 #### Truth table for NOT:
 
-```
+```text
 NOT Gate
 ---------
 A    Not A
@@ -51,7 +51,7 @@ A    Not A
 
 Truth table for other operations are similar but have two inputs:
 
-```
+```text
 A|B|A AND B|A OR B|A XOR B|A NOR B|A NAND B
 0|0|   0   |  0       0   |   1   |   1
 0|1|   0   |  1       1   |   0   |   1
@@ -61,14 +61,14 @@ A|B|A AND B|A OR B|A XOR B|A NOR B|A NAND B
 
 Javascript Bitwise operators are numeric, not logical, so don't mix and match with boolean or you might get weird results.
 
-```
+```text
   128 64 32 16  8 4 2 1
     0  0  0  0  1 1 0 0 = 8 + 4 = 12
 |   0  1  1  0  0 1 1 1 = 64 + 32 + 4 + 2 + 1 = 103
     0  1  1  0  1 1 1 1 = 64 + 32 + 8 + 4 + 2 + 1 = 111
 ```
 
-```
+```text
      128 64 32 16 8 4 2 1
      1    1  0  1 0 1 1 0 = 128 + 64 + 16 + 4 + 2 = 214
 AND  1    1  1  1 0 0 0 0 = 128 + 64 + 32 + 16 = 240
@@ -77,7 +77,7 @@ AND  1    1  1  1 0 0 0 0 = 128 + 64 + 32 + 16 = 240
 
 If you want to extract two bits, you can shift a number
 
-```
+```text
 Original number: 01101111
 Shifted one to the right: 001101111 <-- last one will fall off into space
 Shifted two to the right: 00011011
@@ -87,7 +87,7 @@ Shifted five to the right: 00000011
 Shifted six to the right: 00000001
 ```
 
-```
+```text
      00000001 = b
 &    00000011 - and mask
 -------------
