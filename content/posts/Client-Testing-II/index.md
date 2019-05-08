@@ -124,7 +124,8 @@ _ toContain: checks that a value exists in an array \* toHaveLength: checks the 
 - createa tree
 - run the assertions to match snapshot
 
-```import renderer from 'react-test-renderer';
+```javascript
+import renderer from 'react-test-renderer';
 import { TheComponent } from '/TheComponent';
 const tree = renderer.create(<TheComponent>);
 
@@ -170,7 +171,7 @@ expect(tree.JSON()).toMatchSnapShot();
 - skipping tests: 'it.skip()' // if it's the snapshot test you want to skip
   Example:
 
-  ```
+  ```javascript
   it.skip('checks that it is an array', () => {
   const numbers = [1, 2, 3];
   const expected = 'array';
@@ -187,7 +188,7 @@ expect(tree.JSON()).toMatchSnapShot();
 - isolating is used to pick the tests you want to run: `it.only()` // if you're working on a test and you have suite of 400 tests but you're only working to fix one, so you only want to run that one.
   Example:
 
-```
+```javascript
 it.only('checks that it is an array', () => {
    const numbers = [1, 2, 3];
    const expected = 'array';
@@ -203,7 +204,7 @@ it.only('checks that it is an array', () => {
 - it also works at the test suite level: `describe.only()` or `describe.skip()`
 - Example:
 
-```
+```javascript
 describe.skip('default', () => {
    it('run the tests', () => {});
 });
@@ -224,7 +225,7 @@ describe.skip('default', () => {
 
 - Invoking done():
 
-```
+```javascript
 it('async using callback', done => {
     setTimeout(done, 4000);
 });
@@ -232,7 +233,7 @@ it('async using callback', done => {
 
 - Returning promise:
 
-```
+```javascript
 it('async using promises', () => {
     return new Promise( resolve => setTimeout(resolve, 3000) )
 });
@@ -240,7 +241,7 @@ it('async using promises', () => {
 
 - Async/await:
 
-```
+```javascript
 it('async with async/await', async () => {
     await new Promise(resolve => setTimeout(resolve, 2000));
 })
@@ -309,7 +310,7 @@ No. I think they use it so they can identify at a quick glance. Like software ca
 
 #### (Amy answer: Maybe they were referring to Binary File Naming?
 
-```
+```text
 Jest uses textRegex to detect test files:
 ├── **tests**
 │ └── component.spec.js # test
@@ -320,7 +321,7 @@ Jest uses textRegex to detect test files:
 └── component.js # not test)
 ```
 
-```
+```javascript
 import React from 'react';
 import renderer from 'react-test-renderer';
 import App from './App';
@@ -332,7 +333,7 @@ describe('snapshot demo', () => {
 }) // Test suite failed - Your test suite must contain at least one test
 ```
 
-```
+```javascript
 describe('snapshot demo', () => {
     describe('saves the snapshot', () => {
         it('should work', () => {
@@ -342,7 +343,7 @@ describe('snapshot demo', () => {
 })  // Passes
 ```
 
-```
+```javascript
 describe('snapshot demo', () => {
     describe('saves the snapshot', () => {
         it('should work', () => {
@@ -362,7 +363,7 @@ Instead of having it test on every change, you can run `yarn test -u`
 
 #### Setup and Teardown Globals:
 
-```
+```javascript
 const utilities = require('.../index');
 
 describe('default', () => {
@@ -423,7 +424,8 @@ See the `numbers` right here? That I'm resetting them? That's a good example of 
 - I could have `const numbers = [1,2,3]` but then during the execution inside the test, I'm making changes to it
   - But you want it to always be reset to the original value before you run the test.
 - Better example:
-  ```
+
+  ```javascript
   it('can push items to the numbers array', () => {
       numbers.push(4)
    })
@@ -451,7 +453,8 @@ But that's the case, when you want to reset or set the value you want each test 
   - We want to say that tests are always isolated, so they shouldn't bring anything from the environment unless it's something you use on the beforeEach and afterEach.
   - This is a camp that's divided. Some people say don't use that because you're violating the pureness of the test because these tests should not be affected by anything on the environment.
   - People say that instead of that, instead have a utilities or maybe just have a regular function, like:
-    ```
+
+    ```javascript
     function makeThing(args) {
         return {
             args: args

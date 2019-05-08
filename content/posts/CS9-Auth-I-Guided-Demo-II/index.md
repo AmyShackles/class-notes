@@ -13,7 +13,7 @@ When you log in, what do you send to server?
 
 - Username and password
 
-```
+```javascript
 server.post('/register', function(req, res) {
     const user = new User(req.body);
 
@@ -47,7 +47,7 @@ need to hash password in req.body and compare to stored hash
 })
 ```
 
-```
+```javascript
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -139,7 +139,7 @@ Way that the server knows that a cookie is valid is only the server has the secr
 
 - Can use secret to encrypt and decrypt the cookie
 
-```
+```javascript
 server.use(session({
     secret: 'nobody tosses a dwarf!', // required
     cookie: {
@@ -156,7 +156,7 @@ Req.session - if you want to add information (like username, ID) to the session 
 
 Session.destroy(callback) destroys the session and will unset req.session property. Once complete, callback is invoked
 
-```
+```javascript
 server.post('/login, (req, res) => {
 // don't want to authenticate this route because we want anyone to be able to log in
 // we don't have time to validate right now, so not including validation
@@ -187,7 +187,7 @@ Default name for the cookie is connect.sid
 - it's bad to use the default because it tells a possible attacker that we're using express-session
 - good practice to set your own name
 
-```
+```javascript
 server.use(session({
     secret: 'nobody tosses a dwarf!', // required
     cookie: {
@@ -201,7 +201,7 @@ server.use(session({
 }))
 ```
 
-```
+```javascript
 server.get('/', (req, res) => {
     if (req.session && req.session.username) {
     res.send(`Welcome back ${req.session.username}`)
@@ -211,7 +211,7 @@ server.get('/', (req, res) => {
 )
 ```
 
-```
+```javascript
 function authenticate(req, res, next) {
     if (req.session && req.session.username) {
         next();
@@ -221,7 +221,7 @@ function authenticate(req, res, next) {
 }
 ```
 
-```
+```javascript
 server.get('/users', authenticate, (req, res,) => {
     User.find().then(users => res.send(users))
 })
@@ -233,7 +233,7 @@ express-session - sessions are a way to persist data across requests - each user
 
 ##### Adding session support:
 
-```
+```javascript
 const session = require('express-session');
     server.use(
         session({
@@ -263,7 +263,7 @@ If I was implementing logout, I would use a get.
 
 - Usually would store userID, maybe full name of user, but usually userID
 
-```
+```javascript
 server.get('/logout', (req, res) => {
     if (req.session) {
         let name = req.session.username
@@ -291,7 +291,7 @@ server.get('/logout', (req, res) => {
 
 connect-mongo needs to know about the session, so needs to be brought in after express-session
 
-```
+```javascript
 const MongoStore = require('connect-mongo')(session) // <-- writing with one statement
 
 const sessionConfig = {

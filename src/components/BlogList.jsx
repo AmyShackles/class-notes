@@ -31,7 +31,6 @@ const BlogList = ({ path, title, date, chapter, subtitle, tags }) => (
 export default BlogList;
 
 BlogList.propTypes = {
-  cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

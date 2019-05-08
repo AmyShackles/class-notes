@@ -19,7 +19,7 @@ db.collection.insertOne({})
 Could include your own \_id so that MongoDB does not create one for you.
 However, if you have two documents that are the same in every way except for \_id, Mongo will interpret them as different documents
 
-```
+```javascript
 db.collection.insertMany([
     {
 // insertMany has ordered: true by default.
@@ -48,7 +48,7 @@ Each ObjectID is a 12-byte hex string
 - Next two bytes contain the process iD
 - Last three are a counter to ensure all objectIDs are unique (even if they might meet the same circumstances for the other parts of the ObjectID
 
-```
+```text
               Date     Mac   PID   Counter
 objectID:    _ _ _ _ | _ _ | _ _ | _ _ _
 ```
@@ -114,7 +114,7 @@ Projection syntax allows you to explicitly include fields in documents returned 
 
 - Allow us to match on basis of a field's value relative to another value
 
-```
+```javascript
 db.collection.find({ runtime: { $gt: 90 }})
     // find documents where runtime is greater than 90
 // field: { value the field should have }
@@ -122,7 +122,7 @@ db.collection.find({ runtime: { $gt: 90 }})
     // find movies with runtimes between 90 and 120
 ```
 
-```
+```javascript
 db.collection.find({ "tomato.meter": {
     $gte: 95, runtime: { $gt: 180 }, {
         title: 1, runtime: 1, _id: 0 }})
@@ -132,7 +132,7 @@ db.collection.find({ "tomato.meter": {
 
 \$eq has same semantics
 
-```
+```javascript
 db.collection.find({ rated: { $ne: "UNRATED" }})
 // all documents that don't have unrated ratings
 ```
@@ -140,7 +140,7 @@ db.collection.find({ rated: { $ne: "UNRATED" }})
 ^ will also return documents without a rated field (if there are any)
 Rather than not having a 'null' in the field, mongoDB doesn't store that field at all
 
-```
+```javascript
 db.collection.find({ rated: { $in: ["G", PG"]}})
     // all documents where rating is G or PG
 ```
@@ -153,31 +153,31 @@ value of \$in has to be an array
 
 Considerations for the shape of a document: - Presence or absence/or data type of a field
 
-```
+```javascript
 db.collection.find({ "tomato.meter": { $exists: true }})
     // returns documents that have a tomato.meter rating
 ```
 
-```
+```javascript
 db.collection.find({ "tomato.meter": { $exists: false }})
     // returns documents that do not have a tomato.meter rating
 ```
 
-```
+```javascript
 db.collection.find({ "_id": { $type: "string" }})
     //returns documents that have "_id" as a string rather than an ObjectId
 ```
 
 ###Logical Operators:
 
-```
+```javascript
 db.collection.find({ $or : [ {
     "tomato.meter": { $gt: 95 }}, {
         "metacritic": $gt: 88 }]})
     // takes array as argument, elements are criteria
 ```
 
-```
+```javascript
 db.collection.find({ $and : [ { "metacritic: { $ne: null }}, {
     "metacritic": { $exists: true }}]})
 // $and is necessary only in certain situations because of implicit &
@@ -192,17 +192,17 @@ db.collection.find({ $and : [ { "metacritic: { $ne: null }}, {
 
 ### Array Operators:
 
-```
+```javascript
 db.collection.find({ genres: { $all: ["Comedy", "Crime", "Drama" ]}})
     // return documents that contain all three elements
 ```
 
-```
+```javascript
 db.collection.find({ countries: { $size: 1 }})
     // documents where there was only one country listed
 ```
 
-```
+```javascript
 db.collection.find({ boxOffice: { $elemMatch: {
     country: "UK", revenue: { $gt: 15 }}}})
 // matches only when both country: UK and gt: 15 match in boxOffice
@@ -216,7 +216,7 @@ db.collection.find({ boxOffice: { $elemMatch: {
 
 ##### updateOne()
 
-```
+```javascript
 db.collection.updateOne({ filter/selector document }, {
     $set { how we want to update the document}})
 ```
@@ -232,7 +232,7 @@ db.collection.updateOne({ filter/selector document }, {
 - removes specified field from a document
   ... etc.
 
-```
+```javascript
 db.collection.updateOne({ title: "The Martian" }, {
     $inc: { "tomato.reviews": 3, "tomato.userReviews: 25 }})
     // increments tomato reviews by 3 and userReviews by 25
@@ -246,7 +246,7 @@ db.collection.updateOne({ title: "The Martian" }, {
 - \$pull - Remove all array elements that match a specified query
 - \$push - Add an item to the array
 
-```
+```javascript
 db.collection.updateOne({ title: "The Martian" }, {
     $push: { reviews: { $each [ { rating: 4.5, date: ..., etc.}]}})
 ```
@@ -254,7 +254,7 @@ db.collection.updateOne({ title: "The Martian" }, {
 - If you don't use \$each, entire array in push will be added as single element in the array
 - We would have an array that would have a single element that would be an array
 
-```
+```javascript
 db.collection.updateOne({ title: "The Martian"}, {$push: {
     reviews: { $each: [ { keys/values }], $position: 0, $slice: 5}}})
 // need to use $position to specify you want element at the front of the array
@@ -264,7 +264,7 @@ db.collection.updateOne({ title: "The Martian"}, {$push: {
 
 Same principles apply to updateMany but it will make the same modification to all documents that match the filter.
 
-```
+```javascript
 db.collection.updateMany({ rated: null }, { $unset: { rated: '' }})
     // removes the field 'rated' from docs where rated is null
 ```
@@ -279,7 +279,7 @@ db.collection.updateMany({ rated: null }, { $unset: { rated: '' }})
 
 #### replaceOne:
 
-```
+```javascript
 db.collection.replaceOne({ "imdb": detail.imdb.id}, detail)
     // wholesale document document replacement
 ```

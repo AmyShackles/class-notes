@@ -136,7 +136,7 @@ insert 101
 Like binary search trees, there are rules for how heaps are laid out
 Direct children have to be less than parents
 
-```
+```text
 [0, 100, 19, 36, 17, 12, 25, 5, 9, 15, 6, 11, 13, 8, 1, 4]
 node = i
 left = 2i

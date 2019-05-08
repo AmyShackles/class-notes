@@ -31,7 +31,7 @@ One of the solutions for distribution not being equal is Docker.
 - Instead of having a single address where your environment could live and servers distributed around the world, you can think of it as an apartment complex where Docker can run as the architecture of the apartment complex and each container can be an individual apartment in the apartment complex.
 - You get a lot of distribution that's even and the same in every environment you run it.
 
-```
+```text
 - mkdir docker-explore
 - cd docker-explore
 - npm init
@@ -42,7 +42,7 @@ One of the solutions for distribution not being equal is Docker.
 
 #### server.js
 
-```
+```javascript
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -63,7 +63,7 @@ server.listen(3000, () => {
 
 #### Dockerfile:
 
-```
+```text
 /* image you want to build off of (baseImage)
     8.7 is the version of Node being used
     Sometimes Docker can't work with latest version
@@ -105,7 +105,7 @@ CMD("npm", "start")
 
 #### in package.json:
 
-```
+```javascript
 "scripts": {
     "start": "node server.js"
 }
@@ -120,7 +120,7 @@ CMD("npm", "start")
 
 #### Commands used to get image built:
 
-```
+```text
 /* to build image */
 
 docker build -t docker-explorer .
@@ -138,7 +138,7 @@ ls
 
 ##### output of ls:
 
-```
+```text
 - Dockerfile
 - bin
 - boot

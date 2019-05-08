@@ -21,7 +21,7 @@ Every Go program is made up of packages and programs start running in package `m
 
 You can import multiple packages by "factoring" them (grouping them together):
 
-```
+```go
 import (
     "fmt"
     "math/rand"
@@ -77,7 +77,7 @@ You should use `int` unless you have a specific reason to use a sized or unsigne
 
 Import statements and variable declarations can be “factored” into blocks
 
-```
+```go
 import (
 	“fmt"
 	“math/cmplx”
@@ -108,7 +108,7 @@ Variables declared without an explicit initial value are given their “zero val
 
 The expression `T(v)` converts the value v to the type T
 
-```
+```go
 var I int = 42
 var f float64 = float64(i)
 var u uint = uint(f)
@@ -122,12 +122,10 @@ Assignment between items of different types requires an explicit conversion
 
 When the right hand side of the assignment contains an untyped numeric constant, the new variable may be an int, float64, or complex128 depending on the precision of the constant
 
-```
-
+```go
 i:= 42 // int
 f := 3.142 // float64
 g := 0.867 + 0.5i // complex128
-
 ```
 
 ### Constants
@@ -160,7 +158,7 @@ Variables declared in the init statement are visible only in the scope of the `f
 
 - There are no parentheses surrounding the three components of the for statement and braces are always required
 
-```
+```go
 func main() {
     sum:= 0
     for I := 0; I < 10; I++ {
@@ -168,13 +166,11 @@ func main() {
     }
     fmt.Println(sum)
 }
-
 ```
 
 Init and post statements are optional in a for loop
 
-```
-
+```go
 func main() {
     sum:= 1
     for ; sum < 1000; {
@@ -182,13 +178,11 @@ func main() {
     }
     fmt.Println(sum)
 }
-
 ```
 
 You can even drop the semicolons!
 
-```
-
+```go
 func main() {
     sum := 1
     for sum < 1000 {
@@ -196,7 +190,6 @@ func main() {
     }
     fmt.Println(sum)
 }
-
 ```
 
 If you omit the loop condition, it runs forever!
@@ -205,8 +198,7 @@ If you omit the loop condition, it runs forever!
 
 Like for loops, parentheses are not needed for if statements but the braces are required.
 
-```
-
+```go
 func sqrt(x float64) string {
     if x < 0 {
         return sqrt(-x) + “i"
@@ -217,14 +209,13 @@ func sqrt(x float64) string {
 func main() {
     fmt.Println(sqrt(2), sqrt(-4))
 }
-
 ```
 
 ### If
 
 Like `for`, `if` statements can also start with a short statement to execute before the condition. Variables declared by that statement are only in scope until the end of the `if`.
 
-```
+```go
 func po(x, n, lim float64) float64 {
     if v:= math.Pow(x, n); v < lim {
         return v
@@ -238,7 +229,6 @@ func main() {
         pow(3, 3, 20),
     )
 }
-
 ```
 
 Variables declared inside an if short statement are available inside any of the else blocks.
@@ -247,8 +237,7 @@ Variables declared inside an if short statement are available inside any of the 
 
 A `switch` statement is a shorter way to write a sequence of if-else statements. Unlike languages like C, Go runs the first case whose value is equal to the condition expression, as though there were a break after every case.
 
-```
-
+```go
 func main() {
     fmt.Println(“Go runs on “)
     switch os := runtime.GOOS; os {
@@ -260,25 +249,21 @@ func main() {
         fmt.Printf(“%s.”, os)
     }
 }
-
 ```
 
 Switch cases evaluate from top to bottom, stopping when a case succeeds.
 
-```
-
+```go
 switch i {
     case 0:
     case f():
 }
 // does not call f if i==0
-
 ```
 
 A `switch` without a condition is the same as `switch true` - can be a clean way to write long if-then-else chains
 
-```
-
+```go
 func main() {
     t:= time.Now()
     switch {
@@ -290,26 +275,22 @@ func main() {
         fmt.Println(“Good evening.”)
     }
 }
-
 ```
 
 ### Defer
 
 A defer statement defers execution of a function until the surrounding function returns. The arguments of the deferred function’s call get evaluated immediately, but the function call is not executed until the surrounding function returns.
 
-```
-
+```go
 func main() {
     defer fmt.Println(“world”)
     fmt.Println(“hello”)
 }
-
 ```
 
 Deferred function calls are pushed onto a stack and are executed in last-in-first-out
 
-```
-
+```go
 func main() {
     fmt.Println(“counting”
     for I:=0; I < 10; I++ {
@@ -317,5 +298,4 @@ func main() {
     }
     fmt.Println(“done”)
 }
-
 ```

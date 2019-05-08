@@ -31,7 +31,7 @@ In general, we care about the worst case. This gives a guaranteed baseline that 
 
 Let's use Selection Sort as an example for how to calculate time complexity. In Selection Sort, an outer loop updates the current position being sorted and an inner loop selects the items that goes in the current position
 
-```
+```text
 function selection_sort(list)
     for current <- 1 ... list.length - 1
         smallest <- current

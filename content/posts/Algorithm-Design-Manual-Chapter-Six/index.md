@@ -12,7 +12,7 @@ published: true
 
 Chapter 5's graph data structure quietly supported edge-weighted graphs, but we'll make it explicit for this chapter. The adjacency list structure consists of an array of linked lists where the outgoing edges from vertex.x appear in the list edges[x]
 
-```
+```c
 typedef struct {
     edgenode *edges[MAXV+1]; /* adjacency info */
     int degree[MAXV+1]; /* outdegree of each vertex */
@@ -24,7 +24,7 @@ typedef struct {
 
 Each edgenode is a record with three fields: first describing second endpoint of the edge (y), second enabling us to annotate the edge with a weight (weight) and third to annotate the next edge in the list (nex):
 
-```
+```c
 typedef struct {
     int y; /* adjacency info */
     int weight; /* edge weight, if any */
@@ -50,7 +50,7 @@ Prim-MST(G)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add the selected edge and vertex to the tree T<sub>prim</sub>
 
-```
+```c
 prim(graph *g, int start) {
     int i; /* counter */
     edgenode *p; /* temporary pointer */
@@ -118,7 +118,7 @@ What is the time complexity?
 
 Faster implementation results if we can implement the component test in faster than O(n) time. Union-find is a data structure that can support such queries in O(lg n) time, allowing Kruskal's algorithm to run in O(m lg m) time, faster than Prim's for sparse graphs.
 
-```
+```c
 kruskal(graph *g) {
     int i; /* counter */
     set_union s; /* set union data structure */
@@ -147,7 +147,7 @@ The connected components in a graph can be represented as a set partition. For K
 
 The union-find data structure represents each subset as a "backwards" tree, with pointers from a node to its parent. Each node of this tree contains a set el.ement and the name of the set is taken from the key at the root.
 
-```
+```c
 typedef struct {
     int p[SET_SIZE+1]; /* parent element */
     int size[SET_SIZE+1]; /* number of elements in subtree */
@@ -162,7 +162,7 @@ We implement desired ops in terms of operations _union_ and _find_:
 
 To minimize tree height, it is better to make the smaller tree the subtree of the larger one. The height of all the nodes in the root subtree stay the same while the height of the nodes merged into the tree all increase by one. Thus, merging in the smaller tree leaves the height unchanged on the larger set of vertices
 
-```
+```c
 set_union_init(set_union *s, int n) {
     int i; /* counter */
     for (i = 1; i <= n; i++) {
@@ -246,7 +246,7 @@ ShortestPath-Dijkstra(G, s, t)
 
 In each iteration, we add one vertex to the tree of vertices for which we know the shortest path from _s_. We keep track of best path seen for all vertices outside the tree and insert them in order of increasing cost.
 
-```
+```c
 dijkstra(graph *g, int start) {
     int i; /* counter */
     edgenode *p; /* temporary pointer */
@@ -305,7 +305,7 @@ You could also opt to leave Dijkstra intact and construct an edge-weighted graph
 
 Floyd's all-pairs shortest-path algorithm is a slick way to create a nxn distance matrix from the origiinal weight matrix of the graph
 
-```
+```c
 typedef struct {
     int weight[MAXV+1]; /* adjacency/weight info */
     int nvertices; /* number of vertices in the graph */
@@ -316,7 +316,7 @@ We should initialize each non-edge to MAXINT. This way, we can test whether it i
 
 There are several ways to characterize the shortest path between two nodes in a graph. The Floyd-Warshall algorithm starts by numbering the vertices of the graph from 1 to _n_. We use the numbers not to label vertices but to order them. When k=0, we are allowed no intermediate vertices, so the only allowed paths are the original edges on the graph. Thus the initial all-pairs shortest-path matrix consists of the initial adjacency matrix. We perform n iterations where the _kth_ iteration allows only the first _k_ vertices as possible intermediate steps on the path between each pair of vertices _x_ and _y_.
 
-```
+```c
 floyd(adjacency_matrix *g) {
     int i, j; /* dimension counters */
     int k; /* intedrmediate vertex counter */
@@ -369,7 +369,7 @@ The prescence of edge (i, j) in the residual graph indicates that positive flow 
 
 The maximum flow from _s_ to _t_ always equals the weight of the minimum s-t cut. Thus, flow algorithms can be used to solve general edge and vertex connectivity problems in graphs.
 
-```
+```c
 typedef struct {
     int v; /* neighboring vertex */
     int capacity; /* capacity of edge */
@@ -381,7 +381,7 @@ typedef struct {
 
 We use breadth-first search to look for any path from source to sink that increases the total flow, and use it to augment the total. We terminate with the optimal flow when no such augmenting path exists.
 
-```
+```c
 netflow(flow_graph *g, int source, int sink) {
     int volume; /* weight of the augmenting path */
     add_residual_edges(g);
@@ -399,7 +399,7 @@ netflow(flow_graph *g, int source, int sink) {
 
 Any augmenting path from source to sink increases the flow, so we can use bfs to find such a path in the appropriate graph. We only consider network edges that have remaining capacity (positive residual flow). This helps bfs distinguish between saturated and unsaturated edges.
 
-```
+```c
 bool valid_edge(edgenode *e) {
     if (e->residual > 0) return true;
     else return false;
@@ -408,7 +408,7 @@ bool valid_edge(edgenode *e) {
 
 Augmenting a path transfers the maximum possible volume from the residual capacity into positive flow. This amount is limited by the path-edge with the smallest amount of residual capacity just as the rate of which traffic can flow is limited by the most congested point.
 
-```
+```c
 int path_volume(flow_graph *g, int start, int end, int parents[]) {
     edgenode *e; /* edge in question */
     edgenode *find_edge();
@@ -433,7 +433,7 @@ edgenode *find_edge(flow_graph *g, int x, int y) {
 
 Sending an additional unit of flow along directed edge (i, j) reduces the residual capacity of edge (i, j) but increases the residual capacity of edge (j, i). Thus, the act of augmenting a path requires modifying both forward and reverse edges for each link on the path.
 
-```
+```c
 augment_path(flow_graph *g, int start, int end, int parents[], int volume) {
     edgenode *e; /* edge in question */
     edgenode *find_edge();

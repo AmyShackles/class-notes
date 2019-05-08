@@ -61,7 +61,7 @@ A person who can sort of dip into both ends of those two separate tasks.
 
 - Takes your git package and puts it on the world wide web for you
 
-```
+```text
 create-react-app netlify-demo
 
 cd netlify-demo
@@ -73,7 +73,7 @@ yarn
 
 #### App.js:
 
-```
+```javascript
 import React, { Component } from 'react';
 import './App.css';
 
@@ -99,7 +99,7 @@ Fetch API - not available in Node (have to use a package in Node if you want to 
 
 #### StarWarsList.js:
 
-```
+```javascript
 import Read, { Component } from 'react';
 
 class StarwarsList extends Component {
@@ -140,7 +140,7 @@ export default StarWarsList;
 
 #### App.css
 
-```
+```css
 .App {
     tex-align: center;
 }
@@ -166,7 +166,7 @@ First, need to publish on git.
 
 - You want your code in a version control system
 
-```
+```text
 git init
 git add .
 git commit -m 'initialized home layout'
@@ -222,7 +222,7 @@ If you're working on another branch, it will only update if merged to master
 
 Someone posted in slack at the end saying:
 
-```
+```text
 FYI If you use <BrowserRouter> you have to have a file in your public folder called _redirects with /* /index .... will not work
 ```
 

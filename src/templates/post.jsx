@@ -3,10 +3,6 @@ import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header } from 'components';
-// import Header from '../components/Header';
-// import Container from '../layouts/Container';
-// import Content from '../layouts/Content';
-// import SEO from '../components/SEO';
 import '../styles/prism.css';
 import '../styles/post.css';
 

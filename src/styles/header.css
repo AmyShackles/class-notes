@@ -7,14 +7,9 @@
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 900px) {
-    .header-wrapper {
-    height: 300px;
-  }
-}
+
 @media (max-width: 600px) {
     .header-wrapper {
-        height: 275px;
         -webkit-clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
         clip-path: polygon(100% 0, 0 0, 0 90%, 50% 100%, 100% 90%);
   }

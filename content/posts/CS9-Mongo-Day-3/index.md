@@ -77,7 +77,7 @@ When relationship goes both ways:
 - books and authors
 - users and roles
 
-```
+```javascript
 const ObjectId = mongoose.Schema.Types.ObjectId
 
 const definition = {
@@ -117,8 +117,7 @@ Could be embedded or linked (ref)
 
 Many would be linked, few embedded
 
-```
-
+```javascript
 const characterSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -191,7 +190,7 @@ Every query can be captured as a query
 
 ### Sort
 
-```
+```javascript
 let query = Character.find()
 
 query.sort('name') // by name asending
@@ -204,7 +203,7 @@ query.sort({ gender: 1, height: -1 }) // same as above
 
 Have a lot of things but only need a few fields:
 
-```
+```javascript
 query.select('name gender')
 query.select({ name: 1, gender: 1 })
 query.select({_id: 0}) // exclude only _id
@@ -215,7 +214,7 @@ query.select({ name: 1, gender: 1, _id: 0 }) // excludes _id
 
 #### Methods are chainable:
 
-```
+```javascript
 Character.find({ gender: 'female'})
     .sort('height')
     .select('name')
@@ -224,8 +223,8 @@ Character.find({ gender: 'female'})
 
 Could have query, don't execute it, and add to it
 
-```
-incrementally building query:
+```javascript
+// incrementally building query:
 
 const gender = req.query.gender;
 
@@ -236,7 +235,7 @@ if (gender) {
 query.then(chars => res.json(chars)).catch();
 ```
 
-```
+```javascript
 query.where('age').gte(18).lte(62)
 ```
 

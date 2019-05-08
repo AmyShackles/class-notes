@@ -41,7 +41,7 @@ _Solution_:
 
 The way to specify such matters to your sorting algorithm is with an application-specific pairwise-element comparison function. By abstracting the pairwise ordering decision to such a comparison function, we can implement sorting independently of such criteria.
 
-```
+```c
 #include <stdlib.h>
 
 void qsort(void *base, size_t nel, size_t width, int(* compare) (const void*, const void*));
@@ -51,7 +51,7 @@ Qsort sorts the first nel elements of an array (pointed to by base) where each e
 
 Comparison function to sort integers in increasing order:
 
-```
+```c
 int intcompare(int *i, int *j) {
     if (*i > *j) return 1
     if (*i < *j) return -1
@@ -61,13 +61,13 @@ int intcompare(int *i, int *j) {
 
 This comparison function can be used to sort an array _a_ of which the first _n_ elements are occupied as follows:
 
-```
+```c
 qsort(a, n, sizeof(int), intcompare);
 ```
 
 Selection sort is a simple-to-code algorithm that repeatedly extracts the smallest remaining element from the unsorted part of the list.
 
-```
+```c
 SelectionSort(A)
     For i = 1 to n, do
         Sort[i] = Find-Minimum from A
@@ -89,21 +89,21 @@ A heap-labeled tree is defined to be a binary tree such that the key labeling of
 
 You do not need pointers for heaps because you can store data as an array of keys and use the position of keys to implicitly satisfy the role of pointers - root at first element, then left child followed by right child.
 
-```
+```c
 typedef struct {
     item_type q[PQ_SIZE + 1]; /* body of queue */
     int n; /* number of queue elements */
 } priority queue;
 ```
 
-```
+```c
 int pq_parent(int n) {
     if (n == 1) return (-1);
     else return ((int)n / 2); /* implicitly take floor (n/2) */
 }
 ```
 
-```
+```c
 int pq_child(int n) {
     return (2 * n);
 }
@@ -118,7 +118,7 @@ _Solution_: We can't. Binary search does not work because a heap is not a binary
 
 Insert new element at leftmost open spot in the array. If that element dominates its parent, it is swapped with its parent recursively until order is established.
 
-```
+```c
 pq_insert(priority_queue *q, item_type x) {
     if (q->n >= PQ_SIZE)
         printf("Warning: priority queue overflow, insert x=%d/n", x);
@@ -130,7 +130,7 @@ pq_insert(priority_queue *q, item_type x) {
 }
 ```
 
-```
+```c
 bubble_up(priority_queue *q, int p) {
     if (pq_parent(p) == -1) return; /* at root of heap, no parent */
     if (q->q[pq_parent(p)] > q->q[p]) {
@@ -142,13 +142,13 @@ bubble_up(priority_queue *q, int p) {
 
 Swap process takes constant time at each level. Since the height of an _n_-element heap is ⌊lg n⌋, each insertion takes at most O(log n) time, so a heap of _n_ elements can be constructed in O(n log n) time through n insertions.
 
-```
+```c
 pq_init(priority_queue *q) {
     q->n = 0;
 }
 ```
 
-```
+```c
 make_heap(priority_queue *q, item_type s[], int n) {
     int i; /* counter */
     pq_init(q);
@@ -161,7 +161,7 @@ make_heap(priority_queue *q, item_type s[], int n) {
 
 The top of the heap sits at the first position of the array, but removing it leaves a hole. This can be filled by replacing it with the element at the _nth_ position, but heap order may not be correct. If the root is dominated by its children, it is then swapped with the most dominant child and swapping keeps occurring down the heap until no parent is dominated by its children. This is referred to as bubbling down and also heapify (since it merges two heaps - the subtrees below the original root) with a new key.
 
-```
+```c
 item_type extract_min(priority_queue *q) {
     int min = -1; /* minimum value */
     if (q->n <= 0) printf("Warning: Empty queue.\n");
@@ -179,7 +179,7 @@ We reach a leaf after ⌊lg n⌋ bubble_down steps, each in constant time. Root 
 
 Exchanging the maximum element with the last element and calling heapify repeatedly gives O(n log n) sorting algorithm called heapsort.
 
-```
+```c
 bubble_down(priority_queue *q, int p) {
     int c; /* child index */
     int i; /* counter */
@@ -197,7 +197,7 @@ bubble_down(priority_queue *q, int p) {
 }
 ```
 
-```
+```c
 heapsort(item_type s[], int n) {
     int i; /* counter */
     priority_queue q; /* heap for heapsort */
@@ -210,7 +210,7 @@ heapsort(item_type s[], int n) {
 
 We can create a heap by performing n/2 calls to bubble_down...
 
-```
+```c
 make_heap(priority_queue *q, item_type s[], int n) {
     int i; /* counter */
     q->n = n;
@@ -233,7 +233,7 @@ Two ideas that lead to correct but inefficient algorithms:
 
 An O(k) solution can look at only _k_ elements smaller than _x_, plus at most O(k) elements greater than _x_. Consider the following recursive function, called at the root with _i = 1_ and _count = k_:
 
-```
+```c
 int heap_compare(priority_queue *q, int i, int count, int x) {
     if ((count <= 0) || (i > q->n)) return count;
     if (q->q[i] < x) {
@@ -248,7 +248,7 @@ If the root of the min-heap is greater than or equal to _x_, no elements in the 
 
 ### Sort by Incremental Insertion
 
-```
+```c
 InsertionSort(A)
     A[0] = -∞
     for i = 2 to n, do
@@ -264,13 +264,13 @@ Although it takes O(n<sup>2</sup>) in worst cast, performs considerably better o
 
 A recursive approach to sorting involves partitioning elements into two groups, sorting recursively, and then interleaving the sorted lists. Base case is when the subarray consists of one element. Because the recursion goes log n deep and a linear amount of work is done per level, merge sort is O(n log n) worst-case.
 
-```
+```c
 Mergesort (A[1, n])
     Merge( MergeSort(A[1, ⌊n/2⌋), Mergesort(A[⌊n/2⌋ + 1, n]))
     // Pseudocode
 ```
 
-```
+```c
 mergesort(item_type s[], int low, int high) {
     int middle; /* index of middle element */
     if (low < high) {
@@ -282,7 +282,7 @@ mergesort(item_type s[], int low, int high) {
 }
 ```
 
-```
+```c
 merge(item_type s[], int low, int middle, int high) {
     int i; /* counter */
     queue buffer1, buffer2; /* buffers to hold elements for merging */
@@ -306,7 +306,7 @@ merge(item_type s[], int low, int middle, int high) {
 
 Pick random item as pivot, separate other items into two piles, one less than and one greater than pivot. Then sort elements to left and right independently - can use recursive sorting algorithm to use partitioning in each sub problem.
 
-```
+```c
 quicksort(item_type s[], int l, int h) {
     int p; /* index of partition */
     if (( h - l) > 0) {
@@ -319,7 +319,7 @@ quicksort(item_type s[], int l, int h) {
 
 We can partition the array in one linear scan for a given pivot by maintaining three sections of the array - less than the pivot (to the left of firsthigh), greater than or equal to pivot (between firsthigh and i) and unexplored (to the right of i) as implemented below:
 
-```
+```c
 int partition(item_type s[], int l, int h) {
     int i; /* counter */
     int p; /* pivot element index */
@@ -372,7 +372,7 @@ Sorting can be used to illustrate most algorithm design paradigms. Data structur
 
 Binary search is a fast algorithm for searching in a sorted array of keys _S_. To search for key _q_, we compare _q_ to middle key _S[n/2]_. It _q_ appears before _S[n/2]_ it must reside in the top half of _S_. If not, it must reside in the bottom half of _S_. By repeating this process recursively on the correct half, we can locate the key in ⌈lg n⌉ comparisons.
 
-```
+```c
 int binary_search(item_type s[], item_type key, int low, int high) {
     int middle; /* index of middle element */
     if (low > high) return -1 /* key not found */

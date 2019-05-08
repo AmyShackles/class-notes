@@ -86,7 +86,7 @@ Dont' pad decimal numbers with leading zeros!
 
 ### Conversions:
 
-```
+```text
 +--------128s place
 |+-------64s place
 ||+------32s place
@@ -101,19 +101,19 @@ Dont' pad decimal numbers with leading zeros!
 64 + 16 + 4 + 2 = 86 decimal == 1010110 binary
 ```
 
-```
+```text
 1111
 8 + 4 + 2 + 1 = 15 decimal == 1111 binary
 ```
 
 #### Decimal to binary:
 
-```
+```text
 67 decimal
 1000011 binary == 67 decimal
 ```
 
-```
+```text
 33 decimal
 100001 binary == 33 decimal
 ```
@@ -122,7 +122,7 @@ Dont' pad decimal numbers with leading zeros!
 
 Base 2 binary
 
-```
+```text
 0 - zero decimal
 1 - one decimal
 10 - two decimal
@@ -136,7 +136,7 @@ Any number under 10 is same in decimal and hexadecimal
 
 Split up into nibbles:
 
-```
+```text
 10100011
 1010 0011
 10 3
@@ -146,7 +146,7 @@ A3 == 10100011
 
 C7 hex is what binary?
 
-```
+```text
 C
 12 decimal
 1100 binary
@@ -161,7 +161,7 @@ Hex to decimal and decimal to hex, more mental gymnastics - might want to conver
 
 Conversions in C!
 
-```
+```c
   int main(void)
   {
       int x = 100; // value is 100 decimal
@@ -180,7 +180,7 @@ Conversions in C!
 
 Number only really matters when you write it down - value is going to be how math is done.
 
-```
+```c
   #include <stdio.h>
   #include <stdlib.h>
 
@@ -197,7 +197,7 @@ Number only really matters when you write it down - value is going to be how mat
   }
 ```
 
-```
+```c
   #include <stdio.h>
   #include <stdlib.h>
 
@@ -210,7 +210,7 @@ Number only really matters when you write it down - value is going to be how mat
   }
 ```
 
-```
+```c
   #include <stdio.h>
   #include <stdlib.h>
 
@@ -228,7 +228,7 @@ Number only really matters when you write it down - value is going to be how mat
 
 No way to convert binary to string and print it out
 
-```
+```c
   #include <stdio.h>
   #include <stdlib.h>
 

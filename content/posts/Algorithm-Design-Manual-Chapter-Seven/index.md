@@ -29,7 +29,7 @@ Backtrack-DFS(A, k)
 
 Breadth-first would also work, but takes up more space. Current state of search represented by path from root to current search depth-first node. Requires space proportional to height of tree. In breadth-first search, the queue stores all nodes at the current level, proportional to the width of the tree.
 
-```
+```c
 bool finished = False; /* found solution yet? */
 backtrack(int a[], int k, data input) {
     int c[MAXCANDIDATES]; /* candidates for next position */
@@ -69,13 +69,13 @@ The global finished flag allows for early termination
 
 ### Constructing all Subsets
 
-```
+```c
 is_a_solution(int a[], int k, int n) {
     return (k == n); /* is k == n? */
 }
 ```
 
-```
+```c
 construct_canddidates(int a[], int k, int n, int c[], int *ncandidates) {
     c[0] = True;
     c[1] = False;
@@ -83,7 +83,7 @@ construct_canddidates(int a[], int k, int n, int c[], int *ncandidates) {
 }
 ```
 
-```
+```c
 process_candidates(int a[], int k) {
     int i; /* counter */
     printf("{");
@@ -93,7 +93,7 @@ process_candidates(int a[], int k) {
 }
 ```
 
-```
+```c
 generate_subsets(int n) {
     int a[NMAX]; /* solution vector */
     backtrack(a, 0, n);
@@ -106,7 +106,7 @@ There are 2<sup>2</sup> subsets.
 
 Counting permutations is a necessary prerequisite to generating them.
 
-```
+```c
 construct_candidates(int a[], int k, int n, int c[], int *ncandidates) {
     int i; /* counter */
     bool in_perm[NMAX]; /* what's in the permutation */
@@ -126,7 +126,7 @@ Testing if _i_ is a candidate for the _kth_ slot in the permutation can be done 
 
 Completing the job requires specifying _process_solution_ and _is_a_solution_ and setting the appropriate arguments to backtrack. Essentially the same as with subsets:
 
-```
+```c
 process_solution(int a[], int k) {
     int i; /* counter */
     for (i = 1; i <= k; i++) printf(" %d", a[i]);
@@ -134,13 +134,13 @@ process_solution(int a[], int k) {
 }
 ```
 
-```
+```c
 is_a_solution(int a[], int k, int n) {
     return k == n;
 }
 ```
 
-```
+```c
 generate_permutations(int n) {
     int a[NMAX]; /* solution vector */
     backtrack(a, 0, n);
@@ -151,7 +151,7 @@ generate_permutations(int n) {
 
 Starting point of any path from _s_ to _t_ always starts with _s_ so _s_ is the only candidate for the first position and _S<sub>1</sub> = {s}_. Possible candidates for second position are vertices _v_ such that _{s, v}_ is an edge of the graph. In general, _S<sub>k</sub>_ consists of the set of vertices adjacent to _a<sub>k</sub>_ that have not been used elsewhere in the partial solution _A_.
 
-```
+```c
 construct_candidates(int a[], int k, int n, int c[], int *ncandidates) {
     int i; /* counter */
     bool in_sol[NMAX]; /* what's already in the solution */
@@ -178,13 +178,13 @@ construct_candidates(int a[], int k, int n, int c[], int *ncandidates) {
 }
 ```
 
-```
+```c
 is_a_solution(int a[], int k, int t) {
     return a[k] == t;
 }
 ```
 
-```
+```c
 process_solution(int a[], int k) {
     solution_count++; /* count all s to t paths */
 }
@@ -202,7 +202,7 @@ Combinatorial searches, when augmented with tree pruning techniques, can be used
 
 Backtracking lends itself to solving a Sudoku puzzle
 
-```
+```c
 #define DIMENSION 9; /* 9 x 9 board */
 #define NCELLS DIMENSION * DIMENSION /* 81 cells */
 
@@ -219,7 +219,7 @@ typedef struct {
 
 Constructing the options for the next solution position requires picking the open square to fill next (next_square) and identifying which numbers are options to fill the square (possible_values)
 
-```
+```c
 construct_candidates(int a[], int k, boardtype *board, int c[], int *ncandidates) {
     int x, y; /* position of next move */
     int i; /* counter */
@@ -241,19 +241,19 @@ construct_candidates(int a[], int k, boardtype *board, int c[], int *ncandidates
 }
 ```
 
-```
+```c
 make_move(int a[], int k, boardtype *board) {
     fill_board(board->move[k].x, board->move[k].y, a[k], board);
 }
 ```
 
-```
+```c
 unmake_move(int a[], int k, boardtype *board) {
     free_space(board->move[k].x, board->move[k].y, board);
 }
 ```
 
-```
+```c
 is_a_solution(int a[], int k, boardtype *board) {
     if (board->freecount == 0)
         return True
@@ -264,7 +264,7 @@ is_a_solution(int a[], int k, boardtype *board) {
 
 Turn off search once solution found.
 
-```
+```c
 process_solution(int a[], int k, boardtype *board) {
     print_board(board);
     finished = True;
@@ -469,7 +469,7 @@ Search heuristic identifies element with the best possible score - highest or lo
 
 Simplest method to search in a solution space uses random sampling. Repeatedly construct random solutions and evaluate them, stopping when you have a good enough solution or are tired of waiting. True random sampling means being able to select elements from the solution space uniformly at random - each of the elements of the solution space must have an equal probability of being the next candidate selected.
 
-```
+```c
 random_sampling(tsp_instance *t, int nsamples, tsp_solution *bestsol) {
     top_solution s; /* current top solution */
     double best_cost; /* best cost so far */
@@ -502,7 +502,7 @@ _Problem_: Propose an efficient algorithm to generate elements from the (<sup>n<
 
 _Solution_:
 
-```
+```c
 do {
     i = random_int(1, n);
     j = random_int(1, n);
@@ -514,7 +514,7 @@ do {
 
 A local search heuristic starts from an arbitrary element of the solution space and scans the neighborhood looking for a favorable transition to take. Hill-climbing and closely related heuristics such as greedy search and gradient descent search are great at finding local options quickly but often fail to find the globally best solution.
 
-```
+```c
 hill_climbing(tsp_instance *t, tsp_solution *s) {
     double cost; /* best cost so far */
     double delta; /* swap cost */
@@ -551,7 +551,7 @@ When does local search do well?
 
 Simulated annealing is effective because it spends more time working on good elements of the solution space than on bad ones and because it avoids getting trapped repeatedly in the same local optima.
 
-```
+```c
 anneal(tsp_instance *t, tsp_solution *s) {
     int i1, i2; /* pair of items to swap */
     int i, j; /* counters */

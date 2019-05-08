@@ -59,7 +59,7 @@ When you say passport.authenticate with local, it says to read the configuration
 
 `passport.use()` will register the strategy with passport
 
-```
+```javascript
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
@@ -190,7 +190,7 @@ Index.js
 
 Index.js
 
-```
+```javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-dom'
@@ -208,7 +208,7 @@ document.getElementById('root')
 
 App.js
 
-```
+```javascript
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 
@@ -251,7 +251,7 @@ I'm not going to use Switch. You normally use Switch when you want to make sure 
 
 Signin.js
 
-```
+```javascript
 import React from 'react';
 
 class Signin extends React.Component {
@@ -324,7 +324,7 @@ onSubmit on the form allows the user to submit the form by hitting enter instead
 Response comes in as response.data
 Users.js
 
-```
+```javascript
 import React from 'react'
 import axios from 'axios'
 
@@ -404,7 +404,7 @@ Logged in and also has a role
 // if you want roles, should add role to the userSchema or have it as an option in a put request
 // that way you can pass it to the token in order to use that to validate role
 
-```
+```javascript
 function makeToken(user) {
 const timestamp = new Date().getTime();
 const payload = {

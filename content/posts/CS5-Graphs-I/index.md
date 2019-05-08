@@ -64,7 +64,7 @@ Cheap
 
 1.  Have each node store a list of what it is connected to:
 
-```
+```text
 Edge Class
     ... var connection
     ... var weight
@@ -76,7 +76,7 @@ Edge Class
 
 2.
 
-```
+```text
 Matrix:
     .. A, B, C, D
     A 0, 1, 0, 0

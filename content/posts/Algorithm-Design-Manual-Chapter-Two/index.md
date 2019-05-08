@@ -125,7 +125,7 @@ _O(f(n)) * O(g(n)) -> O(f(n) * g(n))_
 
 Identify smallest unsorted element and place at end of sorted portion
 
-```
+```c
 selection_sort(int s[], int n) {
     int i, j /* counters */
     int min; /* index of minimum */
@@ -146,7 +146,7 @@ _S(n) = (n - 1) + (n - 2) + (n - 3) + ... + 2 + 1_
 
 **Insertion Sort**
 
-```
+```c
 for (i = 1; i < n; i++) {
     j = i;
     while ((j > 0) && (s[j] < s[j - 1])) {
@@ -164,7 +164,7 @@ Problem: Substring pattern matching
 Input: A text string _t_ and a pattern string _p_
 Output: Does _t_ contain the pattern _p_ as a substring and if so, where?
 
-```
+```c
 int findMatch(char* p, char* t) {
     int i, j; /* counters */
     int m, n; /* string lengths */
@@ -188,7 +188,7 @@ Problem: Matrix multiplication
 Input: Two matrices, _A_ (of dimension _x_ <sup>.</sup> _y_) and _B_ (dimension _y_ <sup>.</sup> _z_)
 Output: An _x <sup>.</sup> z_ matrix _C_ where _C[i][j]_ is the dot product of the ith row of _A_ and the jth column of _B_
 
-```
+```c
 for (i = `; i <= x; i++) {
     for (j = 1; j <= z; j++) {
         C[i][j] = 0;

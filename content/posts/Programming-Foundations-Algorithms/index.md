@@ -57,7 +57,7 @@ GCD (20, 8)
 
 Find the greatest common denominator of two numbers using Euclid's algorithm
 
-```
+```python
 def gcd(a, b):
     while (b != 0):
         t = a
@@ -69,7 +69,7 @@ def gcd(a, b):
 
 Try out the function with a few examples
 
-```
+```python
 print(gcd(60, 96)) // should be 12
 print(gcd(20, 8)) // should be 4
 ```
@@ -177,7 +177,7 @@ Item lookup is linear in time complexity
 
 The Node class
 
-```
+```python
 class Node(object):
     def __init__(self, val):
         self.val = val
@@ -198,7 +198,7 @@ class Node(object):
 
 The Linked List class
 
-```
+```python
 class LinkedList(object):
     def __init__(self, head=None):
         self.head = head
@@ -244,7 +244,7 @@ class LinkedList(object):
 
 Create a linked list and insert some items
 
-```
+```python
 itemlist = LinkedList()
 itemlist.insert(38)
 itemlist.insert(49)
@@ -255,7 +255,7 @@ itemlist.dump_list()
 
 Exercise the list
 
-```
+```python
 print("Item count: ", itemlist.get_count())
 print("Finding item: ", itemlist.find(13))
 print("Finding item: ", itemlist.find(78))
@@ -263,7 +263,7 @@ print("Finding item: ", itemlist.find(78))
 
 Delete an item
 
-```
+```python
 itemlist.deleteAt(3)
 print("Item count: ", itemlist.get_count())
 print("Finding item: ", itemlist.find(38))
@@ -298,13 +298,13 @@ itemlist.dump_list()
 
 Create a new empty list that we'll use as a stack
 
-```
+```python
 stack = []
 ```
 
 Put items onto the stack
 
-```
+```python
 stack.append(1)
 stack.append(2)
 stack.append(3)
@@ -313,13 +313,13 @@ stack.append(4)
 
 Print the stack contents
 
-```
+```python
 print(stack) // [1, 2, 3, 4]
 ```
 
 Pop an item off the stack
 
-```
+```python
 x = stack.pop()
 print(x)
 print(stack)
@@ -332,13 +332,13 @@ Python deque is optimized for adding and removing elements from both ends of the
 
 Create an empty deque object that will function as a queue
 
-```
+```python
 queue = deque()
 ```
 
 Add some items to the queue
 
-```
+```python
 queue.append(1)
 queue.append(2)
 queue.append(3)
@@ -347,13 +347,13 @@ queue.append(4)
 
 Print the queue contents
 
-```
+```python
 print(queue)
 ```
 
 Pop an item off the front of the queue
 
-```
+```python
 x = queue.popleft()
 print(x)
 print(queue)
@@ -381,14 +381,14 @@ Hash tables don't order entries in a predictable way
 
 Create a hashtable all at once
 
-```
+```python
 items1 = dict({"key1": 1, "key2": 2, "key3": "three"})
 print(items1) // {'key3': 'three', 'key2': 2, 'key1': 1}
 ```
 
 Create a hashtable progressively
 
-```
+```python
 items2 = {}
 items2["key1"] = 1
 items2["key2"] = 2
@@ -398,25 +398,25 @@ print(items2) // {'key3': 3, 'key2': 2, 'key1': 1}
 
 Try to access a nonexistant key
 
-```
+```python
 print(items1["key6"]) // Throws an exception
 ```
 
 Replace an item
 
-```
+```python
 items2["key2"] = "two"
 print(items2) // {'key3': 3, 'key2': 'two', 'key1': 1}
 ```
 
 Iterate the keys and values in the dictionary
 
-```
+```python
 for key, value in items2.items():
     print("Key: ", key, " value: ", value)
-// ('Key: ', 'key3', ' value: ', 3)
-// ('Key: ', 'key2', ' value: ', 'two')
-// ('Key: ', 'key1', ' value: ', 1)
+# ('Key: ', 'key3', ' value: ', 3)
+# ('Key: ', 'key2', ' value: ', 'two')
+# ('Key: ', 'key1', ' value: ', 1)
 ```
 
 ## Recursion
@@ -436,7 +436,7 @@ This is called the "call stack"
 
 ## Recursion Example
 
-```
+```text
 function countdown(x) {
     if (x == 0)
         print("done!")
@@ -450,7 +450,7 @@ countdown(4)
 
 ![Recursion-Example](./Recursion-Example.png)
 
-```
+```python
 def countdown(x):
     if x == 0:
         print("Done!")
@@ -461,20 +461,20 @@ def countdown(x):
         print("foo")
 
 countdown(5)
-// 5 ...
-// 4 ...
-// 3 ...
-// 2 ...
-// 1 ...
-// Done!
-// foo
-// foo
-// foo
-// foo
-// foo
+# 5 ...
+# 4 ...
+# 3 ...
+# 2 ...
+# 1 ...
+# Done!
+# foo
+# foo
+# foo
+# foo
+# foo
 ```
 
-```
+```python
 # 2^4 = 2*2*2*2 = 16
 def power(num, pwr):
     if pwr == 0:
@@ -527,7 +527,7 @@ Not considered a practical solution
 
 ## Bubble Sort Example
 
-```
+```python
 def bubbleSort(dataset):
     # Start with the array length and decrement each time
     for i in range(len(dataset) - 1, 0, -1): // start, stop, step
@@ -550,7 +550,7 @@ if __name__ == "__main__":
 
 Output in console:
 
-```
+```text
 Current state: [6, 8, 19, 20, 23, 56, 41, 49, 53, 87]
 Current state: [6, 8, 19, 20, 23, 41, 49, 53, 56, 87]
 Current state: [6, 8, 19, 20, 23, 41, 49, 53, 56, 87]
@@ -582,7 +582,7 @@ Go through and merge arrays together, maintaining sort
 
 ## Merge Sort Example
 
-```
+```python
 items = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 
 def mergeSort(dataset):
@@ -628,7 +628,7 @@ print(items)
 
 Output:
 
-```
+```python
 [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 [6, 8, 19, 20, 23, 41, 49, 53, 56, 87]
 ```
@@ -661,7 +661,7 @@ Split into two arrays - one that's lower than the pivot and one that's larger th
 
 ## Quick Sort Example
 
-```
+```python
 items = [20, 6, 8, 53, 56, 23, 87, 41, 49, 19]
 
 def quickSort(dataset, first, last):
@@ -715,14 +715,14 @@ print(items)
 
 Output:
 
-```
+```python
 [20, 6, 8, 53, 56, 23, 87, 41, 49, 19]
 [6, 8, 19, 20, 23, 41, 49, 53, 56, 87]
 ```
 
 ## Searching for data in an unordered list (Linear Search)
 
-```
+```python
 # declare a list of values to operate on
 items = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 
@@ -753,7 +753,7 @@ Performance: O(log n)
 
 ## Example:
 
-```
+```python
 items = [6, 8, 19, 20, 23, 41, 49, 53, 56, 87]
 
 def binarysearch(item, itemlist):
@@ -787,7 +787,7 @@ print(binarysearch(250, items))
 
 Output:
 
-```
+```text
 4
 9
 None
@@ -795,7 +795,7 @@ None
 
 ## Example to determine if a list is sorted
 
-```
+```python
 items1 = [6, 8, 19, 20, 23, 41, 49, 53, 56, 87]
 items2 = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 
@@ -813,21 +813,21 @@ print(is_sorted(items2))
 
 Output:
 
-```
+```text
 True
 False
 ```
 
 ## Python Comprehension version
 
-```
+```python
 def is_sorted(itemlist):
     return all(itemlis[i] <= itemlist[i+1] for i in range(length(itemlist)-1))
 ```
 
 ## Filter with Hash Table Example O(n)
 
-```
+```python
 # define a set of items that we want to reduce duplicates
 items = ["apple", "pear", "orange",
 "banana", "apple", "orange", "apple",
@@ -848,7 +848,7 @@ print(result)
 
 ## Value Counting with Hash Table O(n)
 
-```
+```python
 # define a set of items that we want to count
 items = ["apple", "pear", "orange",
 "banana", "apple", "orange", "apple",
@@ -871,13 +871,13 @@ print(count)
 
 Output:
 
-```
+```python
 {'apple': 5, 'pear': 3, 'orange: 4, 'banana': 2, 'kiwi': 1}
 ```
 
 ## Find maximum value with recursion
 
-```
+```python
 # declare a list of values to operate on
 items = [6, 20, 8, 19, 56, 23, 87, 41, 49, 53]
 

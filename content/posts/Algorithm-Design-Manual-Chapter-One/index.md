@@ -207,7 +207,7 @@ Second are cavalier extension claims - adding an element could cause entire opti
 
 **Problem**: Prove the correctness of the following recursive algorithm for incrementing natural numbers (i.e., y -> y + 1):
 
-```
+```text
 Increment(y)
     if (y = 0 then return (1) else
         if (y mod 2) = 1 then
@@ -217,7 +217,7 @@ Increment(y)
 
 ⌊⌋ are floor symbols. This threw me at first because I mistook them for absolute value symbols.
 
-```
+```text
 Increment(3)
     if (3 = 0 then return (1) else
         if (3 mod 2) = 1 then - nope
