@@ -252,14 +252,14 @@ resizeable.add("Resizeable");
 
 ### Fixed arrays: Objective-C
 
-```objective-c
+```objectivec
 //NSArray used for arrays of objects - fixed size
 NSArray \*myFiexedArray = @[@"one", @"two", @"three"];
 ```
 
 ### Resizeable arrays: Objective-C
 
-```objective-c
+```objectivec
 // NSMutableArray is the resizeable version
 NSMutableArray *resizeable = [[NSMutableArray alloc]init];
 

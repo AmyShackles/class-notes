@@ -31,20 +31,20 @@ _Note_: Values of the elements are "garbage" until particular values are assigne
 
 **Assigning a value to every element**:
 
-```c++
+```cpp
 int tenIntegerArray[10] = {4, 5, 9, 12, -4, 0, -57, 27, 3, 1}
 ```
 
 **Setting every element in 10-element array to -1**:
 
-```c++
+```cpp
 int integerArray[10];
 for (int i = 0; i < 10; i++) tenIntegerArray[i] = -1;
 ```
 
 **2) Copy: Either because need original array after manipulation or because we want to copy parts to a new array**:
 
-```c++
+```cpp
 int tenIntegerArray[10] = {4, 5, 9, 12, -4, 0, -57, 27, 3, 1}
 int secondArray[10];
 for (int i = 0; i < 10; i++) secondArray[i] = tenIntegerArray[i];
@@ -52,13 +52,13 @@ for (int i = 0; i < 10; i++) secondArray[i] = tenIntegerArray[i];
 
 **3) Retrieval and Search**
 
-```c++
+```cpp
 int num = tenIntegerArray[0];
 ```
 
 **4) Searching for a Specific Value**:
 
-```c++
+```cpp
 const int ARRAY_SIZE = 10;
 int intArray[ARRAY_SIZE] = {4, 5, 9, 12, -4, 0, -27, 30987, -287, 1};
 int targetValue = 12;
@@ -72,7 +72,7 @@ _Note_: If targetValue is not found, targetPos will be equal to ARRAY_SIZE after
 
 When the value you're looking for isn't a fixed value and is instead a value based on the relationship with other values in the array - for example, largest.
 
-```c++
+```cpp
 const int ARRAY_SIZE = 10;
 int intArray[ARRAY_SIZE] = {4, 5, 9, 12, -4, 0, -57, 30987, -287, 1};
 int highestValue = intArray[0];
@@ -93,7 +93,7 @@ To use _qsort_, you have to write a comparator function. That function will be c
 
 **Comparator function example**:
 
-```c++
+```cpp
 int compareFunc(const void* voidA, const void* voidB) {
     int* intA = (int *)(voidA);
     int* intB = (int *)(voidB);
@@ -108,7 +108,7 @@ qsort(intArray, ARRAY_SIZE, sizeof(int), comapreFunc);
 
 Basic implementation for our integer array:
 
-```c++
+```cpp
 int start = 0;
 int end = SIZE_ARRAY - 1;
 for (int i = start + 1; i <= end; i++) {
@@ -129,7 +129,7 @@ Similar to retrieval operation in that you need to look at every element in the 
 
 **Example: Average**:
 
-```c++
+```cpp
 const int ARRAY_SIZE = 10;
 int gradeArray[ARRAY_SIZE] = {87, 76, 100, 97, 64, 83, 88, 92, 74, 95};
 double sum = 0;
@@ -143,7 +143,7 @@ double average = sum / ARRAY_SIZE;
 
 Array of double values represents payments to vendors. Only positive values are valid, so negative values indicate data integrity problems. As part of validation report, you might write a loop to count the number of negative values in the array.
 
-```c++
+```cpp
 const int ARRAY_SIZE = 10;
 int countNegative = 0;
 for (int i = 0; i < ARRAY_SIZE; i++) {
@@ -157,7 +157,7 @@ In statistics, the mode of a set of values is the value that appears most often.
 
 #### Pseudo Code
 
-```c++
+```cpp
 int mostFrequent = ?;
 int highestFrequency = ?;
 int currentFrequency = 0;
@@ -175,7 +175,7 @@ for (int i = 0; i < ARRAY_SIZE; i++) {
 
 #### Completed:
 
-```c++
+```cpp
 int mostFrequent;
 int highestFrequency = 0;
 int currentFrequency = 0;
@@ -198,7 +198,7 @@ qsort(surveyData, ARRAY_SIZE, sizeof(int), compareFunc);
 
 **Histogram**: A graph showing how often different values appear in an underlying dataset.
 
-```c++
+```cpp
 const int MAX_RESPONSE = 10;
 int histogram[MAX_RESPONSE];
 for (int i = 0; i < MAX_RESPONSE; i++) {
@@ -213,7 +213,7 @@ With histogram data in place, we can write the rest. Note the histogram code was
 
 **No time is saved by writing all of the code at once in a situation where the problem is easily separated into parts that can be individually written and tested**
 
-```c++
+```cpp
 int mostFrequent = 0;
 for(int i = 1; i < MAX_RESPONSE; i++) {
     if (histogram[i] > histogram[mostFrequent]) mostFrequent++;
@@ -229,14 +229,14 @@ It's often useful to create an array where values never change after initializat
 
 #### Example: Replacing the punctuation switch for Decode a Message
 
-```c++
+```cpp
 const char punctuation[8] = {'!', '?', ',', '.', ' ', ';', '"', '\''};
 outputCharacter = punctuation[number - 1];
 ```
 
 #### Example: If we then had to encode using same algorithm
 
-```c++
+```cpp
 const int ARRAY_SIZE = 8;
 int targetPos = 0;
 while (punctuation[targetPos] != targetValue && targetPos < ARRAY_SIZE) targetPos++;
@@ -245,7 +245,7 @@ int punctuationCode = targetPos + 1;
 
 Suppose writing program to compute cost of a business license in a state where the license cost varies as the gross sales figures of the business varies.
 
-```c++
+```cpp
 const int NUM_CATEGORIES = 4;
 const double categoryThresholds[NUM_CATEGORIES] = {0.0, 5000.0, 150000.0, 5000000.0};
 const double licenseCost[NUM_CATEGORIES] = {80.0, 200.0, 1000.0, 5000.0};
@@ -270,7 +270,7 @@ Sometimes, the use of compound data types does require us to make some changes t
 
 For example, consider the problem of finding the highest of a set of student grades. Suppose that instead of an array of int, we have an array of data structures, each representing a student record:
 
-```c++
+```cpp
 struct student {
     int grade;
     int studentID;
@@ -280,7 +280,7 @@ struct student {
 
 Always easy to initialize an array, even when a struct!
 
-```c++
+```cpp
 const int ARRAY_SIZE = 10;
 student sutdentArray[ARRAY_SIZE] = {
     {87, 10001, "Fred"},
@@ -298,7 +298,7 @@ student sutdentArray[ARRAY_SIZE] = {
 
 To get the highest grades:
 
-```c++
+```cpp
 int highest = studentArray[0].grade;
 for (int i = 1, i < ARRAY_SIZE; i++) {
     if (studentArray[i].grade > highest) highest = studentArray[i].grade;
@@ -307,7 +307,7 @@ for (int i = 1, i < ARRAY_SIZE; i++) {
 
 In order to retrieve any data for the highest scoring student (name, id, grade), it would be better to track the array position rather than the highest grade:
 
-```c++
+```cpp
 int highPosition = 0;
 for (int i = 0; i < ARRAY_SIZE; i++) {
     if (studentArray[i].grade > studentArray[highPosition].grade) highPosition = i;
@@ -318,7 +318,7 @@ for (int i = 0; i < ARRAY_SIZE; i++) {
 
 Business license example from earlier:
 
-```c++
+```cpp
 const double licenseData[2][numberCategories] = {
     {0.0, 5000.0, 150000.0, 5000000.0},
     {50.0, 200.0, 1000.0, 50000.0}
@@ -329,7 +329,7 @@ Using a multidimensional array usually lowers readability, and isn't really wort
 
 Example:
 
-```c++
+```cpp
 const int NUM_AGENTS = 3;
 const int NUM_MONTHS = 12;
 int sales[NUM_AGENTS][NUM_MONTHS] = {
@@ -349,7 +349,7 @@ for (int agent = 0; agent < NUM_AGENTS; agent++) {
 
 It may occur to you that the first time through the nested loops, both of our loop counters will be 0, so we will be comparing this initial value of highestSales to itself. This doesn't affect the outcome, but sometimes novice programmers will attempt to avoid this tiny inefficiency by putting in a second if statement in the inner loop body:
 
-```c++
+```cpp
 if (agent != 0 || month != 0)
     if (sales[agent][month] > highestSales)
         highestSales = sales[agent][month];
@@ -357,7 +357,7 @@ if (agent != 0 || month != 0)
 
 This, however, is considerably _less_ efficient than the previous version because we would be performing 50 extra comparisons while avoiding only one.
 
-```c++
+```cpp
 double arrayAverage(int intArray[], int ARRAY_SIZE) {
     double sum = 0;
     for (int i = 0; i < ARRAY_SIZE; i++) {
@@ -382,7 +382,7 @@ If the data you want to individually process isn't contiguous in the array inita
 
 Because average monthly sales for the current agent is potentially referenced twice (once in the assignment statement and once in the conditional), temp variable eliminates the possibility of calling arrayAverage twice for the same agent data.
 
-```c++
+```cpp
 int ARRAY_SIZE;
 cout << "Number of survey responses: ";
 cin >> ARRAY_SIZE;
@@ -401,7 +401,7 @@ delete[] is used for arrays. It doesn't really matter with ints, but with object
 
 If you don't know the size of the array, you can use a vector, which works like an array but when a vector has filled its original size, you can use push_back to add further elements to the array:
 
-```c++
+```cpp
 vector<int> surveyData;
 surveyData.reserve(30);
 int surveyResponse;
@@ -436,7 +436,7 @@ We may not need an array for survey data, only for histogram.
 
 We need a data structure only when we need to read in all the values before processing or need to process the values more than once. In this particular situation, neither condition is true.
 
-```c++
+```cpp
 const int MAX_RESPONSE = 10;
 int histogram[MAX_RESPONSE];
 for (int i = 0; i < MAX_RESPONSE; i++) {

@@ -362,7 +362,7 @@ Jumps:
 
 #### Examples (Add)
 
-```assembly
+```asm
 @2
 D=A
 @3
@@ -373,7 +373,7 @@ M=D
 
 ### Example (Adding 1 - 5)
 
-```
+```asm
 @0
 M=0
 @5
@@ -405,7 +405,7 @@ D;JLE
 - R1 - R4: Coin denominations
 - R5 - R8: Number of each coin to use
 
-```assembly
+```asm
 
 @67
 D=A
