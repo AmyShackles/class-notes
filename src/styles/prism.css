@@ -157,3 +157,10 @@ img {
 .gatsby-highlight pre[class*="language-"].line-numbers span.line-numbers-rows {
   width: 3em !important;
 }
+.language-asm, .language-racket {
+  margin-inline-start: 15px;
+  display: flex;
+}
+code.language-ruby, code.language-javascript, code.language-html, code.language-md {
+  left: 15px;
+}
