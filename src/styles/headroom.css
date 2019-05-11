@@ -31,17 +31,18 @@
 }
 .headroom--unpinned {
     position: fixed;
+    padding-left: 15px;
+    padding-top: 15px;
     transform: translateY(-100%);
     transition: all 0.25s ease-in-out;
   }
   .headroom--pinned {
     position: fixed;
+    padding: 15px 0 15px 15px;
     transform: translateY(0);
     transition: all 0.25s ease-in-out;
     background-color: #3e5fbc;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
   .headroom--pinned nav a {
         color: white;

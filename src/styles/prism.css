@@ -157,10 +157,16 @@ img {
 .gatsby-highlight pre[class*="language-"].line-numbers span.line-numbers-rows {
   width: 3em !important;
 }
-.language-asm, .language-racket {
+.language-asm, .language-racket, .language-text {
   margin-inline-start: 15px;
   display: flex;
 }
 code.language-ruby, code.language-javascript, code.language-html, code.language-md {
   left: 15px;
+}
+section.wrapper div.gatsby-highlight {
+  padding: 0;
+}
+section.wrapper div.tagsContainer {
+  padding: 0;
 }

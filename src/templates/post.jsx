@@ -32,24 +32,30 @@ const Post = ({ data, pageContext }) => {
         <div className="post-postSuggestion">
           {prev && (
             <Link to={prev.frontmatter.path}>
-              Previous
-              <h3>
-                {prev.frontmatter.title}
-                <br />
-                {prev.frontmatter.subtitle}
-              </h3>
+              <button value="prev" aria-label="previous" className="prev-post">
+                <h3 className="prev-post">
+                  {'<< Previous:'}
+                  <br/>
+                  {prev.frontmatter.title}
+                  <br />
+                  {prev.frontmatter.subtitle}
+                </h3>
+              </button>
             </Link>
           )}
         </div>
         <div className="post-postSuggestion">
           {next && (
             <Link to={next.frontmatter.path}>
-              Next
-              <h3>
-                {next.frontmatter.title}
-                <br />
-                {next.frontmatter.subtitle}
-              </h3>
+              <button value="next" aria-label="next" className="next-post">
+                <h3 className="next-post">
+                  {'>> Next:'}
+                  <br/>
+                  {next.frontmatter.title}
+                  <br />
+                  {next.frontmatter.subtitle}
+                </h3>
+              </button>
             </Link>
           )}
         </div>

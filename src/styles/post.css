@@ -3,6 +3,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   background: #f0f0f0;
+  width: 100vw;
   box-shadow: 0 -5px 30px rgba(0,0,0,0.2);
 }
 .post-postSuggestion {
@@ -10,6 +11,19 @@
   align-items: center;
   margin: 1rem;
 }
+.post-postSuggestion a {
+  width: 100%;
+}
 .post-postSuggestion h3 {
-    font-size: 16px;
+    font-size: inherit;
+}
+h3.prev-post {
+  text-align: left;
+}
+h3.next-post {
+  text-align: right;
+}
+button.next-post, button.prev-post {
+  color: white;
+  background-color: black;
 }
