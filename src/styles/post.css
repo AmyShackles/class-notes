@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: #f0f0f0;
   width: 100vw;
-  box-shadow: 0 -5px 30px rgba(0,0,0,0.2);
 }
 .post-postSuggestion {
   display: flex;
