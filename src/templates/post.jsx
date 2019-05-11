@@ -35,7 +35,7 @@ const Post = ({ data, pageContext }) => {
               <button value="prev" aria-label="previous" className="prev-post">
                 <h3 className="prev-post">
                   {'<< Previous:'}
-                  <br/>
+                  <br />
                   {prev.frontmatter.title}
                   <br />
                   {prev.frontmatter.subtitle}
@@ -50,7 +50,7 @@ const Post = ({ data, pageContext }) => {
               <button value="next" aria-label="next" className="next-post">
                 <h3 className="next-post">
                   {'>> Next:'}
-                  <br/>
+                  <br />
                   {next.frontmatter.title}
                   <br />
                   {next.frontmatter.subtitle}
