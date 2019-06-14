@@ -98,4 +98,3 @@ const theme = {
 };
 
 export default theme;
-window.console.log('What is theme?', theme);
