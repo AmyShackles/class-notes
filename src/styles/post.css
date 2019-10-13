@@ -13,7 +13,7 @@
   width: 100%;
 }
 .post-postSuggestion h3 {
-    font-size: inherit;
+  font-size: inherit;
 }
 h3.prev-post {
   text-align: left;
@@ -21,7 +21,16 @@ h3.prev-post {
 h3.next-post {
   text-align: right;
 }
-button.next-post, button.prev-post {
-  color: white;
-  background-color: black;
+button.next-post,
+button.prev-post {
+  color: gray;
+  background-color: transparent;
+  border: none;
+}
+button.next-post:hover,
+button.prev-post:hover {
+  color: black;
+}
+:focus {
+  outline: none;
 }
